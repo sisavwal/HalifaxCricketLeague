@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.overall_container {
+    height: 800px;
+    width: 1150px;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  height:310;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row 
+{margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  height: 300px;
+  background-color: #f1f1f1;
+}
+
+/*Tab Styles Section*/
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 18px 10px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+/*End Tab Styles*/
+
+</style>
+</head>
+
+
+<body>
+<div class="overall_container">
+
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Tab1')">Almondbury to Buttershaw</button>
+  <button class="tablinks" onclick="openTab(event, 'Tab2')">Clayton to Lightcliffe</button>
+  <button class="tablinks" onclick="openTab(event, 'Tab3')">Low Moor to Outlane</button>
+  <button class="tablinks" onclick="openTab(event, 'Tab4')">Oxenhope to Sowerby Bridge</button>
+  <button class="tablinks" onclick="openTab(event, 'Tab5')">Sowerby St. Peter's to Warley</button>
+</div>
+
+<div id="Tab1" class="tabcontent">
+    <h3>Almondbury Wesleyans to Buttershaw St Paul's</h3>
+    <div class="row">
+        <div class="column">
+            <a href=""><button class="card">
+                <img src="../Clublogo/PNG/ALMDWES.png" style="width: 100%">
+                <h3>Almondbury Wesleyans</h3>
+            </button></a>
+        </div>
+
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="../Clublogo/Barki.png" style="width: 100%">
+        <h3>Barkisland</h3>
+      </button></a>
+    </div>
+    
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="../Clublogo/PNG/" style="width: 100%">
+        <h3>Blackley</h3>
+      </button></a>
+    </div>
+    
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Booth</h3>
+      </button></a>
+    </div>
+    </div>
+  <br>
+
+  <div class="row">
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Bradley And Colnebridge</h3> 
+      </button></a>
+    </div>
+
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Bradshaw</h3>
+      </button></a>
+    </div>
+    
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Bridgeholme</h3>
+      </button></a>
+    </div>
+    
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Buttershaw St Paul's</h3>
+      </button></a>
+    </div>
+  </div>
+<br>
+</div>
+
+<div id="Tab2" class="tabcontent">
+  <h3>Clayton to Lightcliffe</h3>
+  <div class="row">
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Clayton</h3> 
+      </button></a>
+    </div>
+
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Copley</h3>
+      </button></a>
+    </div>
+    
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Cullingworth</h3>
+      </button></a>
+    </div>
+    
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Great Horton Park Chapel</h3>
+      </button></a>
+    </div>
+  </div>
+  <br>
+
+  <div class="row">
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Greetland</h3> 
+      </button></a>
+    </div>
+
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Illingworth St. Mary's</h3>
+      </button></a>
+    </div>
+    
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Leymoor</h3>
+      </button></a>
+    </div>
+    
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Lightcliffe</h3>
+      </button></a>
+    </div>
+  </div>
+<br>
+</div>
+
+<div id="Tab3" class="tabcontent">
+  <h3>Low Moor Holy Trinity to Outlane</h3>
+  <div class="row">
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Low Moor Holy Trinity</h3> 
+      </button></a>
+    </div>
+
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Luddendenfoot</h3>
+      </button></a>
+    </div>
+    
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Mount</h3>
+      </button></a>
+    </div>
+    
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Mytholmroyd</h3>
+      </button></a>
+    </div>
+  </div>
+  <br>
+
+  <div class="row">
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Norden</h3> 
+      </button></a>
+    </div>
+
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Northowram Fields</h3>
+      </button></a>
+    </div>
+    
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Old Town</h3>
+      </button></a>
+    </div>
+    
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Outlane</h3>
+      </button></a>
+    </div>
+  </div>
+<br>
+</div>
+
+<div id="Tab4" class="tabcontent">
+  <h3>Oxenhope to Sowerby Bridge</h3>
+  <div class="row">
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Oxenhope</h3> 
+      </button></a>
+    </div>
+
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Queensbury</h3>
+      </button></a>
+    </div>
+    
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Rastrick</h3>
+      </button></a>
+    </div>
+    
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>S.B.C.I.</h3>
+      </button></a>
+    </div>
+  </div>
+  <br>
+
+  <div class="row">
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Shelf Northowram Hedge Top</h3>
+      </button></a>
+    </div>
+
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Slaithwaite</h3>
+      </button></a>
+    </div>
+    
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="../Clublogo/PNG/southowram.png" style="width: 100%">
+        <h3>Southowram</h3>
+      </button></a>
+    </div>
+    
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Sowerby Bridge</h3>
+      </button></a>
+    </div>
+  </div>
+<br>
+</div>
+
+<div id="Tab5" class="tabcontent">
+  <h3>Sowerby St. Peter's to Warley</h3>
+  <div class="row">
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Sowerby St. Peter's</h3> 
+      </button></a>
+    </div>
+   
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Stones</h3>
+      </button></a>
+    </div>
+    
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Thornton</h3>
+      </button></a>
+    </div>
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Triangle</h3> 
+      </button></a>
+    </div>
+  </div>
+  <br>
+
+  <div class="row">
+
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Upper Hopton</h3>
+      </button></a>
+    </div>
+    
+    <div class="column">
+          <a href="" ><button class="card"> 
+        <img src="Club_Image_Blank.png" style="width: 100%">
+        <h3>Warley</h3>
+      </button></a>
+    </div>
+    
+    </div>
+  </div>
+<br>
+</div>
+
+</div>
+
+<script>
+function openTab(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+</html>

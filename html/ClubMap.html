@@ -1,0 +1,125 @@
+<body>
+    
+
+<div id="map" style="width: 1140px;height: 1140px;"></div>
+
+<script type="text/javascript">
+    var locations = [
+    ['Shelf/Northowram Hedge Top CC', 53.738539, -1.823869, 2],
+      ['Southowram CC', 53.7057, -1.82791, 1]
+    ];
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 10,
+      center: new google.maps.LatLng(53.738539, -1.823869,),
+      panControl: true,
+        zoomControl: false,
+        mapTypeControl: false,
+        scaleControl: true,
+        streetViewControl: false,
+        overviewMapControl: true,
+        rotateControl: true  
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+      
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+  </script>
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAETW1Bcz4uEr1unfPfBxt2rq1y6DPmLHY&callback=initMap">
+</script>
+</body>
+
+<!-- <script>
+    // Initialize and add the map
+    function initMap() {
+        // The location of th club
+        // var hclclub= {lat: 53.7057, lng: -1.8279};
+        // var snhtcc={lat: 53.738539, lng: -1.823869}
+        var mapOptions = {
+        center: new google.maps.LatLng(53.738539, -1.823869,),
+        zoom: 10,
+        panControl: true,
+        zoomControl: false,
+        mapTypeControl: false,
+        scaleControl: true,
+        streetViewControl: false,
+        overviewMapControl: true,
+        rotateControl: true   
+        };
+        // The map, centered at the club ,
+        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+        // The marker, positioned at the club
+        // var marker = new google.maps.Marker({position: hclclub, map: map });
+        // var marker1 = new google.maps.Marker({position: snhtcc, map: map });
+        // var infowindow = new google.maps.InfoWindow({
+        // content: "Southowram CC"});
+        // infowindow.open(map,marker);
+    
+    // var infowindow1 = new google.maps.InfoWindow1({
+    //     content: "Shelf/Northowram Hedge Top CC"});
+    //     infowindow1.open(map,marker1);
+
+    var locations = [
+      ['Shelf/Northowram Hedge Top CC', 53.738539, -1.823869, 2],
+      ['Southowram CC', 53.7057, -1.82791, 1]
+    ];
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    // for (i = 0; i < locations.length; i++) {  
+    //   marker = new google.maps.Marker({
+    //     position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+    //     map: map
+    //   });
+    
+    //   google.maps.event.addListener(marker, 'click', (function(marker, i) {
+    //     return function() {
+    //       infowindow.setContent(locations[i][0]);
+    //       infowindow.open(map, marker);
+    //     }
+    //   })(marker, i));
+    // };
+
+    </script>
+
+    
+        <!--Load the API from the specified URL
+        * The async attribute allows the browser to render the page while the API loads
+        * The key parameter will contain your own API key (which is not needed for this tutorial)
+        * The callback parameter executes the initMap() function
+        -->
+
+
+
+<!-- 
+<script type="text/javascript">
+
+        // var hclclub= {lat: , lng: };
+        // var snhtcc={lat: 53.738539, lng: -1.823869}
+    // var map = new google.maps.Map(document.getElementById('map'), {
+    //   zoom: 10,
+    //   center: new google.maps.LatLng(-33.92, 151.25),
+    //   mapTypeId: google.maps.MapTypeId.ROADMAP
+    // });
+
+
+  </script> --> -->

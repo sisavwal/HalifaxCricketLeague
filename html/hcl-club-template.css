@@ -1,0 +1,132 @@
+.heading {
+    background-color: rgb(1, 87, 155); 
+    color: #ffff00; 
+    cursor: pointer; 
+    padding: 10px; 
+    width: 100%; 
+    border: none; 
+    text-align: left; 
+    outline: none; 
+    font-size: 15px; 
+    font-family: Arial, Helvetica, Sans-serif; 
+    font-weight: bold; 
+    transition: 0.4s; 
+    border-radius: 8px; 
+    margin: 2px 0px 2px;    
+}
+
+.hclcard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+.mapcomtainer {
+    position: relative;
+    padding-top: 75%; 
+}
+#map {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+#picture {
+     position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;   
+}
+
+table {
+    width: 100%;
+}
+
+td, th {
+    padding: 5px;
+    text-align: left;
+    vertical-align: top;
+}
+tr {
+    height: 19;
+}
+
+td, th { 
+    border: 1px solid #ddd; 
+    padding: 8px; 
+}
+
+tr:nth-child(even){ 
+    background-color: #f2f2f2; 
+}
+
+tr:hover { 
+    background-color: #ddd; 
+} 
+.ClubHonours {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: normal;
+}
+
+.clubrow {
+    background-color: white;
+    padding: 0 15px;
+}
+
+/* .panel { 
+    padding: 0 18px; 
+    display: block;
+    width: 100%; 
+    overflow: auto;
+}  
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.hclrow {
+    width: 100%;
+    overflow: auto;
+    background-color: #e9ebee;
+    border: 1px solid ;
+}
+
+ 
+
+} */
+
+
+/* }
+
+.panel h1,.panel  h4,.panel  h3,.panel th,.hclrow h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;    
+}
+.panel h1 {
+    color: #0000FF;
+    text-align: center;
+}
+.panel p,.panel  a,.panel  td{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clubDetails { 
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+    border-collapse: collapse; 
+    width: 1064px; 
+}
+
+
+
+

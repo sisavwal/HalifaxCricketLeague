@@ -1,0 +1,360 @@
+<style>
+    .hcloverall_container {
+        height: 1050px;
+        overflow-y: scroll;
+    }
+    .hclaccordion_section {
+        background-color: #13365c;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+        width: 1108px;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        font-family: Arial, Helvetica, Sans-serif;
+        font-weight: bold;
+        transition: 0.4s;
+        border-radius: 8px; 
+        margin: 2px 0px 2px; 
+    }
+    .hclaccordion_section:after {
+        content: '\02795'; /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: #ffff00;
+        float: right;
+        margin-left: 5px;
+     }
+    .hclaccordion_section.active:after {
+        content: "\2796"; /* Unicode character for "minus" sign (-) */
+    }
+    .active, .hclaccordion_section:hover {
+        background-color: #ccc; 
+    }
+    .hclaccordion {
+        background-color: #01579b;
+        color: #ffff00;
+        cursor: pointer;
+        padding: 10px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        font-family: Arial, Helvetica, Sans-serif;
+        font-weight: bold;
+        transition: 0.4s;
+        border-radius: 8px; 
+        margin: 2px 0px 2px; 
+    }
+    .hclaccordion:after {
+        content: '\02795'; /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: #ffff00;
+        float: right;
+        margin-left: 5px;
+     }
+    .hclaccordion.active:after {
+        content: "\2796"; /* Unicode character for "minus" sign (-) */
+    }
+    .active, .hclaccordion:hover {
+        background-color: #ccc; 
+    }
+    .hclpanel {
+        padding: 0 18px;
+        display: none;
+        background-color: white;
+        font-family:Arial, Helvetica, Sans-serif;
+    /*    max-height: 0;*/ 
+        max-height: 500px; 
+         max-width: 1072px;
+        overflow: auto;
+        transition: max-height 0.2s ease-out;
+    }
+    .hclsection_panel {
+        padding: 0 0 0 10px;
+        display: none;
+        background-color: white;
+        font-family:Arial, Helvetica, Sans-serif;
+    /*    max-height: 0;*/ 
+        max-height: 1000px; 
+        max-width: 1098px;
+        overflow: auto;
+        transition: max-height 0.2s ease-out;
+    }
+    table {
+            width: 500px;
+            padding: 10;
+            text-align:left;
+            margin: 100;
+        }
+        th {
+            font-weight: bold;
+        }        
+        table th td {
+            max-width: 50%; 
+         }
+    #ul{
+        text-decoration-line: underline;
+    }
+</style>
+
+
+<body>
+    <div class="hcloverall_container">
+        <button class="hclaccordion_section">SECTION 1 - THE RULES OF THE SUNDAY LEAGUE</button>
+            <div class="hclsection_panel">
+                <button class="hclaccordion">S1 CONSTITUTION</button>
+                <div class="hclpanel">
+                    <ol type="a">
+                        <li>That this combination of clubs shall be entitled the Halifax Sunday Cricket League (SL) and is part of the parent Halifax Cricket League (HCL) and subject to all its applicable Rules, except where shown below.</li>
+                    </ol>
+                </div>
+                <button class="hclaccordion">S2 MEETINGS, MEMBERSHIP & SUBSCRIPTIONS</button>
+                <div class="hclpanel">
+                    <ol type="a">
+                        <li>At all Council, Annual General Meeting (AGM) or Special General Meeting (SGM) only clubs with a team entered in the SL shall be entitled to vote on specific SL matters. </li>
+                        <li>Any club wishing to enter a team in the SL shall contact, in writing, the SL Secretary by 31 August of the year preceding proposed entry. To be eligible for membership a club shall have two senior sides playing in an ECB recognised weekend league and normally meet the entry standards of the HCL.</li>
+                        <li>Subscriptions shall be confirmed at the AGM, or an SGM, and shall be paid to the Treasurer before the February Council Meeting [for full details see HCL Rule L4(b)].</li>
+                        <li>Any club failing to fulfil two or more fixtures (League and/or Cup) will be required to apply for re-election at the AGM.</li>
+                        <li>The Executive may require any club to apply for re-election. At least two weeks before the notification for the AGM it shall advise the club concerned together with the reason(s). At the AGM the name of the club and the reason(s) for it being required to apply for re-election shall be revealed, together with any statement of response from the club.</li>
+                    </ol>
+                </div>
+                <button class="hclaccordion">S3 PLAYER REGISTRATION</button>
+                <div class="hclpanel">
+                    <ol type="a">
+                        <li>Each club shall field only bona-fide amateur players who shall be registered with the Registrations Secretary at least 48 hours before they take part in a match.</li>
+                        <li>No player of a club, other than those registered as a junior, shall be eligible to play for its SL team if he/she played in, or is deemed to have played in, the club’s previous First XI match.</li>
+                        <li>With the exception of players under 19 years of age on 31 August of the preceding year, no more than four players who played in, or were deemed to have played in, its club’s previous Second XI match shall be eligible to play in their club’s following SL match.</li>
+                        <li>No player who has played in three or more First XI League matches in the current season shall play in the SL, unless he/she is under 17 years of age on 31 August of the previous year.</li>
+                        <li>Any player refused permission by the Executive to play in its club’s Second XI shall not be eligible to play in its club’s SL team.</li>
+                        <li>A SL club shall be allowed to nominate a non-Sunday playing HCL club as a satellite club provided the latter club’s name is advised to the Registrations Secretary by no later than 31 March each season. If the satellite club grants permission for any of its designated registered players to play for that SL club then he/she may play in a SL fixture, provided he/she has not played in the HCL on the previous Saturday. There is no limit on the number of players to be used provided that any team, comprising of players from both clubs, shall fulfil all selection and other qualification criteria of the SL.</li>
+                    </ol>   
+                </div>
+                <button class="hclaccordion">S4 FIXTURES</button>
+                <div class="hclpanel">
+                    <ol type="a">
+                        <li>Teams shall be divided into three Divisions, 1, 2 and 3, with each team in a Division playing an equal number of matches. </li>
+                        <li>At the close of each season the bottom two teams in Divisions 1 & 2 shall be relegated to Divisions 2 & 3 respectively. The top two teams in Divisions 2 & 3 shall be promoted to Divisions 1 & 2 respectively. No team in Division 3 is required to apply for re-election.</li>
+                        <li>The start time of all matches shall be 1:30pm except for i) a nominated morning match or ii) where the reserve date of the Rod Warhurst Trophy final is utilised, in which cases the start time shall be 10:00am.</li>
+                        <li>No match shall take place on an artificial pitch.</li>
+                    </ol>                    
+                </div>
+                <button class="hclaccordion">S5 MATCH POINTS</button>
+                <div class="hclpanel">
+                    <ol type="a">
+                        <li>Points shall be determined as follows with references to bonus points detailed below in Rule S5(b).</li>
+                        <ol type="i">
+                            <li>where the opposition is bowled out and a higher total is achieved, the winning team shall be awarded 20 points, with the losing team awarded bonus points.</li>
+                            <li>if the team with the lowest total is not all out then the match shall be deemed a draw, with 7 points awarded to the team scoring most runs and 1 point to that scoring least runs. In addition both teams shall be awarded bonus points.</li>
+                            <li>if the scores are tied each team shall be awarded 4 points and, in addition, both teams shall be awarded bonus points.</li>
+                            <li>should a match be abandoned due to inclement weather before, or at the completion of the first innings, each team shall be awarded 8 points plus any bonus points accrued.</li>
+                            <li>in the case of any abandonment during the second innings 4 points shall be awarded to each team, plus any bonus points accrued.</li>
+                            <li>where a fixture cannot be rearranged due to a club being involved in the Parish Cup (Cup) or Crossley Shield (Shield) competitions, or hosting a Finals day at its ground, then both teams shall be awarded 10 points. Such an occurrence shall be recorded in the League table as a nil points loss but with both teams having 10 points recorded as bonus points. </li>
+                        </ol>
+                            <li>The bonus points referred to above shall be awarded as per the following tables:
+                                <table>
+                                   
+                                        <th>SCHEDULED 30 OVERS MATCHES
+                                          
+                                        </th>
+                                   
+                                    <tr>
+                                        <th><br>Batting</th>
+                                    </tr>
+                                    <tr>
+                                            <td>50-74 runs scored</td>
+                                            <td>1 bonus point</td>
+                                    </tr>                            
+                                    <tr>
+                                        <td>75-99 runs scored</td>
+                                        <td>2 bonus points</td>
+                                    </tr>
+                                    <tr>
+                                        <td>100-124 runs scored</td>
+                                        <td>3 bonus points</td>
+                                    </tr>                        
+                                    <tr>
+                                        <td>125-149 runs scored</td>
+                                        <td>4 bonus points</td>
+                                    </tr>
+                                    <tr>
+                                        <td>150 runs or more scored</td>
+                                        <td>5 bonus points</td>
+                                    </tr>                            
+                                    <tr>
+                                        <th><br>Bowling</th>
+                                    </tr>                            
+                                    <tr>
+                                            <td>three wickets taken</td>
+                                            <td>1 bonus point</td>
+                                    </tr>                            
+                                    <tr>
+                                            <td>four wickets taken</td>
+                                            <td>2 bonus points</td>
+                                    </tr>                            
+                                    <tr>
+                                            <td>five wickets taken</td>
+                                            <td>3 bonus points</td>
+                                    </tr>                            
+                                    <tr>
+                                            <td>six wickets taken</td>
+                                            <td>4 bonus points</td>
+                                    </tr>                            
+                                    <tr>
+                                            <td>seven or more wickets taken</td>
+                                            <td>5 bonus points</td>
+                                    </tr>
+                                    <tr>
+                                        <th><br>SCHEDULED 40 OVERS MATCHES</th>
+                                    </tr>
+                                    <tr>
+                                        <th><br>Batting</th>
+                                    </tr>                       
+                                    <tr>
+                                            <td>100-124 runs scored</td>
+                                            <td>1 bonus point</td>
+                                    </tr>                            
+                                    <tr>
+                                            <td>125-149 runs scored</td>
+                                            <td>2 bonus points</td>
+                                    </tr>                            
+                                    <tr>
+                                            <td>150-174 runs scored</td>
+                                            <td>3 bonus points</td>
+                                    </tr>                            
+                                    <tr>
+                                            <td>175-199 runs scored</td>
+                                            <td>4 bonus points</td>
+                                    </tr>                            
+                                    <tr>
+                                            <td>200 runs or more scored</td>
+                                            <td>5 bonus points</td>
+                                    </tr>
+                                    <tr>
+                                        <th><br>Bowling</th>
+                                        <tr>
+                                                <td>two or three wickets taken</td>
+                                                <td>1 bonus point</td>
+                                        </tr>                            
+                                        <tr>
+                                                <td>four or five wickets taken</td>
+                                                <td>2 bonus points</td>
+                                        </tr>                            
+                                        <tr>
+                                                <td>six or seven wickets taken</td>
+                                                <td>3 bonus points</td>
+                                        </tr>                            
+                                        <tr>
+                                                <td>eight or nine wickets taken</td>
+                                                <td>4 bonus points</td>
+                                        </tr>                            
+                                        <tr>
+                                                <td>All out (including where teams<br> do not bat eleven players)</td>
+                                                <td>5 bonus points</td>
+                                        </tr>
+                                </table>
+                            </li>
+                    </ol> 
+                </div>
+                <button class="hclaccordion">S6 PRE-MATCH PROCEDURES</button>
+                <div class="hclpanel">
+                    <ol type="a">
+                        <li>Where a member club allows another club to use its ground for a SL fixture, a fee of £25.00 shall be payable to the host club.  The clubs involved shall make arrangements regarding any catering.</li>
+                    </ol> 
+                </div>
+                <button class="hclaccordion">S7 MATCH PROCEDURES</button>
+                <div class="hclpanel">
+                    <ol type="a">
+                        <li>All matches shall be of a maximum 40 overs per innings (30 overs for matches commencing at 10:00am). </li>
+                        <li>In matches affected by inclement weather the minimum number of overs to be played per innings shall be 25 (20 overs for matches commencing at 10:00am).</li>
+                        <li>Approved League balls shall be used in all matches however they are not required to be new. </li>
+                        <li>Each club shall be responsible for providing a competent scorer for the full duration of a match.</li>
+                        <li>No player shall bowl more than 9 overs (7 for matches commencing at 10:00am). If a game is interrupted by inclement weather the above maximums remain in place.</li>
+                        <li>Teams must bowl at least 17 overs per hour and any team failing to meet this requirement shall forfeit 1 point.</li>
+                        <li>A batsman scoring 100 runs must retire and shall not resume his/her innings.</li>
+                    </ol> 
+                </div>
+                <button class="hclaccordion">S8 MATCH RESULTS</button>
+                <div class="hclpanel">
+                    <ol type="a">
+                        <li>Reporting the result of each match shall be that as applying for HCL matches and is the responsibility of the home club.</li>
+                    </ol> 
+                </div>
+                <button class="hclaccordion">S9 UMPIRES</button>
+                <div class="hclpanel">
+                    <ol type="a">
+                        <li>It shall be the responsibility of each club to provide one competent umpire for the full duration of a match. If an umpire is not provided one of the players, who shall be a competent umpire, must be appointed for the whole match. If no such person is available the team unable to provide an umpire shall be deemed to have failed to fulfil the fixture and be fined accordingly as per HCL Rule L8(m).</li>
+                    </ol> 
+                </div>
+            </div>
+            <button class="hclaccordion_section">SECTION 2 - THE RULES OF THE ROD WARHURST CUP</button>
+            <div class="hclsection_panel">
+                <button class="hclaccordion">W1 TITLE</button>
+                <div class="hclpanel">
+                    <ol type="a">
+                        <li>The competition shall be called the Rod Warhurst Cup and comprise ties of 40 overs per team.</li>
+                        <li>When membership of the SL exceeds 24 teams the competition shall only be open to those in Divisions 1 and 2. All remaining teams shall play a full League programme of fixtures in a third division.</li>
+                        <li>Except where inappropriate HCL & SL Rules shall apply, plus the specific ones provided herein. </li>
+                    </ol>
+                </div>
+                <button class="hclaccordion">W2 DRAWS & TIES</button>
+                <div class="hclpanel">
+                    <ol type="a">
+                        <li>A first round of four Mini-Leagues shall take place with teams playing each other once.</li>
+                        <li>The winning team in each Mini-League match shall receive 2 points and the losers 0 points. In a tied or abandoned match each team shall receive 1 point.</li>
+                        <li>Where two or more clubs finish level in a Mini-League, qualification shall be determined by the results of the matches between the teams. Should this fail to establish the qualifier, runs per wicket for and against shall be the deciding method.</li>
+                        <li>The top team from each of the four Mini-Leagues shall progress to the knockout Semi-Finals with the two winners contesting the Final.</li>
+                        <li>All results shall stand no matter how many matches are completed.</li>
+                    </ol>              
+                </div>
+                <button class="hclaccordion">W3 TIE PROCEDURES</button>
+                <div class="hclpanel">
+                    <ol type="a">
+                        <li>No player shall bowl more than 20% of the overs for his/her team unless an innings is interrupted by inclement weather after he/she has already completed his/her allocation. </li>
+                        <li>Mini-League matches interrupted by weather or bad light shall be completed on a reduced overs basis with a minimum of 25 overs each innings.</li>
+                        <li>The semi-finals shall be completed on the scheduled date. Should a start be delayed, or inclement weather interrupts a tie, then the procedures shown in HCL Rules K6(c), (d) & (e) shall apply.</li>
+                    </ol> 
+                </div>
+                <button class="hclaccordion">W4 UMPIRES</button>
+                <div class="hclpanel">
+                    <ol type="a">
+                        <li>Each team competing in the Semi-Finals shall provide an umpire who is an ACO member, for the match in which it is not competing. Failure to do so will result in the team being </li>
+                    </ol>
+                </div>
+        </div>
+    </div>
+</body>               
+
+<script>
+        var acc = document.getElementsByClassName("hclaccordion");
+        var acc_s = document.getElementsByClassName("hclaccordion_section");
+        // var l;
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var hclpanel = this.nextElementSibling;
+                if (hclpanel.style.display === "block") {
+                    hclpanel.style.display = "none";
+                } else {
+                    hclpanel.style.display = "block";
+                }
+            });
+        }
+        
+        for (i = 0; i < acc_s.length; i++) {
+            acc_s[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var hclsection_panel = this.nextElementSibling;
+                if (hclsection_panel.style.display === "block") {
+                    hclsection_panel.style.display = "none";
+                } else {
+                    hclsection_panel.style.display = "block";
+                }
+            });
+        }
+        </script> 
+

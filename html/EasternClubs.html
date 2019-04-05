@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+  <title>Google Maps Multiple Markers</title> 
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAETW1Bcz4uEr1unfPfBxt2rq1y6DPmLHY&callback=initMap">
+  </script>
+</head> 
+<body>
+  <div id="map" style="width: 1140px; height: 800px;"></div>
+
+  <script type="text/javascript">
+  function initMap () {
+    var locations = [
+        ['Blackley',53.672534,-1.840503,1],
+        //['Booth',53.740851,-1.940628,2],
+        ['Bradley & Colnebridge',53.673786,-1.745732,3],
+        //['Bradshaw',53.768201,-1.878785,4],
+        //['Bridgeholme',53.723385,-2.05623,5],
+        ['Clayton',53.780747,-1.826022,6],
+       // ['Copley',53.700797,-1.876007,7],
+        //['Cullingworth',53.828485,-1.897072,8],
+        ['Great Horton PC',53.777349,-1.781774,9],
+        ['Greetland',53.687322,-1.857281,10],
+        //['Illingworth',53.754456,-1.888095,11],
+        ['Leymoor',53.645153,-1.848894,12],
+        ['Low Moor',53.756698,-1.751055,13],
+      //  ['Luddendenfoot',53.718736,-1.945333,14],
+        ['Mount',53.706485,-1.651499,15],
+     // ['Mytholmroyd',53.729647,-1.970159,16],
+      //  ['Old Town',53.752561,-2.004637,17],
+        ['Outlane',53.665479,-1.848149,18],
+        //['Oxenhope',53.810428,-1.953677,19]
+        // ['Queensbury',53.770099,-1.863978,20],
+      //  ['SBCI',53.715768,-1.916365,21]
+        ['Shelf Northowram Hedge Top',53.738514,-1.823869,22],
+        ['Southowram',53.705329,-1.826887,23],
+      //  ['Sowerby Bridge',53.709992,-1.917091,24],
+      //  ['Sowerby St Peters',53.704715,-1.933071,25],
+     //  ['Stones',53.670297,-1.960584,26],
+        // ['Thornton',53.795,-1.860156,27],
+      //  ['Triangle',53.696337,-1.933114,28],
+        ['Upper Hopton',53.663522,-1.706319,29],
+       // ['Warley',53.71876,-1.914816,30],
+        ['Augustinians',53.692545,-1.765556,31],
+        ['Almondbury Weslians',53.629825,-1.759104,32],
+        ['Golcar',53.640027,-1.858725,33],
+        // ['Slathwaite',53.624561,-1.885272,34],
+        ['Northowram Fields',53.739264,-1.824079,35],
+        ['Lightcliffe',53.726637,-1.792013,36],
+        ['Buttershaw St Pauls',53.764238,-1.779027,37],
+        ['Rastrick',53.682149,-1.794972,38],
+        // ['Barkisland',53.675475,-1.920753,39]
+    ];
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 12,
+      center: new google.maps.LatLng(53.708205, -1.75511,),
+      panControl: true,
+      zoomControl: false,
+      mapTypeControl: true,
+      scaleControl: true,
+      streetViewControl: true,
+      overviewMapControl: true,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+
+infowindow.setContent(locations[i][0]);
+infowindow.open(map, marker);
+var pos = map.getZoom();
+
+map.setZoom(16);
+map.setCenter(marker.getPosition());
+window.setTimeout(function() {map.setZoom(pos);},3000);
+
+}
+      })(marker, i));
+    }      
+  }
+
+  </script>
+</body>
+</html>

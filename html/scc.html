@@ -1,0 +1,261 @@
+<style>
+ .hclContainer {
+    height: 1050px; 
+    overflow-y: scroll; 
+} 
+.accordion { 
+    background-color: rgb(1, 87, 155); 
+    color: #ffff00; 
+    cursor: pointer; 
+    padding: 10px; 
+    width: 1100px; 
+    border: none; 
+    text-align: left; 
+    outline: none; 
+    font-size: 15px; 
+    font-family: Arial, Helvetica, Sans-serif; 
+    font-weight: bold; 
+    transition: 0.4s; 
+    border-radius: 8px; 
+    margin: 2px 0px 2px; 
+} 
+.accordion:after { content: '\02795'; /* Unicode character for "plus" sign (+) */ 
+    font-size: 13px; 
+    color: #ffff00; 
+    float: right; 
+    margin-left: 5px; 
+} 
+.accordion.active:after {  
+    content: "\2796";  Unicode character for "minus" sign (-) 
+} 
+.active, .accordion:hover { 
+    background-color: #ccc; 
+} 
+.panel { 
+    padding: 0 18px; 
+    display: none;
+    width: 1100px; 
+    overflow: auto; 
+    transition: max-height 0.2s ease-out; 
+}  
+
+
+.column {
+    float: left;
+    width: 520px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.row {
+    width: 1100px;
+    overflow: auto;
+    background-color: #e9ebee;
+    border: 1px solid ;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+img {
+    width: 100%;
+}
+
+#map {
+
+    width: 488px;
+    height: 382px;
+
+}
+
+    h1, h4, h3,  th {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;    
+}
+h1 {
+    color: #0000FF;
+    text-align: center;
+}
+p, a, td{
+    font-family: Arial, Helvetica, sans-serif;
+}
+td, th {
+    padding: 5px;
+    text-align: left;
+    vertical-align: top;
+}
+tr {
+    height: 19;
+}
+
+#clubDetails { 
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+    border-collapse: collapse; 
+    width: 1064px; 
+}
+
+#clubDetails td, #clubDetails th { 
+    border: 1px solid #ddd; 
+    padding: 8px; 
+}
+
+#clubDetails tr:nth-child(even){ 
+    background-color: #f2f2f2; 
+}
+
+#clubDetails tr:hover { 
+    background-color: #ddd; 
+}
+
+</style>
+<body>
+<h1>Southowram Cricket Club</h1>
+    <div class="row">
+        <div class="column">
+            <h4>Club Image</h4> 
+                <div class="card">
+                           
+                <img id="picture" src="../SCC.jpg" alt="Southowram Cricket Club">
+            </div>
+        </div>
+        <div class="column">
+            <h4>Club Map</h4>    
+            <div class="card">            
+                    <img id="picture" src="../SCC.jpg" alt="Southowram Cricket Club">               
+                <!-- <div id="map"> -->
+            </div>
+        </div>
+    </div>
+<button class="accordion">Club Details</button>
+    <div class="panel">
+    <table id="clubDetails"> 
+            <!-- border="0" cellpadding="0" cellspacing="0" style="width:645px;" width="645"> -->
+        
+            <tbody>
+                <tr>
+                    <th style="width:200px;">Ground</td>
+                    <th style="width:475px;">Ashday Lane, Southowram, Halifax HX3 9TR</td>
+                </tr>
+                <tr>
+                    <th>Altitude - Telephone</th>
+                    <th>Altitude 841 feet&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tel: 07901 951372</th>
+                </tr>
+                <tr>
+                    <th>Website</th>
+                    <td><a href="https://southowram.play-cricket.com">southowram.play-cricket.com</a></td>
+                </tr>
+        
+                <tr>
+                    <th>Cricket Chairperson</th>
+                    <td><strong>Alan Veal</strong></td>
+                </tr>
+        
+                <tr>
+                    <th>Secretary</th>
+                    <td><strong>Alan Veal</strong><br />5 Hill Crescent, Bank Top, Southowram, Halifax HX3 9PG<br />Tel: 01422 330727&nbsp;&nbsp;&nbsp;  Mobile: 07870 805983<br />email: <a href="mailto:alan_veal@sky.com">alan_veal@sky.com</a> </td>
+                </tr>
+        
+        
+                <tr>
+                    <th>Treasurer</th>
+                    <td><strong>Philip Veal</strong><br />Tel: 01422 610206&nbsp;&nbsp;&nbsp; Mobile: 07760 421860<br />email: <a href="mailto:philipveal67@gmail.com">philipveal67@gmail.com</a></td>
+                </tr>
+        
+                </tr>
+                <tr height="5">
+                    <td height="5" style="height:5px;">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th>Council Representative&nbsp;</th>
+                    <td><strong>Peter Jowett</strong><br />Tel: 01422 358952&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mobile: 07917 827514<br /><a href="mailto:pjowett@asquithbutler.com">pjowett@asquithbutler.com</a></td>
+                </tr>
+                    <th>Welfare Officer</th>
+                    <td>As Secretary</td>
+                </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    <button class="accordion">Club Honours</button>
+        <div class="panel">
+            <p>Second Division Second XI Winners: 1992</p>
+            <p>First Division Second XI Winners: 2011, 2014</p>
+            <p>Sunday League Section A Winners: 2001</p>
+            <p>Sunday League Division 1 Winners: 2017</p>
+            <p>Sunday League Division 3 Winners: 2006</p>
+            <p>Parish Cup Winners: 2000, 2006</p>
+            <p>Crossley Shield Winners: 2001</p>
+            <p>Rod Warhurst Cup Winners: 2005, 2014</p>
+            <p>Twenty20 Winners: 2005, 2012</p>
+            <p>Lindley Moor Trophy Winners: 1994</p>
+            <p>Clay Trophy Winners: 1996</p>
+            <p>Fraine Kenworth Trophy Winners: 1999, 2015</p>
+
+        </div>
+    <button class="accordion">Club History</button>
+        <div class="panel">
+            <p>Year entered the Halifax Crcket League: 1989</p>
+            <p>Although a cricket club was based in Southowram, at the end of Pinnar Lane, before the First World War the current Southowram Cricket Club is the youngest club in the Halifax Cricket League, having come into existence in 1977 when a meeting in the Cock and Bottle Inn decided that the successful pub team should be transformed in to Southowram Cricket Club. </p>
+            <p>An application to join the Halifax Association Cricket League was accepted and a new cricket club was born. The club secured the use of a council owned ground at Spring Hall where they would remain for the following 4 years. </p>
+            <p>By 1979 it was clear that the club was attracting a great deal of interest from local players, so the committee decided to add a second team. Unfortunately the club was unable to use the ground at Spring Hall as a base for the second team so the old ground to the rear of the former New Delight Inn, which was owned by Wainstalls C.C. but unused by them, was hired.</p>
+            <p>The addition of a second team was an important part of the club’s growth and long-term plans. The committee had decided that they would apply to join the Halifax Cricket League as soon as all of the qualification requirements had been met. The only requirement now was their own permanent ground. A local building supplies manufacturer, Marshalls Mono Plc, was approached and they offered the club a site on a former quarry and landfill site at Ashday Lane.</p>
+            <p>Work started on the ground in early 1982 and was completed in time for the 1983 season. The club acquired a pavilion from Barkisland Cricket Club who had built a new stone pavilion the previous year. Unbeknown to the club at the time the pavilion had its own history having been sold to Barkisland Cricket Club by the former Southowram St Anne’s Cricket Club.</p>
+            <p>In addition to the pavilion an old pie hut acquired from Halifax Town AFC was converted in to a score box, which remained in use until 1987 when it was replaced by a purpose built tackle shed / score box.</p>
+            <p>The club continued in the Association League for the next 5 seasons, unsuccessfully applying to join the Halifax League at the end of each season. In 1988 Halifax R.A.F.A Cricket Club resigned from the league leaving the way open for Southowram to join the league. The opportunity was grabbed with both hands and in the first season the club finished mid table in the second division.</p>
+            <p>By this time the wooden pavilion, which was later joined by two ‘Portacabins’, had fallen in to disrepair. The decision was taken to replace them with a new purpose built stone pavilion complete with bar, showers and running water (a luxury compared with the current facilities). Tony Cawdry of Yorkshire County Cricket Club officially opened the new clubhouse on June 23rd 1993. The day was held around a commemorative cricket match between Southowram and a Halifax League select side.</p>
+            <p>In the years since Southowram Cricket Club were admitted to the Halifax Cricket League, the club has been noted for several firsts, including the first regular female cricketer in the league and the first ground to witness six sixes in an over when Fiaz Haider performed the feat in 2001.</p>
+
+        </div>
+
+</body>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of th club
+          var hclclub= {lat: 53.7057, lng: -1.8279};
+          var mapOptions = {
+            center: hclclub,
+            zoom: 14,
+            panControl: true,
+            zoomControl: false,
+            mapTypeControl: false,
+            scaleControl: true,
+            streetViewControl: false,
+            overviewMapControl: true,
+            rotateControl: true   
+            };
+          // The map, centered at the club ,
+          var map = new google.maps.Map(
+              document.getElementById('map'), mapOptions);
+          // The marker, positioned at the club
+          var marker = new google.maps.Marker({position: hclclub, map: map });
+          var infowindow = new google.maps.InfoWindow({
+            content: "Southowram CC"});
+            infowindow.open(map,marker);
+        }
+            </script>
+            <!--Load the API from the specified URL
+            * The async attribute allows the browser to render the page while the API loads
+            * The key parameter will contain your own API key (which is not needed for this tutorial)
+            * The callback parameter executes the initMap() function
+            -->
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAETW1Bcz4uEr1unfPfBxt2rq1y6DPmLHY&callback=initMap">
+            </script>
+<script> 
+        var acc = document.getElementsByClassName("accordion");     
+        var i; 
+            for (i = 0; i < acc.length; i++) {acc[i].addEventListener("click",function() {this.classList.toggle("active"); 
+        var panel = this.nextElementSibling; 
+            if (panel.style.display === "block") 
+                { panel.style.display = "none"; } 
+            else 
+                { panel.style.display = "block"; }
+            }); 
+        } 
+    </script>

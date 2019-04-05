@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="/assets/print-d0e4f5f39c406e6550c5f7eda0587a0e.css" media="print" rel="stylesheet">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <style>
+    .hcl-btn { 
+        background-color: #ccc;     
+        color: #ffff00; 
+        cursor: pointer; 
+        padding: 10px; 
+        width: 100%; 
+        border: none; 
+        text-align: left; 
+        outline: none; 
+        font-size: 15px; 
+        font-family: Arial, Helvetica, Sans-serif; 
+        font-weight: bold; 
+        transition: 0.4s; 
+        border-radius: 8px; 
+        margin: 2px 0px 2px; 
+    } 
+    .hcl-btn.collapsed {
+        background-color: rgb(1, 87, 155); 
+    } 
+.hcl-btn:hover { 
+        background-color: #ccc;   
+}
+    </style>
+
+    <div class="container">
+      <h2>Accordion Example</h2>
+      <p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+      <div class="panel-group" id="league_rules">
+        <div class="panel panel-default">
+          <button class="hcl-btn collapsed" data-toggle="collapse" data-parent="#league_rules" href="#section1">SECTION 1 - THE RULES OF THE LEAGUE</button>
+          <div id="section1" class="panel-collapse collapse">
+            <div class="panel-group" id="sectionL1">
+              <div class="panel panel-default">
+                <button class="hcl-btn collapsed" data-toggle="collapse" data-parent="#sectionL1" href="#hcl-L1">L1 - TITLE, OBJECT &amp; CONSTITUTION</button>
+                <div id="hcl-L1" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <ol type="a">
+                      <li>That this combination of clubs shall be titled the Halifax Cricket League (League)</li>
+                      <li>The object of the League shall be to promote the best interests of the game of cricket.</li>
+                      <li>The League shall be open to all irrespective of age, gender, disability, race, ethnic origin, colour, social status and sexual orientation.</li>
+                      <li>Each season the League shall consist of the clubs elected at the Annual General Meeting (AGM)</li>
+                      <li>The First &amp; Second XI competitions shall be divided into three divisions as per Rule L6(a). All clubs shall enter a First XI with an option to enter the Second XI competition. Clubs that only enter a First XI shall only compete in the lowest division and cannot gain promotion to a higher division.</li>
+                      <li>The Financial Year shall be from 1 October to 30 September.</li>
+                      <li>The income and property of the League shall be used solely towards the promotion of its objectives as set forth in these Rules and no portion thereof shall be paid or transferred, directly or indirectly, to members of the League.</li>
+                      <li>If upon the winding up or dissolution of the League there remains, after the satisfaction of all its debts and liabilities, any property whatsoever it shall not be paid or distributed amongst the members of the League but given or transferred to (a) charitable organisation(s). Such organisation(s) shall have objectives similar to those of the League which prohibit the distribution of its income and property amongst its members to an extent at least as great as imposed on the League under or by virtue of Rule L1(g) hereof. Nominated organisation(s) shall be determined by the members of the League, at or before the time of dissolution, and in so far effect cannot be given to such provisions then it shall be allocated to other charitable objectives.</li>
+                  </ol>                      
+                  </div>
+                </div>                
+              </div>
+
+                <div class="panel panel-default">
+                  <button class="hcl-btn collapsed" data-toggle="collapse" data-parent="#sectionL2" href="#hcl-L2">L2 COUNCIL, OFFICERS &amp; THE EXECUTIVE</button>
+                  <div id="hcl-L2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <ol type="a">
+                        <li>A League Council (Council)shall be formed consisting of one representative from each of the member clubs and the Honorary Vice Presidents. In addition shall be persons elected to the following positions at the AGM: President, Chairman, Secretary, Assistant Secretary, Treasurer, Assistant Treasurer, Fixtures Secretary, Registrations Secretary, Results Secretary, Sunday League Secretary, Advertising &amp; Sponsorship Officer, Development Officer, Disciplinary Officer, Events Officer, Grounds Officer, Player Liason Officer, PR &amp; Media Officer, Representative Teams Fixtures Officer, Website Officer, Welfare Officer, and a representative from the League’s Association of Cricket Officials (HXACO). Also included shall be the elected representatives from the Junior League (JL) and Calderdale Cricket Development Group (CCDG), together with an Historian. An Independent Voting Examiner shall be appointed for the purposes of Rule L14 and any other relevant matter.</li>
+                        <li>A League Executive (Executive)shall be formed comprising of all positions listed in the second sentence of Rule L2(a). From time to time any posts may be combined. Any other person may be co-opted to fulfil a designated position or duty.</li>
+                        <li>During a calendar year the full Executive shall meet on four occasions plus at any other time it is deemed necessary. It shall also meet on a further four occasions but, to facilitate an effective use of time, it shall be divided into four separate Department Groups (Group) under the designations League, Administration, Finance and Development. The four Group heads, together with any other designated member(s) determined annually, shall form a Management Board (Board) that shall be responsible for co-ordinating, acting upon and, in some cases, confirming decisions of the Groups. A separate Rules Sub-Committee shall be formed consisting of a maximum of six Executive members, of which at least one shall be a representative of the SL, to consider all aspects of the Rules. It shall meet on an ad-hoc basis ensuring that all conditions of Rule L14 are met.</li>
+                        <li>The Executive shall have the power to deal with any urgent matters delegated by the Council, including any matters not covered by specific Rules, and impose any decision or penalty considered necessary which shall be final and binding on all parties. (e) The Executive shall have the power to inspect the grounds of all clubs in the League and report upon their fitness or otherwise to the Council. Any recommendation, action or penalty decided upon by the Council as a result of ground report findings shall be final and binding on all parties.</li>
+                      </ol>                      
+                    </div>
+                  </div>                
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+        </div>
+        <div class="panel panel-default">
+              <button class="hcl-btn collapsed" data-toggle="collapse" data-parent="#league_rules" href="#collapse2">Collapsible Group 2</button>
+          <div id="collapse2" class="panel-collapse collapse">
+            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+              <button class="hcl-btn collapsed" data-toggle="collapse" data-parent="#league_rules" href="#collapse3">Collapsible Group 3</button>
+          <div id="collapse3" class="panel-collapse collapse">
+            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+    </body>

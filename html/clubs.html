@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.overall_container {
+    height: 800px;
+    width: 1140px;}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  height:310;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.hclrow 
+{margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.hclrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  height: 300px;
+  background-color: #f1f1f1;
+  width: 263.5px;
+}
+.hcllabel {
+  position: relative;
+  bottom: 5%;
+}
+
+/*Tab Styles Section*/
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 18px 10px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.tabcontent h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: black;
+    padding: 0.3em;
+}
+
+/*End Tab Styles*/
+
+</style>
+</head>
+
+
+<body>
+<div class="overall_container">
+
+<div class="tab">
+  <button class="tablinks active" onclick="openTab(event, 'Tab1')">Almondbury to Bradshaw</button>
+  <button class="tablinks" onclick="openTab(event, 'Tab2')">Bridgeholme to Greetland</button>
+  <button class="tablinks" onclick="openTab(event, 'Tab3')">Leymoor to Old Town</button>
+  <button class="tablinks" onclick="openTab(event, 'Tab4')">Outlane to Southowram</button>
+  <button class="tablinks" onclick="openTab(event, 'Tab5')">Sowerby Bridge to Warley</button>
+</div>
+
+<div id="Tab1" class="tabcontent" style = "display: block;">
+    <h3>Almondbury Wesleyans to Bradshaw</h3>
+    <div class="hclrow">
+        <div class="column">
+            <a href=""><button class="card">
+                <img src="http://playcrickethcl.orgfree.com/logo/ALMDWES.png" style="width: 90%">
+                <h3>Almondbury Wesleyans</h3> 
+            </button></a>
+        </div>    
+            <div class="column">
+                <a href=""><button class="card">
+                    <img src="http://playcrickethcl.orgfree.com/logo/augustinians.png" style="width: 90%">
+                    <h3>Augustinians</h3> 
+                </button></a>
+            </div>
+
+        <div class="column">
+        <a href=""><button class="card">
+            <img src="http://playcrickethcl.orgfree.com/logo/Barki.png" style="width: 90%">
+            <h3>Barkisland</h3>
+        </button></a>
+        </div>
+ 
+        <div class="column">
+            <a href=""><button class="card">
+                <img src="http://playcrickethcl.orgfree.com/logo/birkby.png" style="width: 90%">
+                <h3>Birkby Rose Hill</h3>
+            </button></a>
+            </div>
+
+        </div>
+
+  <br>
+
+    <div class="hclrow">
+        <div class="column">
+        <a href="http://hcl.play-cricket.com/website/articles/21785"><button class="card">
+            <img src="http://playcrickethcl.orgfree.com/logo/blackley.png" style="width: 90%">
+            <h3>Blackley</h3>
+            </button></a>
+        </div>
+
+        <div class="column">
+        <a href="http://hcl.play-cricket.com/website/articles/21786"><button class="card">
+            <img src="http://playcrickethcl.orgfree.com/logo/booth.png" style="width: 90%">
+            <h3>Booth</h3>
+            </button></a>
+        </div>
+        <div class="column">
+        <a href="http://hcl.play-cricket.com/website/articles/21787"><button class="card">
+            <img src="http://playcrickethcl.orgfree.com/logo/bradley.png" style="width: 90%">
+            <h3>Bradley And Colnebridge</h3> 
+        </button></a>
+        </div>
+
+        <div class="column">
+        <a href="http://hcl.play-cricket.com/website/articles/21788"><button class="card">
+            <img src="http://playcrickethcl.orgfree.com/logo/bradshaw.png" style="width: 90%">
+            <h3>Bradshaw</h3>
+        </button></a>
+        </div>
+        
+
+    </div>
+<br>
+</div>
+
+<div id="Tab2" class="tabcontent">
+    <h3>Bridgeholme to Greetland</h3>
+    <div class="hclrow">
+        <div class="column">
+        <a href="http://hcl.play-cricket.com/website/articles/21789"><button class="card">
+            <img src="http://playcrickethcl.orgfree.com/logo/Club_Image_Blank.png" style="width: 90%">
+            <h3>Bridgeholme</h3>
+        </button></a>
+        </div>        
+        <div class="column">
+            <a href=""><button class="card">
+                <img src="http://playcrickethcl.orgfree.com/logo/buttershaw.png" style="width: 90%">
+                <h3>Buttershaw St Paul's</h3>
+            </button></a>
+        </div>
+        <div class="column">
+            <a href="http://hcl.play-cricket.com/website/articles/21790"><button class="card">
+            <img src="http://playcrickethcl.orgfree.com/logo/clayton.png" style="width: 90%">
+            <h3>Clayton</h3> 
+            </button></a>
+        </div>
+
+        <div class="column">
+            <a href="http://hcl.play-cricket.com/website/articles/21791"><button class="card">
+                <img src="http://playcrickethcl.orgfree.com/logo/copley.png" style="width: 90%">
+                <h3>Copley</h3>
+            </button></a>
+        </div>
+    
+
+        
+    </div>
+  <br>
+
+    <div class="hclrow">
+        <div class="column">
+            <a href="http://hcl.play-cricket.com/website/articles/21792"><button class="card">
+                <img src="http://playcrickethcl.orgfree.com/logo/cullingworth.png" style="width: 90%">
+                <h3>Cullingworth</h3>
+            </button></a>
+        </div>        
+        <div class="column">
+            <a href="http://hcl.play-cricket.com/website/articles/21793"><button class="card">
+                <img src="http://playcrickethcl.orgfree.com/logo/ghpc.png" style="width: 90%">
+                <h3>Great Horton Park Chapel</h3>
+            </button></a>
+        </div>
+        <div class="column">
+            <a href="http://hcl.play-cricket.com/website/articles/21794"><button class="card">
+                <img src="http://playcrickethcl.orgfree.com/logo/Club_Image_Blank.png" style="width: 90%">
+                <h3>Greetland</h3> 
+            </button></a>
+        </div>
+
+        <div class="column">
+            <a href="http://hcl.play-cricket.com/website/articles/21795"><button class="card">
+                <img src="http://playcrickethcl.orgfree.com/logo/illingworth.png" style="width: 90%">
+                <h3>Illingworth St. Mary's</h3>
+            </button></a>
+        </div>
+    </div>
+<br>
+</div>
+
+<div id="Tab3" class="tabcontent">
+<h3>Leymoor to Old Town</h3>
+    <div class="hclrow">
+        <div class="column">
+            <a href="http://hcl.play-cricket.com/website/articles/21796"><button class="card">
+                <img src="http://playcrickethcl.orgfree.com/logo/Club_Image_Blank.png" style="width: 90%">
+                <h3>Leymoor</h3>
+            </button></a>
+        </div>        
+        <div class="column">
+            <a href=""><button class="card">
+                <img src="http://playcrickethcl.orgfree.com/logo/lightcliffe.png" style="width: 90%">
+                <h3>Lightcliffe</h3>
+            </button></a>
+        </div>
+        <div class="column">
+            <a href="http://hcl.play-cricket.com/website/articles/21797"><button class="card">
+                <img src="http://playcrickethcl.orgfree.com/logo/lmht.png" style="width: 90%">
+                <h3>Low Moor Holy Trinity</h3> 
+            </button></a>
+        </div>
+
+        <div class="column">
+            <a href="http://hcl.play-cricket.com/website/articles/21798"><button class="card">
+                <img src="http://playcrickethcl.orgfree.com/logo/foot.png" style="width: 90%">
+                <h3>Luddendenfoot</h3>
+            </button></a>
+        </div>
+        
+
+        
+
+    </div>
+  <br>
+
+    <div class="hclrow">
+            <div class="column">
+            <a href="http://hcl.play-cricket.com/website/articles/21799"><button class="card">
+                <img src="http://playcrickethcl.orgfree.com/logo/mount.png" style="width: 90%">
+                <h3>Mount</h3>
+            </button></a>
+        </div>   
+        <div class="column">
+            <a href="http://hcl.play-cricket.com/website/articles/21800"><button class="card">
+                <img src="http://playcrickethcl.orgfree.com/logo/Mytholmroyd.png" style="width: 90%">
+                <h3>Mytholmroyd</h3>
+            </button></a>
+        </div>
+
+        <div class="column">
+            <a href=""><button class="card">
+                <img src="http://playcrickethcl.orgfree.com/logo/fields.png" style="width: 90%">
+                <h3>Northowram Fields</h3>
+            </button></a>
+        </div>
+        
+        <div class="column">
+            <a href="http://hcl.play-cricket.com/website/articles/21801"><button class="card">
+                <img src="http://playcrickethcl.orgfree.com/logo/oldtown.png" style="width: 90%">
+                <h3>Old Town</h3>
+            </button></a>
+        </div>
+        
+
+    </div>
+<br>
+</div>
+
+<div id="Tab4" class="tabcontent">
+<h3>Outlane to Soouthowram</h3>
+    <div class="hclrow">
+        <div class="column">
+            <a href="http://hcl.play-cricket.com/website/articles/21802"><button class="card">
+                <img src="http://playcrickethcl.orgfree.com/logo/outlane.png" style="width: 90%">
+                <h3>Outlane</h3>
+            </button></a>
+        </div>        
+        <div class="column">
+        <a href="http://hcl.play-cricket.com/website/articles/21803"><button class="card">
+            <img src="http://playcrickethcl.orgfree.com/logo/Oxenhope.png" style="width: 90%">
+            <h3>Oxenhope</h3> 
+        </button></a>
+        </div>
+
+        <div class="column">
+        <a href="http://hcl.play-cricket.com/website/articles/21804"><button class="card">
+            <img src="http://playcrickethcl.orgfree.com/logo/queensbury.png" style="width: 90%">
+            <h3>Queensbury</h3>
+        </button></a>
+        </div>
+        
+        <div class="column">
+        <a href=""><button class="card">
+            <img src="http://playcrickethcl.orgfree.com/logo/rastrick.png" style="width: 90%">
+            <h3>Rastrick</h3>
+        </button></a>
+        </div>
+        
+
+
+    </div>
+<br>
+
+    <div class="hclrow">
+        <div class="column">
+            <a href="http://hcl.play-cricket.com/website/articles/21805"><button class="card">
+            <img src="http://playcrickethcl.orgfree.com/logo/SBCI.png" style="width: 90%">
+            <h3>S.B.C.I.</h3>
+        </button></a>
+        </div>    
+        <div class="column">
+        <a href="http://hcl.play-cricket.com/website/articles/21806"><button class="card">
+            <img src="http://playcrickethcl.orgfree.com/logo/snht.png" style="width: 90%">
+            <h3>Shelf Northowram Hedge Top</h3>
+        </button></a>
+        </div>
+
+        <div class="column">
+        <a href=""><button class="card">
+            <img src="http://playcrickethcl.orgfree.com/logo/slaithwate.png" style="width: 90%">
+            <h3>Slaithwaite</h3>
+        </button></a>
+        </div>
+        
+        <div class="column">
+        <a href="http://hcl.play-cricket.com/website/articles/21807"><button class="card">
+            <img src="http://playcrickethcl.orgfree.com/logo/southowram.png" style="width: 90%">
+            <span class="hcllabel"><h3>Southowram</h3></span>
+        </button></a>
+        </div>
+        
+
+    </div>
+<br>
+</div>
+
+<div id="Tab5" class="tabcontent">
+<h3>Sowerby Bridge to Warley</h3>
+    <div class="hclrow">
+            <div class="column">
+                    <a href="http://hcl.play-cricket.com/website/articles/21808"><button class="card">
+                        <img src="http://playcrickethcl.orgfree.com/logo/SBCC.png" style="width: 90%">
+                        <h3>Sowerby Bridge</h3>
+                    </button></a>
+                    </div>
+        <div class="column">
+        <a href="http://hcl.play-cricket.com/website/articles/21809"><button class="card">
+            <img src="http://playcrickethcl.orgfree.com/logo/sowerby.png" style="width: 90%">
+            <h3>Sowerby St. Peter's</h3> 
+        </button></a>
+        </div>
+    
+        <div class="column">
+        <a href="http://hcl.play-cricket.com/website/articles/21810"><button class="card">
+            <img src="http://playcrickethcl.orgfree.com/logo/stones.png" style="width: 90%">
+            <h3>Stones</h3>
+        </button></a>
+        </div>
+
+        <div class="column">
+        <a href="http://hcl.play-cricket.com/website/articles/21811"><button class="card">
+            <img src="http://playcrickethcl.orgfree.com/logo/thornton.png" style="width: 90%">
+            <h3>Thornton</h3>
+        </button></a> 
+
+    </div>
+</div>
+
+<br>
+
+    <div class="hclrow">
+        <div class="column">
+        <a href="http://hcl.play-cricket.com/website/articles/21812"><button class="card">
+            <img src="http://playcrickethcl.orgfree.com/logo/triangle.png" style="width: 90%">
+            <h3>Triangle</h3> 
+        </button></a>
+        </div>
+        <div class="column">
+            <a href="http://hcl.play-cricket.com/website/articles/21813"><button class="card">
+                <img src="http://playcrickethcl.orgfree.com/logo/upperhopton.png" style="width: 90%">
+                <h3>Upper Hopton</h3>
+            </button></a>
+        </div>
+        
+        <div class="column">
+            <a href="http://hcl.play-cricket.com/website/articles/21814"><button class="card">
+                <img src="http://playcrickethcl.orgfree.com/logo/warley.png" style="width: 90%">
+                <h3>Warley</h3>
+            </button></a>
+        </div>
+<script>
+    tabcontent[1].style.display = "block";
+</script>
+    </div>
+<br>
+
+</div>
+<script>
+function openTab(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+</html>
