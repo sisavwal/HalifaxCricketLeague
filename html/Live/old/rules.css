@@ -1,0 +1,51 @@
+.cont {
+  width: 1140px;
+  margin: 10px;
+}
+
+.hcl-btn {
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-family: Arial, Helvetica, Sans-serif;
+  font-weight: bold;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin: 2px 0 4px;
+  border-radius: 8px;
+}
+
+.hcl-btn-midnight {
+  background: #13365c;
+  color: #f8d932;
+}
+
+.hcl-btn:hover {
+  background-color: #f8d932;
+  color: #13365c;
+}
+
+.hcl-btn:active {
+  background-color: #f8d932;
+  color: #e93f34;
+}
+
+.hcl-rule-section {
+  background-color: #85becf;
+}
+
+.hcl-list {
+  counter-reset: item;
+  list-style: none;
+}
+
+.hcl-list-sun::before {
+  content: "S" counter(item, decimal) ". ";
+  counter-increment: item;
+}
+/*# sourceMappingURL=rules.css.map */
