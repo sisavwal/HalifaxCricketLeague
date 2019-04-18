@@ -39,13 +39,16 @@
   background-color: #85becf;
 }
 
-.hcl-list {
+.hcl-list-sun ol {
   counter-reset: item;
+}
+
+.hcl-list-sun li {
+  counter-increment: item;
   list-style: none;
 }
 
-.hcl-list-sun::before {
-  content: "S" counter(item, decimal) ". ";
-  counter-increment: item;
+.hcl-list-sun li::before {
+  content: "S" counter(item) ". ";
 }
 /*# sourceMappingURL=rules.css.map */

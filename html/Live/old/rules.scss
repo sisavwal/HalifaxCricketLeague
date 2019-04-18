@@ -42,12 +42,19 @@ $hcl-red: #e93f34;
 }
 
 
-.hcl-list {
-    counter-reset: item;
+.hcl-list-sun{
+    & ol{
+        counter-reset: item;
+    }
+& li,
+ {
+    counter-increment: item;
     list-style: none;
 }
 
-.hcl-list-sun::before {
-    content: 'S' counter(item, decimal) '. ';
-    counter-increment: item;
+& li::before{
+    content: 'S' counter(item) '. ';
+    // counter-increment: item;
+}
+
 }
