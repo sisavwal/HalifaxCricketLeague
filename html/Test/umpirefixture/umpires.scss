@@ -1,0 +1,35 @@
+$hcl-blue: #13365c;
+$hcl-gold: #f8d932;
+.hcl-ump {
+    // font-family: Arial, Helvetica, sans-serif;
+    // font-size: 16px;
+    text-align: center;
+    border: 1px solid #000;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+        display: block;
+        float: left;
+
+    &-date {
+        background-color: $hcl-blue;
+        color: $hcl-gold;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    &-division {
+        font-weight: bold;
+        margin-top: 10px;
+        background-color: #000000;  
+        color: #fff;
+    }
+
+
+    &-heading {
+        font-weight: bold;
+        padding: 5px;
+    }
+
+}

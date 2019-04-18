@@ -1,0 +1,30 @@
+.hcl-ump {
+  text-align: center;
+  border: 1px solid #000;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: block;
+  float: left;
+}
+
+.hcl-ump-date {
+  background-color: #13365c;
+  color: #f8d932;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.hcl-ump-division {
+  font-weight: bold;
+  margin-top: 10px;
+  background-color: #000000;
+  color: #fff;
+}
+
+.hcl-ump-heading {
+  font-weight: bold;
+  padding: 5px;
+}
+/*# sourceMappingURL=umpires.css.map */
