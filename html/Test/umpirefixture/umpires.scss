@@ -1,12 +1,30 @@
 $hcl-blue: #13365c;
 $hcl-gold: #f8d932;
+
+@media only screen and (max-width: 600px) {
+    .hcl-container {
+        width: 100%;
+    }
+}
+
+.hcl-background {
+    background-color: #fff;
+}
+
+.hcl-container {
+    max-width: 925px;
+    margin: 0 auto;
+    padding: 5px;
+}
+.fixture-row {
+    border: 1px solid #000;
+}
 .hcl-ump {
     // font-family: Arial, Helvetica, sans-serif;
     // font-size: 16px;
     text-align: center;
-    border: 1px solid #000;
+    // border: 1px solid #000;
     width: 100%;
-    max-width: 1140px;
     margin: 0 auto;
         display: block;
         float: left;
@@ -17,6 +35,7 @@ $hcl-gold: #f8d932;
         font-size: 20px;
         font-weight: bold;
         margin-bottom: 5px;
+        padding: 10px;
     }
 
     &-division {

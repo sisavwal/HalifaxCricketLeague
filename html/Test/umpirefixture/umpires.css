@@ -1,8 +1,26 @@
+@media only screen and (max-width: 600px) {
+  .hcl-container {
+    width: 100%;
+  }
+}
+
+.hcl-background {
+  background-color: #fff;
+}
+
+.hcl-container {
+  max-width: 925px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.fixture-row {
+  border: 1px solid #000;
+}
+
 .hcl-ump {
   text-align: center;
-  border: 1px solid #000;
   width: 100%;
-  max-width: 1140px;
   margin: 0 auto;
   display: block;
   float: left;
@@ -14,6 +32,7 @@
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 5px;
+  padding: 10px;
 }
 
 .hcl-ump-division {
