@@ -1,0 +1,19 @@
+$hcl-blue: #13365c;
+$hcl-gold: #f8d932;
+
+#results_6275 {
+    & .header {
+        color: $hcl-gold;
+        background-color: $hcl-blue;
+    }
+    
+    & a {
+        color: $hcl-blue;
+    }
+
+    & btn-success:hover,
+    & btn-default:hover {
+        color: $hcl-gold;
+        background-color: $hcl-blue;
+    }
+}

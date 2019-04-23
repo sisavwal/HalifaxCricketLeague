@@ -1,0 +1,15 @@
+#results_6275 .header {
+  color: #f8d932;
+  background-color: #13365c;
+}
+
+#results_6275 a {
+  color: #13365c;
+}
+
+#results_6275 btn-success:hover,
+#results_6275 btn-default:hover {
+  color: #f8d932;
+  background-color: #13365c;
+}
+/*# sourceMappingURL=results.css.map */
