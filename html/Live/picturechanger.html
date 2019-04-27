@@ -1,0 +1,52 @@
+<!--HTML For Home Page Manual Scrolling Feature Picture -->
+<!--Picture size has to be 960 x 540 Pixel-->
+<!--Positioning of Widget is X-202,Y-230,W-714,H-403-->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="./Styles/pictureshanger.css" />
+<style>
+
+</style>
+
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides"
+    src="http://p-c2gallery.ecb.co.uk.s3.amazonaws.com/uploads/photo/image/246003/Copley1_960X540.jpg"
+    style="width: 100%; display: block;" />
+  <img class="mySlides" src="http://p-c2gallery.ecb.co.uk.s3.amazonaws.com/uploads/photo/image/246005/OXCC_960x540.jpg"
+    style="width: 100%; display: none;" />
+  <img class="mySlides"
+    src="http://p-c2gallery.ecb.co.uk.s3.amazonaws.com/uploads/photo/image/246004/Bridgholme960x540.jpg"
+    style="width: 100%; display: none;" />
+  <div class="hclcaption">Underneath the Arches at Copley Cricket Club.</div>
+  <div class="hclcaption">Oxenhope on one of the few poor Saturdays during 2018.</div>
+  <div class="hclcaption">Keith Hudson leading the way in ground preparation at Bridgholme. Taking advantage of the
+    exceptional February weather, he has the ground almost looking ready for cricket already</div>
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">❮</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">❯</button>
+</div>
+
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var y = document.getElementsByClassName("hclcaption");
+    if (n > x.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = x.length }
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+      y[i].style.display = "none";
+    }
+    x[slideIndex - 1].style.display = "block";
+    y[slideIndex - 1].style.display = "block";
+  }
+</script>
