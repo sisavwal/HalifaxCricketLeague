@@ -1,43 +1,41 @@
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href="./Styles/pictureshanger.css" />
-
-<div class="w3-content w3-display-container">
-    <img class="mySlides fade"
-        src="https://s3-eu-west-1.amazonaws.com/p-c2gallery.ecb.co.uk/uploads/photo/image/251165/Cup_Draw_960x540.jpg"
-        style="width: 100%; display: block;" />
-    <img class="mySlides fade"
-        src="http://p-c2gallery.ecb.co.uk.s3.amazonaws.com/uploads/photo/image/246003/Copley1_960X540.jpg"
-        style="width: 100%; display: none;" />
-    <img class="mySlides fade"
-        src="http://p-c2gallery.ecb.co.uk.s3.amazonaws.com/uploads/photo/image/250532/Oxenhope_Score_Box_960x540.jpg"
-        style="width: 100%; display: none;" />
-    <img class="mySlides fade"
-        src="http://p-c2gallery.ecb.co.uk.s3.amazonaws.com/uploads/photo/image/246004/Bridgholme960x540.jpg"
-        style="width: 100%; display: none;" />
-    <img class="mySlides fade"
-        src="http://p-c2gallery.ecb.co.uk.s3.amazonaws.com/uploads/photo/image/250529/Mecccaboy_960x540.jpg"
-        style="width: 100%; display: none;" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./Styles/pictureshanger.css" />
+    <title>Document</title>
+</head>
 
 
-    <div class="hclcaption fade" style="display: block;"> Parish Cup &amp; Crossley Shield Round 3 Draw 2019.
-    </div>
-    <div class="hclcaption fade" style="display: none;">Underneath the Arches at Copley Cricket Club.
 
-
-    </div>
-    <div class="hclcaption fade" style="display: none;">The new Scorebox at Oxenhope in use for the first time.
-    </div>
-
-    <div class="hclcaption fade" style="display: none;">Bridgeholme Looking the perfect cricket field early in the
-        season
-    </div>
-    <div class="hclcaption fade" style="display: none;">Chris Metcalf who plundered an incredible 224 Not out off just
-        92 balls including 25 sixes and 14 Fours in Triangle's victory over Sowerby St Peters.
-    </div>
-
-
+<body>
+    <div class="w3-content w3-display-container">
+        <img class="mySlides" src="https://s3-eu-west-1.amazonaws.com/p-c2gallery.ecb.co.uk/uploads/photo/image/251165/Cup_Draw_960x540.jpg" style="width: 100%; display: block;" />
+        <img class="mySlides" src="http://p-c2gallery.ecb.co.uk.s3.amazonaws.com/uploads/photo/image/246003/Copley1_960X540.jpg" style="width: 100%; display: none;" />
+        <img class="mySlides" src="http://p-c2gallery.ecb.co.uk.s3.amazonaws.com/uploads/photo/image/250532/Oxenhope_Score_Box_960x540.jpg" style="width: 100%; display: none;" />
+        <img class="mySlides" src="http://p-c2gallery.ecb.co.uk.s3.amazonaws.com/uploads/photo/image/246004/Bridgholme960x540.jpg" style="width: 100%; display: none;" />
+      
+        
+      
+      <div class="hclcaption" style="display: block;"> Parish Cup &amp; Crossley Shield Round 3 Draw 2019.
+      </div>
+      <div class="hclcaption" style="display: none;">Underneath the Arches at Copley Cricket Club.
+      
+        
+      </div>  
+      <div class="hclcaption" style="display: none;">The new Scorebox at Oxenhope in use for the first time.
+      </div>
+        
+      <div class="hclcaption" style="display: none;">Bridgeholme Looking the perfect cricket field early in the season 
+      </div>
+      
+<!-- buttons removed for automatic image change
     <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">❮</button>
-    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">❯</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">❯</button> -->
+
+
 </div>
 
 <script>
@@ -49,13 +47,13 @@
     }
 
     // automatically scroll through the images
-    //5 second timer for autochanger. Change the numebr to increase or decrease the time. Timer measured in thousanths of a second.
+    
+       var autoScrollTimer = setInterval(autoScroll, 8000); //8 second timer for autochanger. Change the numebr to increase or decrease the time. Timer measured in thousanths of a second.
 
 
-
-    // function autoScroll() {
-    //     plusDivs(1);
-    // }
+    function autoScroll() {
+        plusDivs(1);
+    }
 
     function showDivs(n) {
         var i;
@@ -66,11 +64,21 @@
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";
             y[i].style.display = "none";
-        clearTimeout(autoScrollTimer);
-        var autoScrollTimer = setInterval(autoScroll, 3000);
+        // clearTimeout(autoScrollTimer);
+ 
         }
         x[slideIndex - 1].style.display = "block";
         y[slideIndex - 1].style.display = "block";
 
     }
 </script>
+
+
+
+
+
+</body>
+</html>
+
+
+
