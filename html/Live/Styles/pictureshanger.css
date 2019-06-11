@@ -1,126 +1,169 @@
 * {
-    font-size: 14px;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  }
-  
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 .w3-content {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 980px;
 }
 
 .w3-display-left {
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    transform: translate(0%, -50%);
-    -ms-transform: translate(-0%, -50%)
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(-0%, -50%)
 }
 
 .w3-display-right {
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    transform: translate(0%, -50%);
-    -ms-transform: translate(0%, -50%)
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%)
 }
 
 .w3-button {
-    border: none;
-    display: inline-block;
-    padding: 8px 16px;
-    vertical-align: middle;
-    overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-    background-color: inherit;
-    text-align: center;
-    cursor: pointer;
-    white-space: nowrap;
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 .w3-button:hover {
-    color: #000!important;
-    background-color: #ccc!important
+  color: #000!important;
+  background-color: #ccc!important
 }
 
 .w3-button:disabled {
-    cursor: not-allowed;
-    opacity: 0.3
+  cursor: not-allowed;
+  opacity: 0.3
 }
 
 .w3-black {
-    color: #fff!important;
-    background-color: #000!important
+  color: #fff!important;
+  background-color: #000!important
 }
 
 .w3-display-container {
-    position: relative
+  position: relative
 }
 
 .mySlides {
-    display: none;
-  }
+  display: none;
+}
 
-  .hclcaption {
-    position: absolute;
-    left: 0%;
-    bottom: 0%;
-    background: #13365c;
-    color: #ffffff;
-    float: left;
-    text-align: center;
-    width: 100%;
-    display: none;
-    padding: 7px 0;
-  }
+.hclcaption {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  background: #13365c;
+  color: #ffffff;
+  float: left;
+  text-align: center;
+  width: 100%;
+  display: none;
+  padding: 7px 0;
+}
 
-  /* Fading animation */
+/* Fading animation */
+
 .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
 
-  @-webkit-keyframes zoomIn {
-    from {
-      opacity: 0;
-      -webkit-transform: scale3d(0.6, 0.6, 0.6);
-      transform: scale3d(0.6, 0.6, 0.6);
-    }
-  
-    50% {
-      opacity: 1;
-    }
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
   }
-  
-  @keyframes zoomIn {
-    from {
-      opacity: 0;
-      -webkit-transform: scale3d(0.6, 0.6, 0.6);
-      transform: scale3d(0.6, 0.6, 0.6);
-    }
-  
-    50% {
-      opacity: 1;
-    }
+  to {
+    opacity: 1
   }
-  
+}
 
-  .zoomIn {
-    -webkit-animation-name: zoomIn;
-    animation-name: zoomIn;
+@keyframes fade {
+  from {
+    opacity: .4
   }
-  
+  to {
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.6, 0.6, 0.6);
+    transform: scale3d(0.6, 0.6, 0.6);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.6, 0.6, 0.6);
+    transform: scale3d(0.6, 0.6, 0.6);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+
+li {
+  list-style: none;
+}
+
+.hcl-btn {
+  padding: 10px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+
+.hcl-btn-yellow {
+  background-color: #f8d932;
+  border: 1px solid #f8d932;
+  color: #13365c;
+  font-weight: bold;
+}
+
+.hcl-btn-blue {
+  border: 2px solid #13365c;
+  background: #13365c;
+  color: #fff;
+  -webkit-transition-duration: 0.6s;
+  /* Safari */
+  transition-duration: 0.6s;
+}
+
+.hcl-btn-blue:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.hcl-btn-red { 
+  background-color: #e93f34;
+  border: 1px solid #e93f34;
+  color: #fff;
+  font-weight: bold;
+}
