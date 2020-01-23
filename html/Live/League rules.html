@@ -160,7 +160,7 @@
 <!-- container to prevent overflow. HCL widget should be set to 1140 x 1060. -->
 <div class="hcloverall">
     <h1 style="padding: 4px;">Halifax Cricket League Rules</h1>
-    <button class=" hclaccordion_section">SECTION 1 - THE RULES OF THE LEAGUE</button>
+    <button class="hclaccordion_section">SECTION 1 - THE RULES OF THE LEAGUE</button>
 
     <!-- Start of buttons -->
     <div class="hclsection_panel">
@@ -684,7 +684,11 @@
                 </li>
                 <li>
                     <ol type="i">
-                        <li>Matches in all divisions for First XI’s and the Premier Division for Second Xi’s shall be of 90 overs duration. Matches in the First & Second Divisions for Second XI’s shall be of 80 overs duration. Both systems shall have a tea interval of 30 minutes between innings. The number of overs remaining for a team in an innings shall be exhibited on the scoreboard and shown in descending order. </li>
+                        <li>Matches in all divisions for First XI’s and the Premier Division for Second Xi’s shall be of
+                            90 overs duration. Matches in the First & Second Divisions for Second XI’s shall be of 80
+                            overs duration. Both systems shall have a tea interval of 30 minutes between innings. The
+                            number of overs remaining for a team in an innings shall be exhibited on the scoreboard and
+                            shown in descending order. </li>
                         <li>In 90 overs matches the team batting first shall use no more than 45 overs and, if required,
                             the team batting second may use the balance of any of those 45 overs not used with any odd
                             balls bowled being deemed to be a complete over. Players are limited to a maximum of
@@ -2581,6 +2585,7 @@
 
         for (i = 0; i < acc_s.length; i++) {
             acc_s[i].addEventListener("click", function () {
+                closeSection();
                 this.classList.toggle("active");
                 var hclsection_panel = this.nextElementSibling;
                 if (hclsection_panel.style.display === "block") {
@@ -2590,6 +2595,5 @@
                 }
             });
         }
+
     </script>
-
-
