@@ -1,0 +1,163 @@
+.hcloverall {
+  margin: 0 auto;
+  width: 1140px;
+  height: 1050px;
+  overflow-y: auto;
+}
+
+.hcl_section {
+  background-color: #13365c;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0.7em;
+  width: calc(100% - 1.4em);
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.1em;
+  font-family: Arial, Helvetica, Sans-serif;
+  font-weight: bold;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin: 2px 0 4px;
+  border-radius: 8px;
+}
+
+.hcl_section:after {
+  content: "\02795";
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #ffff00;
+  float: right;
+  margin-left: 5px;
+}
+
+.hcl_section.active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
+}
+
+.active,
+.hcl_section:hover {
+  background-color: #ccc;
+}
+
+.hcl-section-list {
+  width: calc(100% - 3em);
+  margin: 0;
+  list-style: none;
+  padding: 0 1em;
+}
+
+.rule {
+  background-color: #01579b;
+  color: #ffff00;
+  cursor: pointer;
+  padding: 10px;
+  width: calc(100%-2em);
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-family: Arial, Helvetica, Sans-serif;
+  font-weight: bold;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin: 2px 0px 2px;
+  border-radius: 8px;
+}
+
+.rule:after {
+  content: "\02795";
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #ffff00;
+  float: right;
+  margin-left: 5px;
+}
+
+.rule.active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
+}
+
+.active,
+.rule:hover {
+  background-color: #ccc;
+}
+
+.section {
+  padding: 0;
+  display: none;
+  background-color: white;
+  font-family: Arial, Helvetica, Sans-serif;
+  /*    max-height: 0;*/
+  /* max-height: 1000px;  */
+  max-width: 100%;
+  overflow: auto;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+.section_display {
+  display: inline-block;
+}
+
+.sub_rule {
+  padding: 0 0 0 0.7em;
+  display: none;
+  background-color: white;
+  font-family: Arial, Helvetica, Sans-serif;
+  /*    max-height: 0;*/
+  /* max-height: 1000px;  */
+  max-width: 1098px;
+  overflow: auto;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+.sub_rule_list {
+  list-style-type: lower-alpha;
+}
+
+.rule_display {
+  display: block;
+}
+
+.rule {
+  background-color: #01579b;
+  color: #ffff00;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-family: Arial, Helvetica, Sans-serif;
+  font-weight: bold;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin: 2px 0px 2px;
+  border-radius: 8px;
+}
+
+.rule:after {
+  content: "\02795";
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #ffff00;
+  float: right;
+  margin-left: 5px;
+}
+
+.rule.active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
+}
+
+.active,
+.rule:hover {
+  background-color: #ccc;
+}
+/*# sourceMappingURL=style.css.map */
