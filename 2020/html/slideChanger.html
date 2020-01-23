@@ -1,0 +1,68 @@
+<!-- Feature Article Rotating Pictures -->
+
+<div class="w3-content w3-display-container">
+
+  <img class="mySlides" src="	
+   https://s3-eu-west-1.amazonaws.com/p-c2gallery.ecb.co.uk/uploads/photo/image/264239/Mount_WC5_960_x_540.jpg
+" style="width: 100%; display: block;" />
+
+  <img class="mySlides" src="		
+   https://s3-eu-west-1.amazonaws.com/p-c2gallery.ecb.co.uk/uploads/photo/image/264135/Top_Table_960_x_540.jpg
+   " style="width: 100%; display: none;" />
+
+
+
+  <div class="
+  hclcaption" style="display: block;">
+    Mount CC with their special guest The Word Cup Trophy at their presentation evening"
+
+  </div>
+
+
+
+  <div class="
+  hclcaption" style="display: none;">
+    HCL Executive members and Guests at the 2019 Dinner .
+    From left to right Bob Airey, Pete Emmett, Paul Whiteley, John Helm, Geoff Miller, Chris Yewdall Richard Hemblys,
+    David Normanton, Anthony Briggs, Paul Hand, Dan Moss, Adrian Furness, Tim Helliwell, Andy Rawnsley, Steve Williams.
+
+  </div>
+
+
+
+</div>
+
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  // automatically scroll through the images
+
+  var autoScrollTimer = setInterval(autoScroll, 12000); //8 second timer for autochanger. Change the numebr to increase or decrease the time. Timer measured in thousanths of a second.
+
+
+  function autoScroll() {
+    plusDivs(1);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var y = document.getElementsByClassName("hclcaption");
+    if (n > x.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = x.length }
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+      y[i].style.display = "none";
+      // clearTimeout(autoScrollTimer);
+
+    }
+    x[slideIndex - 1].style.display = "block";
+    y[slideIndex - 1].style.display = "block";
+
+  }
+</script>
