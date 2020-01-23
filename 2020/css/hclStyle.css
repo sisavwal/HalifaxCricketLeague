@@ -97,8 +97,8 @@ a:active {
 
 #widget_679902_filter .btn-info {
     color: #ffffcb;
-    background-color: #f8d932;
-    border-color: #f8d932;
+    background-color: #ffffcb;
+    border-color: #ffffcb;
 }
 
 .pagination>.disabled>span, .pagination>.disabled>span:hover, .pagination>.disabled>span:focus, .pagination>.disabled>a, .pagination>.disabled>a:hover, .pagination>.disabled>a:focus {
@@ -106,7 +106,7 @@ a:active {
 }
 
 .pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
-    background-color: #f8d932;
+    background-color: #04ad50;
     color: #ffffcb;
     border-color: #04ad50;
 }
@@ -177,11 +177,12 @@ a:active {
 }
 
 .hclcaption {
+    border: 1px ##006a31 solid;
     position: absolute;
     left: 0%;
     bottom: 0%;
     background: #ffffcb;
-    color: #04ad50;
+    color: ##006a31;
     float: left;
     text-align: center;
     width: 100%;
