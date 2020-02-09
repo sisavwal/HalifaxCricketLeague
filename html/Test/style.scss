@@ -1,0 +1,51 @@
+.container {
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.hcl_club-contianer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(235px, 4fr));
+    // grid-auto-rows: minmax(480px, 650px);
+    grid-row-gap: 10px;
+    grid-column-gap: 1.5%;
+}
+
+.hcl-club-card {
+    border: 1px solid #eee;
+    background-color: #ffffff;
+    margin: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    font-style: 16px;
+    padding-bottom: 5%;
+
+    &__heading {
+        //font-size: 18px;
+        padding: 2px;
+        background-color: #00ad50;
+        height: 58px;
+        font-weight: bold;
+        color: #fff;
+
+        &-sunday {
+            background-color: #0072c1;
+        }
+    }
+    &__logo {
+        width: 70%;
+    }
+
+    &__address {
+        font-size: 12px;
+        color: #0072c1;
+    }
+
+    &__web,
+    &__web:visited {
+        color: #0072c1;
+        text-decoration: none;
+    }
+}

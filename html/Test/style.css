@@ -1,0 +1,53 @@
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.hcl_club-contianer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(235px, 4fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(235px, 4fr));
+  grid-row-gap: 10px;
+  grid-column-gap: 1.5%;
+}
+
+.hcl-club-card {
+  border: 1px solid #eee;
+  background-color: #ffffff;
+  margin: 3%;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  font-style: 16px;
+  padding-bottom: 5%;
+}
+
+.hcl-club-card__heading {
+  padding: 2px;
+  background-color: #00ad50;
+  height: 58px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.hcl-club-card__heading-sunday {
+  background-color: #0072c1;
+}
+
+.hcl-club-card__logo {
+  width: 70%;
+}
+
+.hcl-club-card__address {
+  font-size: 12px;
+  color: #0072c1;
+}
+
+.hcl-club-card__web, .hcl-club-card__web:visited {
+  color: #0072c1;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
