@@ -12,9 +12,12 @@
 }
 
 .hcl-club-card {
+    display: grid;
+    grid-template-rows: 88px auto 50px 90px;
+    justify-items: center;
     border: 1px solid #eee;
     background-color: #ffffff;
-    margin: 3%;
+
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 100%;
     text-align: center;
@@ -23,24 +26,41 @@
     padding-bottom: 5%;
 
     &__heading {
+        justify-self: stretch;
+        align-self: center;
         //font-size: 18px;
+        border: 3px solid #000;
+        border-radius: 5px;
         padding: 2px;
-        background-color: #00ad50;
+        background-color: rgba(0, 172, 80, 0.6);
         height: 58px;
         font-weight: bold;
         color: #fff;
 
         &-sunday {
-            background-color: #0072c1;
+            background-color: rgba(0, 114, 193, 0.5);
         }
     }
     &__logo {
         width: 70%;
     }
 
+    &__label {
+        //align-self: stretch;
+        background-color: #ddd;
+        border: 2px solid #000;
+        border-radius: 100px;
+    }
+
     &__address {
+        align-self: flex-end;
         font-size: 12px;
         color: #0072c1;
+    }
+
+    &__webdetails {
+        width: 100%;
+        line-height: 20px;
     }
 
     &__web,
