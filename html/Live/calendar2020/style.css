@@ -1,0 +1,43 @@
+.hcl-event {
+  margin: 0 auto;
+  font-family: sans-serif;
+  border: 1px solid #000;
+}
+
+.hcl-event__date {
+  border-right: 1px solid #000;
+  width: 8em;
+}
+
+.hcl-event__event {
+  color: green;
+}
+
+.hcl-event__meeting {
+  color: #000;
+}
+
+.hcl-event__cup {
+  color: blue;
+}
+
+.hcl-event__zwingo {
+  color: orange;
+}
+
+.hcl-event__important {
+  color: red;
+}
+
+.hcl-odd-month {
+  background-color: rgba(0, 172, 80, 0.05);
+  width: 100%;
+  border: 1px solid #000;
+}
+
+.hcl-even-month {
+  background-color: rgba(0, 114, 193, 0.05);
+  border: 1px solid #000;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

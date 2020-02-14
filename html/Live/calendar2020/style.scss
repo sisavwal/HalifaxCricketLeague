@@ -1,0 +1,39 @@
+.hcl-event {
+    margin: 0 auto;
+    font-family: sans-serif;
+    border: 1px solid #000;
+    &__row {
+    }
+    &__date {
+        border-right: 1px solid #000;
+        width: 8em;
+    }
+    &__event {
+        color: green;
+    }
+    &__meeting {
+        color: #000;
+    }
+    &__cup {
+        color: blue;
+    }
+
+    &__zwingo {
+        color: orange;
+    }
+    &__important {
+        color: red;
+    }
+}
+
+.hcl-odd-month {
+    background-color: rgba(0, 172, 80, 0.05);
+    width: 100%;
+    border: 1px solid #000;
+}
+
+.hcl-even-month {
+    background-color: rgba(0, 114, 193, 0.05);
+    border: 1px solid #000;
+    width: 100%;
+}
