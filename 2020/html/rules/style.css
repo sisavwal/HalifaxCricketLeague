@@ -1,16 +1,23 @@
-.hcloverall {
-  margin: 0 auto;
-  width: 1140px;
-  height: 1050px;
-  overflow-y: auto;
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
 }
 
-.hcl_section {
-  background-color: #13365c;
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.hcl-section {
+  margin: 0 0.7em;
+}
+
+.hcl-section__btn {
+  background-color: #04ad50;
   color: #ffffff;
   cursor: pointer;
   padding: 0.7em;
-  width: calc(100% - 1.4em);
+  width: 100%;
   border: none;
   text-align: left;
   outline: none;
@@ -20,111 +27,42 @@
   -webkit-transition: 0.4s;
   transition: 0.4s;
   margin: 2px 0 4px;
-  border-radius: 8px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 
-.hcl_section:after {
+.hcl-section__btn:after {
   content: "\02795";
-  /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: #ffff00;
   float: right;
-  margin-left: 5px;
 }
 
-.hcl_section.active:after {
+.hcl-section__btn.active {
+  background-color: #0072c1;
+}
+
+.hcl-section__btn.active:after {
   content: "\2796";
-  /* Unicode character for "minus" sign (-) */
 }
 
-.active, .hcl_section:hover {
-  background-color: #ccc;
-}
-
-.hcl-section-list {
-  width: calc(100% - 3em);
-  margin: 0;
-  list-style: none;
-  padding: 0 1em;
-}
-
-.rule {
-  background-color: #01579b;
-  color: #ffff00;
-  cursor: pointer;
-  padding: 10px;
-  width: calc(100%-2em);
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  font-family: Arial, Helvetica, Sans-serif;
-  font-weight: bold;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  margin: 2px 0px 2px;
-  border-radius: 8px;
-}
-
-.rule:after {
-  content: "\02795";
-  /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: #ffff00;
-  float: right;
-  margin-left: 5px;
-}
-
-.rule.active:after, .sub_rule.active:after {
-  content: "\2796";
-  /* Unicode character for "minus" sign (-) */
-}
-
-.active, .rule:hover {
-  background-color: #ccc;
-}
-
-.section {
-  padding: 0;
+.hcl-section__panel {
   display: none;
-  background-color: white;
-  font-family: Arial, Helvetica, Sans-serif;
-  /*    max-height: 0;*/
-  /* max-height: 1000px;  */
-  max-width: 100%;
-  overflow: auto;
-  -webkit-transition: max-height 0.2s ease-out;
-  transition: max-height 0.2s ease-out;
+  margin: 0 1em;
 }
 
-.section_display {
-  display: inline-block;
-}
-
-.sub_rule {
-  padding: 0 0 0 0.7em;
-  display: none;
-  background-color: white;
-  font-family: Arial, Helvetica, Sans-serif;
-  /*    max-height: 0;*/
-  /* max-height: 1000px;  */
-  max-width: 1098px;
-  overflow: auto;
-  -webkit-transition: max-height 0.2s ease-out;
-  transition: max-height 0.2s ease-out;
-}
-
-.sub_rule_list {
-  list-style-type: lower-alpha;
-}
-
-.rule_display {
+.hcl-section__panel--display {
   display: block;
 }
 
-.rule {
-  background-color: #01579b;
-  color: #ffff00;
+.hcl-rule {
+  margin: 0 auto;
+}
+
+.hcl-rule__btn {
+  background-color: #ffffcd;
+  color: #04ad50;
   cursor: pointer;
   padding: 10px;
   width: 100%;
@@ -137,25 +75,42 @@
   -webkit-transition: 0.4s;
   transition: 0.4s;
   margin: 2px 0px 2px;
-  border-radius: 8px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 
-.rule:after {
+.hcl-rule__btn:after {
   content: "\02795";
-  /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: #ffff00;
   float: right;
-  margin-left: 5px;
 }
 
-.rule.active:after {
+.hcl-rule__btn.active {
+  background-color: #0072c1;
+}
+
+.hcl-rule__btn.active:after {
   content: "\2796";
-  /* Unicode character for "minus" sign (-) */
 }
 
-.active, .rule:hover {
-  background-color: #ccc;
+.hcl-rule__panel {
+  display: none;
+  margin: 0 0.5em 0 0;
+  overflow-y: auto;
 }
 
+.hcl-rule__panel--display {
+  display: block;
+  max-height: 90vh;
+}
+
+.hcl-rule__panel--list {
+  list-style-type: lower-alpha;
+}
+
+.hcl-rule__panel--list-sub {
+  list-style-type: lower-roman;
+}
 /*# sourceMappingURL=style.css.map */

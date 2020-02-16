@@ -1,39 +1,63 @@
 .hcl-event {
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     font-family: sans-serif;
-    border: 1px solid #000;
-    &__row {
+    max-width: 1000px;
+
+    &__year {
+        max-width: 100%;
+        height: 1.5em;
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: #000;
+        color: #fff;
+        padding: 0.2em 0 0 1em;
     }
-    &__date {
+
+    &__month {
+        display: grid;
+        grid-template-columns: 5em auto;
+        grid-auto-rows: min-content;
+        padding: 0.2em;
+        grid-gap: 0;
+        margin: 0;
+        align-items: center;
+        max-width: 100%;
+        border-left: 1px solid #000;
         border-right: 1px solid #000;
-        width: 8em;
+        border-bottom: 1px solid #000;
+
+        &:nth-child(odd) {
+            background-color: rgba(0, 172, 80, 0.1);
+        }
+
+        &:nth-child(even) {
+            background-color: rgba(0, 114, 193, 0.1);
+        }
     }
+}
+
+.type {
     &__event {
         color: green;
+        margin-left: 1.2em;
     }
     &__meeting {
         color: #000;
+        margin-left: 1.2em;
     }
     &__cup {
         color: blue;
+        margin-left: 1.2em;
     }
 
     &__zwingo {
         color: orange;
+        margin-left: 1.2em;
     }
     &__important {
         color: red;
+        margin-left: 1.2em;
     }
-}
-
-.hcl-odd-month {
-    background-color: rgba(0, 172, 80, 0.05);
-    width: 100%;
-    border: 1px solid #000;
-}
-
-.hcl-even-month {
-    background-color: rgba(0, 114, 193, 0.05);
-    border: 1px solid #000;
-    width: 100%;
 }
