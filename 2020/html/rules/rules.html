@@ -3597,6 +3597,9 @@
     for (i = 0; i < sect.length; i++) {
         sect[i].addEventListener("click", function () {
             var panel = this.nextElementSibling;
+
+            // Check if the section button clicked is active.If the button is active, close the panel with the rules and set the button as inactive
+
             if (this.classList.contains("active") == true) {
                 panel.classList.toggle("hcl-section__panel--display")
             }
