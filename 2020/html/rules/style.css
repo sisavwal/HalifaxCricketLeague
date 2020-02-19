@@ -39,21 +39,23 @@ html {
   float: right;
 }
 
-.hcl-section__btn.active {
+.hcl-section__btn.sec-active {
   background-color: #0072c1;
 }
 
-.hcl-section__btn.active:after {
+.hcl-section__btn.sec-active:after {
   content: "\2796";
 }
 
 .hcl-section__panel {
   display: none;
   margin: 0 1em;
+  overflow-y: auto;
 }
 
 .hcl-section__panel--display {
   display: block;
+  max-height: 90vh;
 }
 
 .hcl-rule {
@@ -87,11 +89,12 @@ html {
   float: right;
 }
 
-.hcl-rule__btn.active {
+.hcl-rule__btn.rule-active {
   background-color: #0072c1;
+  color: #fff;
 }
 
-.hcl-rule__btn.active:after {
+.hcl-rule__btn.rule-active:after {
   content: "\2796";
 }
 
@@ -116,6 +119,18 @@ html {
 
 .hcl-amendment {
   color: red;
+}
+
+.hcl-rulechange {
+  font-weight: bold;
+}
+
+.hcl-italic {
+  font-style: italic;
+}
+
+.hcl-change {
+  padding: 0 3em;
 }
 
 .hcl-remove {
