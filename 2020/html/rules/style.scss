@@ -36,7 +36,7 @@ html {
             float: right;
         }
 
-        &.active {
+        &.sec-active {
             background-color: #0072c1;
             &:after {
                 content: "\2796";
@@ -47,9 +47,11 @@ html {
     &__panel {
         display: none;
         margin: 0 1em;
+        overflow-y: auto;
 
         &--display {
             display: block;
+            max-height: 90vh;
         }
     }
 }
@@ -84,8 +86,9 @@ html {
             float: right;
         }
 
-        &.active {
+        &.rule-active {
             background-color: #0072c1;
+            color: #fff;
             &:after {
                 content: "\2796";
             }
@@ -114,6 +117,18 @@ html {
 
 .hcl-amendment {
     color: red;
+}
+
+.hcl-rulechange {
+    font-weight: bold;
+}
+
+.hcl-italic {
+    font-style: italic;
+}
+
+.hcl-change {
+    padding: 0 3em;
 }
 
 .hcl-remove {
