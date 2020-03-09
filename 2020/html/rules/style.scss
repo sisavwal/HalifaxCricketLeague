@@ -112,6 +112,15 @@ html {
                 list-style-type: lower-roman;
             }
         }
+
+        &--table {
+            margin: 0 auto 1em;
+
+            & td,
+            & th {
+                text-align: center;
+            }
+        }
     }
 }
 
@@ -138,4 +147,36 @@ html {
 
 .ul {
     text-decoration: underline;
+}
+.bld {
+    font-weight: bold;
+}
+.centrebold {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.hcl_grid {
+    max-width: 320px;
+    margin: 0 auto 1em;
+
+    &--2col {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+
+        &-title {
+            grid-column-start: 1;
+            grid-column-end: -1;
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+
+    &--3col {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: auto auto auto;
+    }
 }

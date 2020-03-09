@@ -117,6 +117,15 @@ html {
   list-style-type: lower-roman;
 }
 
+.hcl-rule__panel--table {
+  margin: 0 auto 1em;
+}
+
+.hcl-rule__panel--table td,
+.hcl-rule__panel--table th {
+  text-align: center;
+}
+
 .hcl-amendment {
   color: red;
 }
@@ -140,5 +149,44 @@ html {
 
 .ul {
   text-decoration: underline;
+}
+
+.bld {
+  font-weight: bold;
+}
+
+.centrebold {
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.hcl_grid {
+  max-width: 320px;
+  margin: 0 auto 1em;
+}
+
+.hcl_grid--2col {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.hcl_grid--2col-title {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: -1;
+  text-align: center;
+  font-weight: bold;
+}
+
+.hcl_grid--3col {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
 }
 /*# sourceMappingURL=style.css.map */
