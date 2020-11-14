@@ -1,0 +1,3489 @@
+
+ 
+      
+ 
+      
+ 
+      
+ 
+      
+ 
+      
+ 
+      
+ 
+      
+ 
+      
+ 
+      
+ 
+      
+ 
+      
+ 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+      <style>
+          .hcloverall {
+              height: 1050px;
+              overflow-y: auto;
+          }
+      
+          .hclzone {
+              width: 100%;
+          }
+      
+          .hclaccordion_section {
+              background-color: #13365c;
+              color: #ffffff;
+              cursor: pointer;
+              padding: 10px;
+              width: 100%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 15px;
+              font-family: Arial, Helvetica, Sans-serif;
+              font-weight: bold;
+              transition: 0.4s;
+              margin: 2px 0 4px;
+              border-radius: 8px;
+          }
+      
+          .hclaccordion_section:after {
+              content: '\02795';
+              /* Unicode character for "plus" sign (+) */
+              font-size: 13px;
+              color: #ffff00;
+              float: right;
+              margin-left: 5px;
+          }
+      
+          .hclaccordion_section.active:after {
+              content: "\2796";
+              /* Unicode character for "minus" sign (-) */
+          }
+      
+          .active,
+          .hclaccordion_section:hover {
+              background-color: #ccc;
+          }
+      
+          .hclaccordion {
+              background-color: #01579b;
+              color: #ffff00;
+              cursor: pointer;
+              padding: 10px;
+              width: 100%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 15px;
+              font-family: Arial, Helvetica, Sans-serif;
+              font-weight: bold;
+              transition: 0.4s;
+              margin: 2px 0px 2px;
+              border-radius: 8px;
+          }
+      
+          .hclaccordion:after {
+              content: '\02795';
+              /* Unicode character for "plus" sign (+) */
+              font-size: 13px;
+              color: #ffff00;
+              float: right;
+              margin-left: 5px;
+          }
+      
+          .hclaccordion.active:after {
+              content: "\2796";
+              /* Unicode character for "minus" sign (-) */
+          }
+      
+          .active,
+          .hclaccordion:hover {
+              background-color: #ccc;
+          }
+      
+          .hclpanel {
+              padding: 0 18px;
+              display: none;
+              background-color: white;
+              font-family: Arial, Helvetica, Sans-serif;
+              /*    max-height: 0;*/
+              max-height: 500px;
+              max-width: 1072px;
+              overflow: auto;
+              transition: max-height 0.2s ease-out;
+          }
+      
+          .hclsection_panel {
+              padding: 0 0 0 10px;
+              display: none;
+              background-color: white;
+              font-family: Arial, Helvetica, Sans-serif;
+              /*    max-height: 0;*/
+              /* max-height: 1000px;  */
+              max-width: 1098px;
+              overflow: auto;
+              transition: max-height 0.2s ease-out;
+          }
+      
+          /* Columns for download links */
+          .hclcolumn {
+              float: left;
+              width: 33.3%;
+              padding: 0 2px;
+          }
+      
+          .hcldownloadlink {
+              background-color: #13365c;
+              color: white;
+              cursor: pointer;
+              padding: 10px;
+              width: 100%;
+              border: none;
+              text-align: center;
+              outline: none;
+              font-size: 15px;
+              font-family: Arial, Helvetica, Sans-serif;
+              font-weight: bold;
+              transition: 0.4s;
+              margin: 2px;
+              border-radius: 8px;
+          }
+      
+          table {
+              width: 600px;
+              padding: 10;
+              text-align: center;
+              margin: auto;
+          }
+      
+          th {
+              font-weight: bold;
+          }
+      
+          table th td {
+              max-width: 50%;
+          }
+      
+          .hclsundaytable {
+              width: 400px;
+              padding: 10;
+              text-align: left;
+              margin: 0 100;
+          }
+      
+          #ul {
+              text-decoration-line: underline;
+          }
+      </style>
+      
+      <!-- container to prevent overflow. HCL widget should be set to 1140 x 1060. -->
+      <div class="hcloverall">
+          <h1 style="padding: 4px;">Halifax Cricket League Rules</h1>
+          <button class=" hclaccordion_section">SECTION 1 - THE RULES OF THE LEAGUE</button>
+      
+          <!-- Start of buttons -->
+          
+      
+      <div class="hclsection_panel">
+      
+              <button class="hclaccordion">L1 - TITLE, OBJECT &amp; CONSTITUTION</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>That this combination of clubs shall be titled the Halifax Cricket League (League)</li>
+                      <li>The object of the League shall be to promote the best interests of the game of cricket.</li>
+                      <li>The League shall be open to all irrespective of age, gender, disability, race, ethnic origin,
+                          colour, social status and sexual orientation.</li>
+                      <li>Each season the League shall consist of the clubs elected at the Annual General Meeting (AGM)</li>
+                      <li>The First &amp; Second XI competitions shall be divided into three divisions as per Rule L6(a). All
+                          clubs shall enter a First XI with an option to enter the Second XI competition. Clubs that only
+                          enter a First XI shall only compete in the lowest division and cannot gain promotion to a higher
+                          division.</li>
+                      <li>The Financial Year shall be from 1 October to 30 September.</li>
+                      <li>The income and property of the League shall be used solely towards the promotion of its objectives
+                          as set forth in these Rules and no portion thereof shall be paid or transferred, directly or
+                          indirectly, to members of the League.</li>
+                      <li>If upon the winding up or dissolution of the League there remains, after the satisfaction of all its
+                          debts and liabilities, any property whatsoever it shall not be paid or distributed amongst the
+                          members of the League but given or transferred to (a) charitable organisation(s). Such
+                          organisation(s) shall have objectives similar to those of the League which prohibit the distribution
+                          of its income and property amongst its members to an extent at least as great as imposed on the
+                          League under or by virtue of Rule L1(g) hereof. Nominated organisation(s) shall be determined by the
+                          members of the League, at or before the time of dissolution, and in so far effect cannot be given to
+                          such provisions then it shall be allocated to other charitable objectives.</li>
+                  
+      </ol>
+      
+              
+      </div>
+      
+              <button class="hclaccordion">L2 COUNCIL, OFFICERS &amp; THE EXECUTIVE</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>A League Council (Council) shall be formed consisting of one representative from each of the member
+                          clubs and the Honorary Vice Presidents. In addition shall be persons elected to the following
+                          positions at the AGM: President, Chairman, Secretary, Assistant Secretary, Treasurer, Assistant
+                          Treasurer, Fixtures Secretary, Registrations Secretary, Results Secretary, Sunday League Secretary,
+                          Advertising &amp; Sponsorship Officer, Development Officer, Disciplinary Officer, Events Officer,
+                          Grounds Officer, Player Liaison Officer, PR &amp; Media Officer, Representative Teams Fixtures
+                          Officer, Website Officer, Welfare Officer, and a representative from the League’s Association of
+                          Cricket Officials (HXACO). Also included shall be the elected representatives from the Junior League
+                          (JL) and Calderdale Cricket Development Group (CCDG), together with an Historian. An Independent
+                          Voting Examiner shall be appointed for the purposes of Rule L14 and any other relevant matter.</li>
+                      <li>A League Executive (Executive) shall be formed comprising of all positions listed in the second
+                          sentence of Rule L2(a). From time to time any posts may be combined. Any other person may be
+                          co-opted to fulfil a designated position or duty.</li>
+                      <li>During a calendar year the full Executive shall meet on four occasions plus at any other time it is
+                          deemed necessary. It shall also meet on a further four occasions but, to facilitate an effective use
+                          of time, it shall be divided into four separate Department Groups (Group) under the designations
+                          League, Administration, Finance and Development. The four Group heads, together with any other
+                          designated member(s) determined annually, shall form a Management Board (Board) that shall be
+                          responsible for co-ordinating, acting upon and, in some cases, confirming decisions of the Groups. A
+                          separate Rules Sub-Committee shall be formed consisting of a maximum of six Executive members, of
+                          which at least one shall be a representative of the SL, to consider all aspects of the Rules. It
+                          shall meet on an ad-hoc basis ensuring that all conditions of Rule L14 are met.</li>
+                      <li>The Executive shall have the power to deal with any urgent matters delegated by the Council,
+                          including any matters not covered by specific Rules, and impose any decision or penalty considered
+                          necessary which shall be final and binding on all parties. (e) The Executive shall have the power to
+                          inspect the grounds of all clubs in the League and report upon their fitness or otherwise to the
+                          Council. Any recommendation, action or penalty decided upon by the Council as a result of ground
+                          report findings shall be final and binding on all parties.</li>
+      
+                  
+      </ol>
+      
+      
+              
+      </div>
+              <button class="hclaccordion">L3 MEETINGS - LEAGUE &amp; CALDERDALE CRICKET DEVELOPMENT GROUP</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>All meetings shall be held at the Headquarters of the League unless the Executive determine
+                          otherwise, except for those of the CCDG {see Rule L3(i)}. </li>
+                      <li>The AGM shall be held in the month of November. Notice of the meeting together with an agenda shall
+                          be circulated to all clubs and officers no later than 14 days prior to the meeting.</li>
+                      <li>The Council shall meet in February, April, July &amp; October and at other times as the business of
+                          the League may require. </li>
+                      <li>To form a quorum for any Council Meeting a minimum of one-third of club representatives shall be
+                          present and, in the case of all other meetings, it shall be one-third of the persons entitled to
+                          vote.</li>
+                      <li>At all Council, AGM or any Special General Meeting (SGM) clubs shall have one representative who
+                          shall be entitled to vote {See Rule L3(f)}. (f) At the meetings detailed above all attendees listed
+                          shall be entitled to take part in discussions. All references to ‘Chairman’ shall also apply to any
+                          appointed deputy. Voting rights at such meetings shall be as follows: </li>
+      
+                      <ol type="i">
+                          <li>AGM, SGM and Council Meetings: HCL club representatives and the HXACO representative shall each
+                              have one vote with the Chairman having a casting vote only. Other than the Chairman’s casting
+                              vote, the President, Honorary Vice-Presidents and Officers shall have no vote. </li>
+                          <li>Executive, Group and Board meetings: all members shall each have one vote with the meeting
+                              chairman also having an additional casting vote. </li>
+      
+                      
+      </ol>
+                      <li>At all meetings votes shall be given personally and not by proxy and, unless a ballot is demanded by
+                          any member present or the Executive has deemed a vote to be electronic, shall be indicated by a show
+                          of hands. Except, as otherwise provided in these Rules, the result of the voting shall be determined
+                          by a majority of the votes cast. Where voting is electronic then a breakdown of votes submitted by
+                          each club shall be published on the League website. </li>
+                      <li>During any calendar year, commencing 1 January, a club not represented at a Council Meeting shall be
+                          fined £10.00 for its first absence and £20.00 for any second transgression. For any subsequent
+                          absence, in addition to the £20.00 fine, a further sanction of the deduction of five points shall be
+                          made from all its open-age teams. Should the latter occur after the end of the season the deduction
+                          of points shall be carried forward to the following season. </li>
+                      <li>During the period from 1 January to 31 December four CCDG meetings shall be held on the third
+                          Wednesday in the months of January (including AGM), April, July and October. The venue, time and
+                          agenda will be available on the CCDG Website. Failure to attend meetings shall result in the
+                          following fines: two - £6.00, three - £12.00, or four - £18.00. Fines shall be payable to the CCDG
+                          Treasurer, notice of which shall be issued following the October meeting. Please refer to Rule
+                          L14(a) regarding any alterations to this Rule.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">L4 MEMBERSHIP &amp; SUBSCRIPTIONS</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>All clubs shall abide by the following England &amp; Wales Cricket Board (ECB) publications: </li>
+                      <ol type="i">
+                          <li> Code of Conduct [incorporating the Spirit of Cricket], </li>
+                          <li> Guidance for Umpires {ground, weather &amp; light}, </li>
+                          <li> Misuse of Social Media Policy, </li>
+                          <li> Use of Non-English Language Policy, </li>
+                          <li> Guidance on the Wearing of Cricket Helmets &amp; Fielding Regulations [minimum distance where a
+                              hard ball is used],</li>
+                          <li> Guidelines for Junior Players in Open-Age Cricket [including fast bowling directives] &amp;
+                          </li>
+                          <li> the Safe Hands Policy – welfare of young people in cricket. A club telephone contact number,
+                              either landline, mobile or both, shall be advised each season for insertion in the Yearbook club
+                              directory, the details for use in any emergency on match days. </li>
+      
+                      
+      </ol>
+                      <li>Subscriptions shall be established or varied at the AGM, or an SGM, with each club currently paying
+                          one of the following annual fees:
+                          <ol type="i">
+                              <li>£185.00 (Saturday &amp; Sunday Leagues)</li>
+                              <li>£150.00 (Saturday League only - two teams)</li>
+                              <li>£135.00 (Saturday League only - one team)</li>
+                              <li>£ 50.00 (Sunday League only)</li>
+                              <li>£ 10.00 (T20 only)</li>
+                          
+      </ol>
+                          For v) the purchase of only two Yearbooks shall be included</li>
+                      <li>The fees shall include Yorkshire Cricket Board (YCB) affiliation fees, Institute of Groundsmanship
+                          (IOG) subscription and the purchase of ten League Yearbooks for i) &amp; ii) and five Yearbooks for
+                          iii) &amp; iv) above. In addition a HCL club shall pay a levy, which shall be determined annually by
+                          the Executive, to be used solely for the promotion of junior cricket. The Treasurer shall transfer
+                          the grand total amount to the JCL by no later than 28 February. Subscriptions and levies must be
+                          paid at or before the February Council Meeting and defaulting clubs shall be fined £5.00 for the
+                          first week and £1.00 per day thereafter. Any club requiring more than their allocation of Yearbooks
+                          must order the additional number required at the February Council Meeting. An invoice, at cost, will
+                          be issued at the April Council Meeting.</li>
+                      <li>All fines shown in these Rules shall be paid to the Treasurer within twenty-eight days of the date
+                          of issue. Failure to do so shall result in the fine being doubled. Should the fine still be unpaid
+                          within a further fourteen days then the club shall be requested to appear before the Board.</li>
+                      <li>Each club shall contribute equally any additional sums as may be required by the Treasurer to manage
+                          the finances of the League. Any such sum shall be agreed at an SGM. </li>
+                      <li>All clubs shall:
+                          <ol type="i">
+                              <li>ensure that its scorebox, or the position taken up by the scorers, has a mains electricity
+                                  supply and a minimum of two power sockets</li>
+                              <li>take out public liability insurance with a minimum indemnity cover as required by the ECB.
+                                  Each season a copy of the relevant cover note, or appropriate policy documentation, shall be
+                                  sent to the Treasurer to be received by no later than the second Saturday in April. For
+                                  clubs with a policy renewal date during the season the relevant documentation shall be
+                                  received at least one week before the expiry date of the current policy. Failure to comply
+                                  with this Rule shall result in a fine of £5.00 for each day beyond which the appropriate
+                                  information is outstanding, culminating in the suspension of the club concerned if the copy
+                                  is not received. Should any club fail to meet the requirements of this Rule no liability
+                                  shall be incurred by the League, the Executive or any Officer of the League. </li>
+                          
+      </ol>
+                      </li>
+       <li>Each club shall be required to purchase a minimum of two tickets for any event organised by the
+                          Executive, e.g. the Annual Dinner. </li>
+                      <li>Any club wishing to join the League must contact the Secretary for an application pack, who shall
+                          also provide any further information required plus all relevant forms to complete.</li>
+                      <li>Any written applications to join the League must be accompanied by a completed form of Information
+                          and League Ground Report (LGR). Applying clubs shall be required to reach an adequate category in
+                          all areas, with a least two categories classified as good by the nominated members of the Executive,
+                          who shall undertake an onsite inspection and complete the LGR before the February Council Meeting. A
+                          copy of the club’s constitution and its three most recent sets of annual accounts must also
+                          accompany the application. At the above meeting, in the year before the season it intends to join
+                          the League, up to three officials of the club shall make a verbal presentation. All relevant
+                          information and documentation shall be made available at this meeting and any League club, if it
+                          wishes, shall be given the opportunity to ask questions of the club’s representatives. The final
+                          decision on admission shall be by a electronic vote with the results being announced at the April
+                          Council Meeting and ratified at the following November AGM. Any club not required to provide one
+                          year’s notice to its current league may apply for admission, enclosing all documentation, before 30
+                          June. Their application shall be considered, in the manner outlined above, at the AGM for admission
+                          for the next season. </li>
+                      <li>Any new club accepted to play in the League shall pay an entrance fee, currently £50.00, which may
+                          be varied at any AGM. Payment of the entrance fee shall be made at the February Council Meeting in a
+                          club’s inaugural season. </li>
+                      <li>A club applying to join the HCL, including any club voluntarily resigning from the YCB Pyramid
+                          System – West (PSW), as per Rules L4(f) and L4(g) shall join the lowest divisions of both the First
+                          and Second XI’s existing at that time. The only exception shall be in the case of a former HCL club
+                          relegated from the PSW, and in such circumstances both its First and Second XI’s shall be restored
+                          to the division in which they were playing in the year of leaving. Any club returning to the League
+                          from the PSW by regulation is exempt from paying the joining fee shown in Rule L4(h). </li>
+                      <li>When considering accepting any PSW promotion offer, a club shall ensure it is aware of the promotion
+                          and relegation criteria set out both in these Rules and those of the PSW. </li>
+                      <li>A club accepting a promotion offer from the PSW shall be aware that it if returns to the HCL through
+                          voluntary application, or relegation, then that return must be at the amateur status described in
+                          Rules L5</li>
+                      <li>and L5(b). </li>
+                      <li>Any club resigning from the League shall inform the Secretary, in writing, by no later than 30
+                          September to enable it to leave the League prior to the commencement of the following season. No
+                          club shall negotiate with another league with the intention of considering joining that league
+                          without first obtaining permission, in writing, from the Secretary and permission shall be refused
+                          if the club has failed to fulfil its financial obligations or has failed to observe the Rules of the
+                          League in respect of withdrawal of membership. If the League does not provide the necessary written
+                          permission within 14 days then the club shall have the right of appeal to the YCB Council.
+                          Permission to negotiate shall not be interpreted as resignation or dismissal but should the date of
+                          30 September, that by which resignations are due to be received, pass without further written
+                          notification of action from the club then the above written permission is deemed spent.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">L5 PLAYER REGISTRATION &amp; QUALIFICATIONS</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>Each club shall field only bona-fide amateur players registered with the League in accordance with
+                          this Rule. </li>
+                      <li>An ‘amateur registered player’ (player) shall be defined as one who does not receive any money or
+                          gift as an inducement to play for or perform at a club. Any club found to have paid a player, or
+                          provided a gift, to play for or perform shall be expelled from the League. Any player found to have
+                          received a payment or gift in return for joining, staying or performing at a club shall be expelled
+                          from the League. </li>
+                      <li>Players may receive consolidated expenses for umpiring in any match organized by the League,
+                          commensurate with the umpire’s rate(s) shown in Rule L11(d). They may also receive payment
+                          commensurate with his/her club’s rates for the following duties, as these will not be interpreted as
+                          an inducement to play: </li>
+                      <ol type="i">
+                          <li>scorer </li>
+                          <li> ground maintenance worker </li>
+                          <li> bar person, provided it is not funded by their club or </li>
+                          <li> honorary member. </li>
+      
+                      
+      </ol>
+                      <li>Players who are employed in a related business may be reimbursed for carrying out work at their
+                          clubs. If requested by the Board an invoice for such work must be provided for verification and any
+                          payment of these invoices shall not be regarded as an inducement to play.</li>
+                      <li>Players may be reimbursed by their clubs for any course fees for
+                          <ol type="i">
+                              <li>recognised coaching, </li>
+                              <li>first aid, </li>
+                              <li>child protection or </li>
+                              <li>club development.</li>
+      
+                          
+      </ol>
+                          These fees shall not be regarded as an inducement to play. </li>
+                      <li>A club and/or its sponsor(s) may provide cricket clothing once a season to the value of £100.00 per
+                          player and this shall not be regarded as an inducement to play. Similarly, should a club reach a cup
+                          final or commemorative event, additional clothing may be provided by the club and/or its sponsor(s).
+                      </li>
+                      <li>No overseas player shall be eligible for registration or play for any member club unless they can
+                          fulfil <span id="ul">either</span> of the following criteria:</li>
+                      <ol type="i">
+                          <li>the person concerned shall physically have been a resident in the United Kingdom for a
+                              continuous minimum period of twelve months (without an interruption of no more than two months)
+                              immediately prior to the League season for which they wish to register; or</li>
+                          <li>the person has (a valid Visa for) the right of <span id="ul">permanent</span> residency in the
+                              United Kingdom. Documentation attesting to the above shall be provided to the Registration
+                              Secretary before the player is registered. The onus is solely on the club to provide this proof.
+                              The Executive shall have the right to interview any overseas applicant wishing to play in the
+                              League.</li>
+      
+                      
+      </ol>
+                      <li>
+                          <ol type="i">
+                              <li>Each club shall send to the Registration Secretary a list of former players to be removed
+                                  from its list of registrations, together with a list of its new players with full names,
+                                  dates of birth, addresses and contact numbers(and any Transfer Forms if applicable) to be
+                                  registered with the League 48 hours before the first match of the season. Additionally,
+                                  players may be registered during the course of the season but must not play in any League
+                                  match unless they have been registered with the Registration Secretary at least 48 hours
+                                  before they take part in a match. No player, except a junior under 17 years of age on 31
+                                  August of the previous year, shall be registered or transferred after 15 August </li>
+                              <li>Any junior player registered with a club at the end of the previous season, shall
+                                  automatically be registered with that club at the commencement of the following season
+                                  unless a completed transfer form has been received by the Halifax Junior Cricket League
+                                  prior to that date. <em>Before consideration is given by a club to playing any player under
+                                      14 years of age at senior cricket level it must refer to JCL Rules J5(e) &amp; (f) for
+                                      guidance. Players meeting the criteria set within those Rules must have a League
+                                      Clearance Form (LCF) signed by the parents or guardians and a qualified coach of ECB
+                                      Level II or above.</em> A copy of this form must be sent to reach the Registration
+                                  Secretary 48 hours before he/she plays and a copy shall also be presented to the umpires
+                                  with an ECB Team Sheet (ECBTS) before every game in which the junior plays as per Rule L8(e)
+                              </li>
+                              <li>Each season the Secretary shall issue a Self-Declaration Form (SDF). At the April Council
+                                  Meeting each club shall provide a copy of this form, signed by its current chairman,
+                                  treasurer and First XI captain, which shall indicate which players are to be reimbursed for
+                                  carrying out club duties, as shown in Rule L5(c), parts (ii), (iii) &amp; (iv). The SDF
+                                  should also confirm that none of its registered players shall receive pay or gifts to play,
+                                  to stay or to perform at the club.</li>
+      
+                          
+      </ol>
+                      </li>
+                      <li>All clubs shall notify the Registration Secretary each year, by no later than the April Council
+                          Meeting, of any of its playing members who are in financial arrears from the preceding season.</li>
+                      <li><em>Any player who has ceased to be remunerated for playing cricket, on or before 31 December of the
+                              previous year, may play as an amateur in the League, provided that all provisions of the
+                              remainder of Rule L5 are met.</em></li>
+                      <li>All registrations for the transfer of players shall be conducted in accordance with the current YCB
+                          regulations. For all transfers the Registration Secretary shall check that the player has fulfilled
+                          all financial obligations to his/her previous club and, should this not be the case, the transfer
+                          shall be refused. No player shall play for a club fielding a Saturday team in another League unless
+                          the transfer procedure is completed.</li>
+                      <li>Any team playing an ineligible player, under any part of these Rules, shall forfeit the match and
+                          the maximum points available on the day in its division shall be awarded to its opponents.</li>
+                      <li>During the season between the first to the last scheduled dates of matches no League club shall
+                          approach or negotiate with any player of any other League club, verbally or in writing, with the
+                          intention of securing their services. </li>
+                      <li>Any player selected for a League XI in any inter-league competition, and not taking up the
+                          invitation, cannot play for his/her club on the day of the match without the consent of the
+                          Executive unless it is a semi-final or final of the Parish Cup or Crossley Shield competitions.
+                      </li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">L6 FIXTURES, MATCH POINTS &amp; AVERAGES</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>There shall be independent First &amp; Second XI competitions with teams in both cases divided into
+                          three Divisions - Premier, First &amp; Second - with each team in a division playing an equal number
+                          of matches. </li>
+                      <li>The fixture list for the season shall be organised as soon as possible after the AGM and distributed
+                          by the Fixture Secretary by no later than 31 March. </li>
+                      <li>Matches shall usually commence on the third week in April and be played every Saturday plus Sundays
+                          and Bank Holidays as determined. All matches shall be played on the dates arranged and the final
+                          fixtures of the season shall be no later than the last weekend in September. </li>
+                      <li>Points for match results shall be awarded as follows:
+                          <ol type="i">
+                              <li><span id="ul">Outright win</span> - where a team scores more runs than the opposition and
+                                  bowls it out - 12 points awarded. Bonus points do not apply. </li>
+                              <li><span id="ul">Scoring most runs where a team fails to bowl out the opposition</span> – 6
+                                  points awarded <span id="ul">plus</span> bonus points. </li>
+                              <li><span id="ul">Tied matches</span> - where both teams have scored, the same number of runs
+                                  irrespective of the number of wickets to fall – 3 points awarded to each team <span id="ul">plus</span> bonus points </li>
+                              <li><span id="ul">Abandoned matches with no play</span> – where a match has been abandoned due
+                                  to inclement weather with no play possible - 2 points awarded to both teams. </li>
+                              <li><span id="ul">Abandoned matches but play commenced</span> – where a match has been abandoned
+                                  due to inclement weather after play has commenced - 2 points awarded to both teams, plus
+                                  bonus points accrued at the time of abandonment.<br />
+                                  <strong>Note:</strong> an innings declared by the team batting first does not grant the
+                                  bowling team maximum bonus points unless it subsequently wins the match.</li>
+                              <li><span>Match Forfeited</span> - should a team forfeit a League fixture then 2 points shall be
+                                  deducted from its season’s total. Its opponents shall be awarded 12 points, provided that at
+                                  least one match in its division results in more than a 2-2 allocation of points (see Rules
+                                  L6(d) iv) &amp; v). If no match falls into the latter category then only 2 points shall be
+                                  awarded.</li>
+      
+                          
+      </ol>
+                          <span id="ul">Bonus Points Calculation Tables <br />
+                              Batting</span>
+                          100-139 runs scored – 1 bonus point
+                          140-179 runs scored – 2 bonus points
+                          180 runs &amp; over scored – 3 bonus points (maximum)
+                          Irrespective of the actual score maximum bonus points shall be awarded to the team batting second
+                          should it beat its opponents score.
+                          <span id="ul">Bowling</span>
+                          Four to six wickets taken – 1 bonus point
+                          Seven to nine wickets taken – 2 bonus points
+                          All out (including where teams do not bat eleven players) – 3 bonus points (maximum)</li>
+                      <li>At the close of each season the bottom two teams in each of the Premier &amp; First Divisions shall
+                          be relegated to the First and Second Divisions respectively. The top two teams in each of the First
+                          and Second Divisions shall be promoted to the Premier &amp; First Divisionsrespectively. The bottom
+                          two clubs in the First XI Second Division shall, if they so desire, apply for re-admission to the
+                          League by no later than 30 September. For a club re-elected the entrance fee shall be waived. Should
+                          a club accept promotion to the PSW [see Rule L4(i)] and no club is relegated from the PSW to the
+                          HCL, only one team shall be relegated at that time from the First XI’s Premier &amp; First
+                          Divisions. In the case of a club promoted to the PSW and its Second XI team obtains promotion in its
+                          last season before leaving, then only one team shall be relegated from the Second XI Division above.
+                          All other divisional movements shall be subject to Rule L6(e) and, dependent on the divisional
+                          status of the club’s Second XI team in the year of leaving, then similar movements shall apply as
+                          above. </li>
+                      <li>The Executive reserves the right to amend the structure of the HCL as it deems fit to accommodate
+                          any other situation that arises. </li>
+                      <li>In the event of two or more teams having the same number of points at the close of the season, where
+                          championship, promotion, relegation or re-election issues are involved, the final position of such
+                          teams shall be determined on the basis of the team having most maximum point wins. Should there
+                          still be equality then wins in descending order of points awarded shall be the determining factor.
+                          If equality still remains then the final positions shall be determined on the basis of the team
+                          having the best average of runs, for and against per wicket, for all matches in the League during
+                          the season.</li>
+                      <li>At the April Council Meeting player performance qualifications, for League matches only, shall be
+                          established for the season. At its close, clubs shall submit to the Secretary full details of their
+                          batting, bowling, fielding and wicket-keeping qualifiers for its First &amp; Second XI’s. Only
+                          returns made on the provided official form and signed by two members, one of whom must be an
+                          official of the club, shall be accepted. Should these not be received within 14 days of the close of
+                          the season the club shall be fined £10.00. Where returns are not received within a further seven
+                          days then the club shall be fined an additional £10.00 and its returns disqualified. Clubs sending
+                          inaccurate or incomplete returns shall also be fined £10.00. <em>Should a player transfer from one
+                              club to another in the same Division, during the course of a season, then his/her second club
+                              shall be responsible for collecting all the player’s records for the first part of his/her
+                              season. The two records shall be amalgamated to produce one combined list of details and
+                              averages for the season, to submit as above, clearly stating that this process has been
+                              undertaken.</em> </li>
+                      <li>On the request of the Executive, clubs shall make scorebooks available to check the averages of
+                          players who qualify for individual awards. When all checks have been completed prizes shall be
+                          awarded to the leading players with details published on the League website and made available to
+                          the media.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">L7 PRE-MATCH PROCEDURES &amp; CANCELLATIONS</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>In the event of a First XI having a vacant date on a scheduled match day no player who has played
+                          six or more League matches for a First XI in the current season may play for its Second XI on that
+                          day.</li>
+                      <li>The following shall apply for the supply of teas: i) The home club shall provide a tea free of
+                          charge for the umpires and scorers. ii) Prior to the scheduled start of the match, to avoid any loss
+                          or food waste to the home club, the visiting team shall indicate the exact number of teas it
+                          requires, which shall be a minimum of seven excluding the scorer [see above]. iii) In the event of a
+                          match not starting, or there is a very early finish, the visiting players shall offer to purchase
+                          the teas ordered and provided. iv) Visiting teams that have players with special dietary
+                          requirements, or do not require the minimum number of teas shown above during a period of fasting,
+                          shall inform the home club of those needs by 2.00 pm on the Wednesday preceding the match. In the
+                          latter case a failure to do so shall result in the cost of the minimum amount of teas being charged
+                          to the visiting club.</li>
+                      <li>No match shall be postponed due to a clash with any other sporting fixture. No match shall be
+                          cancelled without the sanction of the Executive except as detailed below:
+                          <ol type="i">
+                              <li>Should there be persistent inclement weather on the day of a match it may be cancelled by
+                                  the home club, but by no earlier than three hours before the start time, in order to prevent
+                                  the visiting team and umpires making unnecessary journeys. This is on condition that an
+                                  official or captain of the home club contacts an official or captain of the away club and
+                                  they mutually agree to the cancellation. </li>
+                              <li>If such an agreement is made then within one hour an email must be sent, by both home and
+                                  away clubs, to the Fixture Secretary stating which persons made the agreement, together with
+                                  their list of eleven players selected to play for its team. Additionally the home club must
+                                  also contact the umpires to notify them of the cancellation and should an umpire cannot be
+                                  contacted it must ensure that a responsible person remains at the ground to meet with the
+                                  umpire and pay any appropriate expenses. </li>
+                              <li>The away team has the right not to agree to the cancellation until it has inspected the
+                                  ground. If it does not agree to the cancellation and the umpires, on their inspection,
+                                  subsequently rule it unfit for play and abandon the match, without a ball being bowled, then
+                                  the away team shall be liable for the full amount of the umpire’s expenses.</li>
+                              <li>If any club fails to comply with the notification procedure outlined above then it shall be
+                                  fined £10.00. Any additional breech(es) during the season shall result in the doubling of
+                                  the fine on each occasion.</li>
+      
+                          
+      </ol>
+                      </li>
+                      <li>In the last six matches of the season, <span id="ul">unless approved by any five members of the
+                              Executive, who shall have no vested interest in any decision to be taken,</span> no player shall
+                          play for a Second XI if he/she has accumulated with a First XI the appearance percentages, or over,
+                          shown below:
+                          <ol type="i">
+                              <li>Six to four matches remaining – 75% or over of First XI matches</li>
+                              <li>Three matches to one match remaining – 80% or over of First XI matches</li>
+      
+                          
+      </ol>
+                          Any club seeking approval of the Executive must submit a request by email, with its reasons, to the
+                          Registration Secretary by 18:00 on the Wednesday prior to the date of a match, together with his/her
+                          playing record. A decision shall be given to the club within 48 hours.</li>
+                      <li>Club badges and a logo for a manufacturer, or sponsor, may be used on shirts and sweaters but should
+                          not exceed four inches (10.16cm) square. The logo of a sponsor may be used centrally provided it
+                          does not exceed eight inches (20.32cm) in width and four inches (10.16cm) in length. </li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">L8 MATCH PROCEDURES</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li> All matches shall be played in accordance with these Rules and the Laws of Cricket except the
+                          possible agreement under Law 21.1 regarding underarm bowling which shall not apply as none is
+                          allowed in the League.<br />
+      <span>Clarification Note regarding Law 41.7.</span> This Law, regarding
+                          dangerous and non-pitching deliveries, shall now apply in its entirety but, due to various recent
+                          Law changes, the basic principles applying are stated here. Any full pitch delivery above waste
+                          height shall be called a No Ball but no further penalty shall ensue unless the umpire considers it
+                          is unfair and/or dangerous, in which case he/she shall instruct the bowler’s captain that an
+                          official warning is being issued. Should there be a second occurrence by the same player he/she
+                          shall be immediately suspended from bowling for the remainder of the match. However, should at any
+                          time the umpire considers a full pitch delivery to be deliberate and malicious the official warning,
+                          shown above, shall be dispensed with and the suspension above shall be activated immediately.</li>
+                      <li>All matches shall start at 1:30pm unless inclement weather intervenes and no match shall commence
+                          after 4:15pm, <span id="ul">noting that the toss must have taken place at least 15 minutes
+                              earlier.</span> </li>
+                      <li>Each First and Second XI shall provide its own ball, which must be new and of standard League issue.
+                          All reserve balls must also be of standard League issue. All balls shall be submitted to the
+                          opposing captain and the umpires for their approval prior to the commencement of the match. </li>
+                      <li> Both clubs shall provide a competent scorer for the duration of the match. If no scorer is
+                          available for a team then one of its players, who shall be a competent scorer, must be appointed.
+                          That player shall not participate in the match when his/her team is fielding and no interchange of
+                          scorers shall be allowed during the innings. However, when his/her team is batting he/she shall be
+                          allowed to participate should a competent alternative player take over the scoring duties.
+                          Additionally, should a competent scorer be located during the match and be able to take up duties
+                          the player scoring may resume his/her place in the team at any time. If no such player is available
+                          then that team shall be deemed to have failed to fulfil the fixture and be fined as per Rule L8(m).
+                      </li>
+                      <li> In every match before the toss is undertaken the umpires shall be provided with an ECBTS showing
+                          the names of all players. The ages of all players under the age of 19 years, on or before midnight
+                          on 31 August of the preceding year, must also be shown. Any subsequent change(s) agreed by both
+                          captains shall be notified to the umpires as soon as possible Any proposed change(s) not agreed by
+                          both captains shall be decided by the umpires. The names of all players must be recorded in the
+                          scorebook, irrespective of whether any play is possible. The scorebook entries for both teams must
+                          be signed by both umpires at the end of the match with the obtaining of such signatures being the
+                          responsibility of each team.</li>
+                      <li> All late starts must be reported immediately to the Fixture Secretary by the umpires and the home
+                          club. Any offending club may be fined at the discretion of the Executive.
+                      </li>
+                      <li>
+                          <ol type="i">
+                              <li>Matches in all divisions for First XI’s and the Premier Division for Second Xi’s shall be of 90 overs duration. Matches in the First &amp; Second Divisions for Second XI’s shall be of 80 overs duration. Both systems shall have a tea interval of 30 minutes between innings. The number of overs remaining for a team in an innings shall be exhibited on the scoreboard and shown in descending order. </li>
+                              <li>In 90 overs matches the team batting first shall use no more than 45 overs and, if required,
+                                  the team batting second may use the balance of any of those 45 overs not used with any odd
+                                  balls bowled being deemed to be a complete over. Players are limited to a maximum of
+                                  fourteen overs.</li>
+                              <li>In 80 overs matches there shall be no transfer of overs and players are restricted to
+                                  bowling a maximum of 12 overs.</li>
+                              <li>clubs shall make every effort to ensure that grounds are fit for play by the scheduled start
+                                  time. Any decision to play, or not, is totally that of the umpires. In the case of matches
+                                  where only one League umpire is present the decision lies solely with him/her {see Rule
+                                  L11(c)}. Any attempt to influence such a decision by club officials, groundsmen or players
+                                  will be treated as an offence under Rule L13(a). Bad light, lightning or slippery and wet
+                                  conditions are the main reasons umpires shall judge that play cannot commence, restart or
+                                  continue. Play shall not proceed under any circumstances if the umpires consider any of the
+                                  above to apply. Where a decision is required outside the boundaries of the above criteria,
+                                  for a suspension or resumption of play due to rain, the following shall apply: </li>
+      
+                          
+      </ol>
+                          <span id="ul">Suspension of play:</span>
+                          <ol type="i">
+                              <li>If a passing shower is of short duration, unless the strength of wind and level of light add
+                                  to the deterioration of the conditions, <em>play shall NOT be suspended immediately.</em>
+                              </li>
+                              <li>If, after a short time period or a number of overs, it appears that there is no reasonable
+                                  expectation of the light rain ceasing then <em>play shall be suspended.</em> </li>
+                              <li>Play, at any time, <span id="ul">shall be suspended immediately</span> if the umpires
+                                  consider the conditions to have become dangerous. </li>
+      
+                          
+      </ol>
+                          <span id="ul">Resumption of play:</span>
+                          <ol type="i">
+                              <li>Play <span id="ul">shall not resume</span> if the umpires consider that conditions are
+                                  dangerous. </li>
+                              <li>Play shall resume, provided that both umpires (see above) are agreed that conditions have
+                                  improved sufficiently, even though rain may still be in the air.</li>
+      
+                          
+      </ol>
+                          <span id="ul">Communication:</span> <br />
+                          At all times the umpires shall inform both team captains of their intentions with regard to the
+                          continuance, suspension or resumption of play. In the case of the batting team either of the players
+                          currently batting shall be deemed to be the captain.
+                      </li>
+                      <li>Players of the fielding team and the two batsmen shall follow the umpires onto the field of play at
+                          the commencement of the match and at each subsequent period of play. </li>
+                      <li>No player, except as a substitute fielder, shall be allowed to take part in a match if they arrive
+                          more than one hour (60 minutes) after the scheduled start. No player shall be allowed to bowl in any
+                          match unless they are wearing predominantly white clothing. </li>
+                      <li>The batting side shall be responsible for organising a search for any ball lost during play,
+                          subject to local ground notices and Health &amp; Safety regulations.
+                      </li>
+                      <li>An incoming batsman must meet the outgoing batsman on the field of play. </li>
+                      <li>
+                          <ol type="i">
+                              <li>Should there be any interference through inclement weather, with the innings of either team,
+                                  a cumulative total of 15 minutes per innings may be lost before any reduction in overs or
+                                  score is enforced. Following this initial period of 15 minutes playing time, should there be
+                                  any such interference with the innings of the team batting first, then two overs shall be
+                                  deducted from the match for each further six minutes period of delay. The maximum number of
+                                  overs that can be deducted from an innings shall be 20 (90 overs matches) and 15 (80 overs
+                                  matches), including any of those lost at the start of the Match’. There shall be no
+                                  reduction whatsoever to a player’s maximum number of overs in a match where inclement
+                                  weather only interferes with play in a second innings.</li>
+                              <li>Where inclement weather intervenes, at the discretion of the umpires, the interval referred
+                                  to in Rule L8(g)(i) may be taken early during which time any deduction of overs will be
+                                  suspended. </li>
+                              <li>Should inclement weather interfere with the innings of the team batting second no reduction
+                                  of overs shall take place in the first 15 minutes of stoppage. Following this period one
+                                  over shall be deducted from the innings for every completed three minutes period of delay.
+                                  The maximum number of overs that can be deducted from the inningsshall be 20, including any
+                                  of those lost at the start of the match. </li>
+                              <li>If the team batting second has its allocation of overs reduced due to inclement weather the
+                                  score of the first batting team shall be recalculated. This shall be determined by
+                                  multiplying the total number of overs lost to the team batting second by the average runs
+                                  per over required by the team batting second at the closure of the first innings.
+                              </li>
+                              <li>Examples of how this calculation works are as follows noting that the <span id="ul">deduction of runs may only take place when play has restarted:</span> eg
+                                  <ol type="i">
+                                      <li>If the closure of the first innings is at the end of 45 overs, the average runs per
+                                          over required by the team batting second is the final total score of the team
+                                          batting first, divided by 45. eg </li>
+                                      <li>If the team batting first are all out after (say) 37 overs, there shall be 53 overs
+                                          available to the team batting second (45 overs normal allocation plus eight
+                                          unoccupied by the team batting first). The average runs per over required by the
+                                          team batting second shall be the final total score of the team batting first,
+                                          divided by 53. </li>]
+      
+                                  
+      </ol>
+                              </li>
+      
+                          
+      </ol>
+                      </li>
+                      <li>Any club failing to fulfil a fixture or having less than seven players present at the scheduled
+                          start time shall forfeit the match, unless unavoidable delays prevail, details of which must be
+                          conveyed to the opposition team and the umpires before the scheduled start time. The umpires shall
+                          record all details on the MRF. In addition to the sanction under Rule L6(d) any contravention of
+                          this Rule shall also result in a fine of £50.00 unless amended and/or waived by the Executive. Any
+                          additional costs and the allocation of match points shall be determined by the Executive after
+                          consideration of all the facts. Should a club fail to fulfil a fixture and/or forfeit a match during
+                          a season on more than two occasions the following additional action shall be taken against both its
+                          Saturday teams or a single team if only fielding such:<br />
+                          <ol type="i">
+                              <li>three occasions - deducted five points.</li>
+                              <li>four occasions - deducted an additional ten points.</li>
+                              <li>five occasions - deducted an additional fifteen points.</li>
+                          
+      </ol>
+                          If the deduction of points as stated in this Rule results in a club having to apply for re-election
+                          and that club is re-elected its teams shall return to the divisions they were previously competing
+                          in, dependant on relegation/promotion movements and/or re-organisation of the League
+                      </li>
+                      <li>Covers shall be used when necessary at the instruction of the umpires. The home club is responsible
+                          for the placement of covers which must be completed within five minutes of the above decision of the
+                          umpires.</li>
+                      <li>Performance collections may be taken for any of the following:
+                          <ol type="i">
+                              <li>batsman scoring 50 runs, </li>
+                              <li>bowler taking five wickets or iii) bowler achieving the hat-trick.</li>
+      
+                          
+      </ol>
+                      </li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">L9 MATCH RESULTS</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <!-- <li>Reporting the result of each match, either First or Second XI, is the responsibility of the home club. </li>
+                     <li>The result for a club’s First or Second XI team, as appropriate, must be entered on the League website by <span id="ul">10.00pm on the day of the match</span> in the format: runs/ wickets/ overs/ points. In addition, by the same deadline, a fully completed Match Report Form (MRF) must be sent by email to the Fixture Secretary. Any club not complying with this Rule shall be fined £5.00 per day for each entry that remains outstanding. If a missing MRF is not forwarded within seven days of receiving a reminder then such a fine shall be increased to £10.00 per day. </li>
+                     <li>A full Match Scoresheet must be entered on the League website by the following deadlines: First XI’s - <span id="ul">by 10.00am on the day following the match,</span> Second XI’s- <span id="ul">by 10.00am on the second day following the match.</span> Any club not complying with this Rule shall incur the following fines: first offence £5.00, second £10.00, third and fourth offences £20.00, thereafter £25.00 per offence. After any fifth offence the club shall be requested to appear before the Board. </li>
+              -->
+                      <li>Following each match, either First or Second XI, the recording of the result is the responsibility
+                          of the home club. Details shall i) be entered on the League website and ii) be sent by email to the
+                          Results Secretary by no later than the days and times shown below:<br />
+                          <ol type="i">
+                              <li>League website: enter by no later than 10:00pm Saturday the First XI result, showing
+                                  runs/wickets/over/points awarded, plus the fully completed Match Scoresheet.</li>
+                              <li>Results Secretary: email by no later than 10.00am Sunday the First &amp; Second XI Match Report
+                                  Forms (MRFs) duly signed by the umpire(s) and club representative.</li>
+                              <li>League website: enter by no later than Monday 10.00am the Second XI fully completed Match
+                                  Scoresheet.</li>
+                          
+      </ol>
+                      </li>
+       <li>Any club not complying with any part of this Rule shall be ﬁned £5.00 per day for each entry that
+                          remains outstanding. If a missing entry is not made and/or sent within seven days of receiving a
+                          reminder then such a ﬁne shall be increased to £10.00 per day.</li>
+                      <li>During a season any club failing to comply with this Rule on further occasions shall, in addition,
+                          be subject to the following ﬁnes per offence: second: £10.00, third: £15.00 and fourth: £20.00.
+                          Following any ﬁfth oﬀence the club shall be requested to appear before the Board.</li>
+      
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">L10 DISCLOSURE &amp; BARRING SERVICE (DBS)</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>The following list of persons shall obtain enhanced DBS Clearance from the ECB under its Safe Hands
+                          – Welfare of Young People in Cricket policy (currently free for un-paid persons or £44.00 for paid
+                          persons) before commencing duties in the HCL:
+                          <ol type="i">
+                              <li>all umpires, including club umpires </li>
+                              <li>scorers over the age of 16 years </li>
+                              <li>open age team captains </li>
+                              <li>welfare officers </li>
+                              <li>coaches </li>
+                              <li>team managers including representative match personnel </li>
+                              <li>junior team co-ordinators </li>
+                              <li>all other volunteers having access to children within a club</li>
+      
+                          
+      </ol>
+                      </li>
+                      <li>A foreign national, coaching young players in the HCL, shall have the equivalent of a DBS check from
+                          the police authority in his/her own country. </li>
+                      <li>DBS checks must be renewed every three years. </li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">L11 UMPIRES</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>All clubs shall provide a club umpire contact telephone number to enable the HXACO Secretary to deal
+                          with any shortage of appointments affecting fixtures on any match day.
+                      </li>
+                      <li>Umpires, whilst officiating at matches, shall wear white footwear, black or navy trousers, white
+                          shirt, a tie and a white coat, the latter two being optional in above average temperatures.
+                      </li>
+                      <li>It shall be the responsibility of the home club for all Second XI matches to provide one competent
+                          umpire. If an umpire is not provided one of the players, who shall be a competent umpire, must be
+                          appointed for the whole match. If no such person is available the home team shall be deemed to have
+                          failed to fulfil the fixture and be fined accordingly as per Rule L8(n). For all matches the
+                          consolidated expenses for an umpire, including any travel costs, shall be £32.00. Following the
+                          conclusion of the match the umpire(s) shall ensure that the MRF has been completed correctly and
+                          that both have signed it to that effect as shown in Rule L9. At this stage the expenses due shall be
+                          handed to each (the) umpire in a sealed envelope. Double the consolidated expenses shall be paid to
+                          an umpire if only one is present and he/she stands at both bowler’s ends. If no play takes place at
+                          a match, due to inclement weather, the expenses shall be £10.00. Should an umpire have been informed
+                          of a cancellation under Rule L7(c)i) then no expenses are payable.
+      
+      
+      
+      
+                      </li>
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">L12 COMPLAINTS &amp; PROTESTS</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>Other than a disciplinary matter, shown and to be dealt with under Rule L13, any complaint or
+                          protest concerning a club, from any other club, an official of the League or an umpire, shall be
+                          dealt with by either a Special Executive Meeting (SEM) or a Complaints hclpanel (Panel). </li>
+                      <li>Any complaint or protest must reach the Secretary by no later than ten days following the incident
+                          or match and, in the case of one from a club, shall include a deposit of £20.00 which shall be
+                          forfeited if the complaint or protest is deemed frivolous. For any complaint or protest deemed
+                          worthy it shall be considered within ten days of its receipt.</li>
+                      <li>The Board shall decide which category any complaint or protest falls. Should it be of a very serious
+                          nature then a SEM shall be convened, noting that five members shall be randomly excluded as they may
+                          be required to act under Rule L12 (e). In cases referred to the Panel it shall be made up of any
+                          five members of the Executive. </li>
+                      <li>Should a complaint or protest be upheld against a club, either by the SEM or the Panel, it has the
+                          right of appeal which must be lodged with the Secretary by no later than ten days following receipt
+                          of the notification of the original decision. </li>
+                      <li>Any appeal shall be dealt with by an Appeals Committee (AC) and it shall be made up of five members
+                          of the Executive, different to those referred to in Rule L12 (c), and sit within ten days of receipt
+                          of the appeal. The decision of the AC shall be final and binding. </li>
+                      <li>An Executive member with a vested interest in any such case shall be ineligible to sit on any of the
+                          above bodies. </li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">L13 DISCIPLINARY MATTERS</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>Any disciplinary action shall be conducted in accordance with current YCB Disciplinary Procedures
+                          (please refer to the updated YCB disciplinary document on the League website).</li>
+                      <li>Any club causing information to be passed to any media organization or outlet regarding any matter
+                          under consideration by the League, without due reference to the PR &amp; Media Officer, shall be
+                          subject at the discretion of the Executive to a minimum fine of £50.00.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">L14 RULE ADDITIONS &amp; AMENDMENTS</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>Alterations to these Rules shall only be made at the AGM, or at a SGM called for this specific
+                          purpose, except in the case of Rule L3(i) which shall be determined by any equivalent meeting of the
+                          CCDG. </li>
+                      <li>The following timetable applies to both the Executive and any club proposing an amendment or
+                          alteration to these Rules and lists the total process. In respect of the counting and reporting of
+                          votes for this Rule an Independent Voting Examiner (IVE) shall be appointed by the Executive and
+                          approved by Council.
+                          <ol type="i">
+                              <li><span id="ul">31 August:</span> deadline for clubs to give notice in writing, or by email,
+                                  to the Assistant Secretary (AS). </li>
+                              <li><span id="ul">First full week in September: </span>proposals discussed at a Rules
+                                  Sub-Committee meeting and the final list drawn up.</li>
+                              <li><span id="ul">Second full week in September:</span> all provisional proposals sent by email
+                                  by the AS to all clubs for internal discussion. </li>
+                              <li><span id="ul">First Tuesday in October:</span> all proposals discussed at the Council
+                                  Meeting and any queries resolved. At this meeting any proposal must obtain a seconder for it
+                                  to proceed to a vote. </li>
+                              <li><span id="ul">First Thursday in October:</span> following iv)above, the full completed
+                                  proposals together with voting papers shall be emailed to all clubs by the AS showing the
+                                  actual deadline for submission of votes (see vi below). </li>
+                              <li><span id="ul">Second Tuesday in November:</span> deadline for clubs to return, by email,
+                                  their completed voting papers to the AS.</li>
+                              <li><span id="ul">Second Friday in November:</span> the AS shall forward the collated voting
+                                  results, with all relevant material, to the IVE. </li>
+                              <li><span id="ul">Third Monday in November:</span> the IVE shall confirm the accuracy of the
+                                  voting results to the AS. </li>
+                              <li><span id="ul">Third Tuesday in November:</span> the results of each proposal shall be
+                                  announced with voting numbers, by the AS at the AGM. </li>
+      
+                          
+      </ol>
+                      </li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">L15 ANNUAL AWARDS &amp; TROPHIES</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>All League trophies shall be presented to the champions of each Division together with such other
+                          prizes as the Executive shall decide to award.</li>
+                      <li>The Lindley Moor Trophy &amp; Clay Trophy shall be awarded to the First XI &amp; Second XI teams
+                          respectively, in any of the Premier, First or Second Divisions, obtaining the highest number of
+                          points from their team’s last six matches including matches abandoned owing to inclement weather.
+                          The champions of each Division shall not be eligible for these trophies. </li>
+                      <li>All trophies, including those for individuals, are in the custody of winning clubs who shall be held
+                          responsible for their safety and be required to sign a receipt to this effect. All trophies shall be
+                          returned in good, clean condition to Briggs Priestley Ltd (info@briggspriestley.co.uk) by the dates
+                          shown in the Trophy Appendix at the end of these Rules. Failure to comply with this Rule by an
+                          offending club shall result in a fine of £5.00 for the first week and £1.00 per day thereafter.
+                      </li>
+                      <li>Briggs Priestley Ltd will arrange for the engraving of all trophies. Should any repairs be necessary
+                          the cost shall be invoiced to the club (refer also to Rules K10 &amp; T8). </li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+      
+      
+          
+      </div>
+          <button class="hclaccordion_section">SECTION 2 - THE RULES OF THE PARISH CUP &amp; CROSSLEY SHIELD</button>
+      
+      
+          
+      
+      <div class="hclsection_panel" style="display: none;">
+              <button class="hclaccordion">K1 TITLE &amp; CONSTITUTION</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>The competitions shall be called the Parish Cup (Cup) and Crossley Shield (Shield) and be knockout
+                          competitions comprising of 45 overs per team. Except where inappropriate, League Rule sshall apply
+                          plus the specific ones provided herein.</li>
+                      <li>All clubs shall enter First XI’s and, where applicable Second XI’s, in the competitions. Clubs
+                          opting NOT to compete in the Crossley Shield must advise the Fixture Secretary by the specified date
+                          in January, prior to the February Council Meeting. The Executive will notify the January deadline
+                          date to clubs by 31 December.</li>
+                      <li>The Executive shall undertake the management of both competitions.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">K2 DRAWS &amp; TIES</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>Following the publication of the fixtures for any external inter-league competitions the Fixture
+                          Secretary shall set the schedule for the competitions. Dates shall be published for each round to
+                          include a Scheduled Date (SD) plus a Reserve Date (RD) with all ties played on a Sunday.</li>
+                      <li>The Executive shall be responsible for making the draw for the First Rounds at the February Council
+                          Meeting and, for all subsequent draws, at separate meetings. Should the number of competing teams in
+                          either competition exceed 32 then a Preliminary Round, drawn from all competing teams, shall take
+                          place to reduce the First Round qualifiers to 32. To determine ties for the First Round of the
+                          Parish Cup the numbers of each team shall be drawn in pairs from one bag, with the tie played on the
+                          ground of the team drawn first in the paring. Where a club is only entering a team in the Parish Cup
+                          the list of club names shall show that club as ‘Club X/Bye” to facilitate the Crossley Shield draw
+                          (see below). If the total number of teams entered is an odd number under 32 the odd team(s) drawn
+                          last shall receive a bye. To determine ties for the First Round of the Crossley Shield, including
+                          those shown as ‘Club X/Bye’, the numbers of the teams drawn at home in the First Round of the Parish
+                          Cup shall be placed in a designated ‘away’ bag and those drawn away from home in that competition
+                          shall be placed in a designated ‘home’ bag. The team(s) receiving a bye in the Parish Cup shall be
+                          placed (drawn) in one (or both) bags. The draw shall then take place with teams drawn from the
+                          ‘home’ and ‘away’ bags alternately until the appropriate number of ties has been determined. The
+                          last team(s) in the (two) bags will receive the necessary bye(s). For ties in all subsequent rounds,
+                          except the Final, any club whose First XI is drawn at home in the Parish Cup shall be placed in the
+                          designated ‘away’ bag. Further teams shall be added to this bag, drawn at random, until both bags
+                          contain an equal number of teams with the identity of these teams being undisclosed. The draw for
+                          the appropriate round shall then take place as above.</li>
+                      <li>The League shall receive the whole of the receipts for the Final ties, from which it shall pay any
+                          incurred expenses. If a Final tie is postponed, due to inclement weather, the League shall indemnify
+                          the hosts for all reasonable expenses incurred. (d) Any monetary loss on a tie shall be shared
+                          equally by the competing clubs except as provided in Rule K2(c)</li>
+      
+                  
+      </ol>
+              
+      </div>
+              <button class="hclaccordion">K3 PLAYER QUALIFICATION</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>All players registered with the League prior to the commencement of the season, plus any additional
+                          player(s) registered at least 48 hours before the Second Round is due to be played, shall be
+                          eligible to play in the competition for the club for which they are registered.</li>
+                      <li>clubs shall register all its players at least 48 hours before the First Round is due to be played.
+                      </li>
+                      <li>During the same season no player shall play for more than one club in the competitions.</li>
+                      <li>During the same season a player shall not be eligible to play in a Shield tie if he/she has played
+                          for his/her First XI the following number of matches, or more, at the commencement of each round:
+                          First Round – three; Second Round – five; Third Round – six and Semi-Final &amp; Final – seven.</li>
+                      <li>During the same season a player who has played in a Cup tie, except the First Round, shall not be
+                          eligible to play in a Shield tie except as: i) a substitute fielder or ii) a player nominated by
+                          their club to replace a player selected for any League Representative XI on the same date as a Cup
+                          tie.</li>
+                      <li>During the same season a player shall not be eligible to play in a Cup tie if they have played in a
+                          Shield tie in the same round, except as a substitute fielder.</li>
+                      <li>Any club playing an ineligible player shall forfeit the tie.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">K4 TIE PROCEDURES - GENERAL</button>
+      
+      
+              
+      
+      <div class="hclpanel" style="display: none;">
+                  <ol type="a">
+                      <li>No tie shall be cancelled without the approval of the Executive except as detailed in Rule L7(c).
+                      </li>
+                      <li>All ties shall start at 1:00pm</li>
+                      <li>All ties shall consist of a maximum of 45 six-ball overs per team. The side scoring the most runs
+                          shall be the winner.</li>
+                      <li>Before the commencement of play the opposing captains must exchange lists of the eleven players
+                          selected. Should play have commenced and the tie is carried over to the RD, only the initially named
+                          team for the SD shall play on the RD. If no play is possible on the SD a different team may be
+                          selected for the RD [see Rule K6(b)].</li>
+                      <li>Match ball Rule L8(c) applies including the Rule that new balls must be used. The League shall be
+                          responsible for providing balls for use in the Final ties of the competitions.</li>
+                      <li>A bowler is limited to a maximum of nine overs but this number may be reduced under Rules K5 or K6.
+                      </li>
+                      <li>If a bowler is unable, through injury, to complete an over, the captain of the fielding team shall
+                          nominate another to finish the over, with the exception of the bowler who bowled the last full over
+                          or one who has completed his allocation.</li>
+                      <li>Should the start of a tie be delayed, as much play as possible must be achieved on the SD. No tie
+                          shall commence after 4:30pm.</li>
+                      <li>Where the scores finish level in all ties of the competitions, including those for the Semi-Finals
+                          and Finals, the following shall apply in obtaining a result:<br />
+                          <ol type="i">
+                              <li>the team losing the fewest wickets shall be declared the winner.</li>
+                              <li>should both the runs scored and the wickets lost be the same on the SD then the game shall
+                                  be replayed on the away team’s ground on the RD with Rule K5 applying as appropriate.</li>
+      
+                          
+      </ol>
+                      </li>
+                      <li>Should a tie fail to start or be uncompleted on the SD refer to Rules K5 &amp; K6 as appropriate.
+                      </li>
+                      <li>In the Final ties of both competitions should inclement weather or other matters affect the
+                          arrangements, members of the Executive present at the ground shall have the power to form an
+                          Emergency Committee (EC) to make any re-arrangements necessary. The decision of the EC shall be
+                          final.</li>
+                      <li>No other match, including those for charity, shall be played on a League ground on the afternoons of
+                          the Cup or Shield Finals. Any such matches commencing in a morning shall cease by no later than
+                          1:00pm.</li>
+                      <li>At the trophy presentation of the Final ties all players in receipt of trophies should be attired in
+                          white playing clothing.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">K5 TIE PROCEDURES - RESERVE DATE CONTINUATION</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>The overs for all ties shall remain as shown in Rule K4(c) unless inclement weather intervenes.</li>
+                      <li>Where play in a tie has commenced on the SD then no alterations shall be made on the RD to the teams
+                          played on that date.</li>
+                      <li>Where inclement weather has interrupted the tie on the SD <span id="ul">and the first innings is
+                              completed but the second innings is incomplete</span> and inclement weather further interrupts
+                          the tie then the following will apply
+                          <ol type="i">
+                              <li>Where the tie commences between 1:30pm &amp; 3:30pm no deduction of overs shall apply. If
+                                  the tie has started between 1:30pm &amp; 3:30pm and play is again interrupted no overs shall
+                                  be deducted before 3:30pm. For every 30 cumulative minutes lost after 3:30pm then Rule K5(d)
+                                  ii) shall apply.</li>
+                              <li>Where the tie does not start before 3:30pm then the start time and commencement of overs
+                                  deduction will be determined by the number of overs remaining in the second innings when the
+                                  game was abandoned on the SD as follows:
+      
+      
+                                  
+      
+      <table>
+                                      <tbody>
+                                          <tr>
+                                              <th>Overs Remaining<br />
+                                                  Between</th>
+                                              <th>Latest Start<br />
+                                                  Time </th>
+      
+                                          
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       </tr>
+                                          <tr>
+                                              <td>45 &amp; 41</td>
+                                              <td>3:30pm </td>
+      
+                                          
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       </tr>
+                                          <tr>
+                                              <td>40 &amp; 36</td>
+                                              <td>4:00pm</td>
+                                          
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       </tr>
+                                          <tr>
+                                              <td>35 &amp; 31</td>
+                                              <td>4:30pm</td>
+                                          
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       </tr>
+                                          <tr>
+                                              <td>30 &amp; 26</td>
+                                              <td>5:00pm</td>
+                                          
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       </tr>
+                                          <tr>
+                                              <td>25 &amp; 21</td>
+                                              <td>5:30pm</td>
+                                          
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       </tr>
+                                          <tr>
+                                              <td>20 &amp; 16</td>
+                                              <td>6:00pm</td>
+                                          
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       </tr>
+                                          <tr>
+                                              <td>15 &amp; 11</td>
+                                              <td>6:30pm</td>
+                                          
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       </tr>
+                                          <tr>
+                                              <td>10 minimum</td>
+                                              <td>7:00pm</td>
+                                          
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       </tr>
+                                      </tbody>
+                                  
+      </table>
+                                  <span id="ul">Bowling restrictions for ii) above apply as follows:</span>- Should a bowler
+                                  have bowled their allocated nine overs, these shall be taken from the total number of overs,
+                                  the remaining overs then be divided equally between the remaining bowlers. Any odd number of
+                                  overs would then be added to one or more bowlers. Any part bowled over in all of these
+                                  calculations is deemed to be completed.
+                              </li>
+      
+                          
+      </ol>
+                      </li>
+                      <li>Once the latest start time is reached for each of the cases listed in Rule K5(d) ii) and the team
+                          batting second has not received a minimum of 10 overs then a Bowl Off shall take place to decide the
+                          winner as per Rule K7.</li>
+                      <li>Where inclement weather has interrupted the tie on the SD with the <span id="ul">first innings
+                              incomplete and thereafter further inclement weather interrupts the tie on the RD</span> then the
+                          match continues as per Rule K6.</li>
+                      <li>Rolling of the pitch in the presence of the umpires shall be allowed for seven minutes at the
+                          commencement of and at the close of each day’s play and after the completion of any innings.</li>
+                      <li>Any necessary action required to repair the pitch and/or cut the outfield shall be agreed between
+                          the umpires and captains at the end of play for each innings or day.</li>
+                      <li>Except for a Semi-Final or Final tie if the RD is used due to the SD being curtailed or postponed
+                          for inclement weather and the scores finish level after applying Rule K4(i) then a Bowl Off shall
+                          take place to determine the winner as per Rule K7.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">K6 TIE PROCEDURES - RESERVE DATE START</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>Rule K4 applies except where shown below. In all cases should a tie remain uncompleted in the normal
+                          manner then under this Rule a Bowl Off shall take place as described in Rule K7.</li>
+                      <li>If no play is possible on the SD a different team may be selected for the RD and before the
+                          commencement of play the opposing captains must exchange lists of the eleven players selected for
+                          this tie.</li>
+                      <li>Should the start be delayed then the following over reductions shall apply:
+      
+      
+                          
+      
+      <table>
+                              <tbody>
+                                  <tr>
+                                      <th>Start Time (Finals)</th>
+                                      <th>Overs Per Side</th>
+                                      <th>Max Overs Per Bowler</th>
+                                  
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>2:30pm (2:00pm)</td>
+                                      <td>40</td>
+                                      <td>8</td>
+                                  
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>3:00pm (2:30pm)</td>
+                                      <td>35</td>
+                                      <td>7</td>
+                                  
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>3:30pm (3:00pm)</td>
+                                      <td>30</td>
+                                      <td>6</td>
+                                  
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>4:00pm (3:30pm)</td>
+                                      <td>25</td>
+                                      <td>4</td>
+                                  
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>4:30pm (4:00pm)</td>
+                                      <td>20</td>
+                                      <td>4</td>
+                                  
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>5:00pm (4:30pm)</td>
+                                      <td>15</td>
+                                      <td>3</td>
+                                  
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>5:30pm (5:00pm)</td>
+                                      <td>10</td>
+                                      <td>1</td>
+                                  
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       </tr>
+                              </tbody>
+                          
+      </table>
+                      </li>
+                      <li>Where inclement weather interrupts a tie whilst in progress then the following shall apply: <span id="ul">Interrupted in the first innings:</span>Five overs per innings shall be deducted for
+                          every cumulative 30 minutes lost (note that no deduction is made up to 29 minutes lost) However
+                          should further interruptions occur then the cumulative minutes lost, including any up to 29 minutes,
+                          is calculated and the number of overs to be deducted are as follows:
+      
+      
+                          
+      
+      <table>
+                              <tbody>
+                                  <tr>
+                                      <th>Minutes Lost</th>
+                                      <th>Overs Deducted</th>
+                                  
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>30</td>
+                                      <td>5</td>
+                                  
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>60</td>
+                                      <td>10</td>
+                                  
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>90</td>
+                                      <td>15</td>
+                                  
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       </tr>
+                              </tbody>
+                          
+      </table>
+      
+                          120
+                          20
+      
+      
+                          150
+                          25
+      
+      
+                          180
+                          30
+      
+      
+                          210
+                          35
+      
+                          Maximum overs per bowler are as Rule K6(c). The minimum overs for a tie shall be ten overs per team
+                          with both having the opportunity to bat for its ten overs for a tie to be deemed to have taken
+                          place.<br />
+                          <span id="ul">Interrupted in the second innings:</span> Should inclement weather interrupt the
+                          second innings then the average runs per over of the team batting first shall be calculated by
+                          taking the number of runs scored and dividing by the number of overs faced. Five overs shall be
+                          deducted for every 30 minutes lost on a cumulative basis. The target score shall then be reduced by
+                          the number of overs lost, multiplied by the scoring rate of the team batting first. See Rule K6(d)
+                          for minimum overs.<br />
+                          <span id="ul">Overs allocation of a bowler if tie interrupted:</span> Should inclement weather
+                          interrupt an innings before a bowler’s allocation has been completed then the following calculation
+                          shall be made: the revised total number of overs for the inningsshall be divided by five to give an
+                          allocation of overs per bowler. <br />
+                          <span id="ul">Examples:</span> eg i) Should two bowlers bowl their allocated nine overs and the
+                          innings loses 30 minutes, then five overs are deducted. This is now a 40 overs per side game and,
+                          with 18 overs having already been bowled, 22 overs remain therefore the maximum number of overs per
+                          bowler will now be 8. eg ii) Should three bowlers have bowled their nine overs and 60 minutes are
+                          lost, therefore 10 overs are lost. This is now a 35 overs per side game and, with 27 having already
+                          been bowled, 8 overs remain and therefore the maximum number of overs per bowler will now be 4. The
+                          same calculation may also be used in the second innings. A part bowled over is considered complete
+                          for these calculations.
+                      </li>
+                      <li>If no play is possible on any RD, except the Finals, then a Bowl Off shall take place to decide the
+                          winner as per Rule K7.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">K7 TIE PROCEDURES – BOWL OFF</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>Five bowlers from each team shall be nominated to bowl two balls.</li>
+                      <li>A toss shall be made to ascertain which team bowls first and players from each team shall bowl
+                          alternately. The team that strikes the stumps the most from its 10-ball allocation shall be declared
+                          the winner of the tie.</li>
+                      <li>To achieve a strike the delivered ball shall pitch on the playing surface before hitting the stumps
+                          and must be a legitimate ball, not a no ball.</li>
+                      <li>In the event of the scores still being level after the above then a sudden death Bowl Off shall
+                          apply. The five nominated bowlers from the two teams shall each bowl one ball alternately until a
+                          clear winner is achieved, the same number of balls must be bowled per team.</li>
+                      <li>Umpires should note Rule K8(d) for their procedures.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">K8 UMPIRES</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>The competing clubs, with the exception of the Final ties, shall each pay one of the consolidated
+                          expenses for the umpires as shown in Rule L11(d) and these shall be paid during the tea interval.
+                      </li>
+                      <li>Rule L11(d) shall also apply in cases where only one umpire is present, except in the case of
+                          Crossley Shield First Round ties.</li>
+                      <li>Should a competition tie, for any reason, take more than one day to complete then each umpire shall
+                          be paid consolidated expenses of 25% of those shown in Rule L11(b), to the nearest £1.00 above, for
+                          every additional ground visit. Should there be any alteration to the designated umpire(s) then
+                          together they shall agree the distribution of such expenses.</li>
+                      <li>Where a bowl-off is necessary to establish the winner of a tie umpires shall act as follows. One
+                          umpire shall stand at the bowlers end to judge for no balls. The second umpire shall stand square to
+                          the batting crease at the batsman’s end to judge for the legitimacy of each ball. Each ball shall
+                          bounce at least once, but no more than twice, otherwise any stumps strike is invalid and no extra
+                          ball shall be allowed. Both umpires should record the successful stumps strike ball(s).</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">K9 COMPLAINTS &amp; DISCIPLINARY MATTERS</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>Any complaint shall be made in accordance with Rule L12. However in the case of a tie completed less
+                          than seven days before the next round it shall be emailed to the Disciplinary Officer within 24
+                          hours.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">K10 TROPHIES</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>The Parish Cup replica, the Crossley Shield and the Parish Cup &amp; Crossley Shield Man of the
+                          Match trophies must be returned to Briggs Priestley Ltd [see Rule L15(c)] by the dates shown in the
+                          Trophy Appendix at the end of these Rules.</li>
+                      <li>Failure to comply with this Rule by the offending club shall result in a fine of £5.00 for the first
+                          week and £1.00 per day thereafter.</li>
+      
+      
+                  
+      </ol>
+      
+      
+              
+      </div>
+      
+          
+      </div>
+          <button class="hclaccordion_section">SECTION 3 - THE RULES OF THE T20 TROPHY</button>
+      
+      
+          
+      
+      <div class="hclsection_panel">
+              <button class="hclaccordion">T1 TITLE &amp; CONSTITUTION</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>competition, open to all League clubs, shall be called the T20 Trophy and be a knockout competition,
+                          comprising of 20 overs per innings per team. Except where inappropriate, League and Knockout
+                          Competition Rules shall apply plus the specific ones provided herein.</li>
+                      <li>Clubs opting NOT to compete in the T20 must advise the Secretary by the specified date in January,
+                          prior to the February Council Meeting. The Executive will notify the January deadline date to clubs
+                          by 31 December.</li>
+                      <li>If a Final Day is postponed, due to inclement weather, the League will indemnify the hosts for all
+                          reasonable expenses incurred.</li>
+                      <li>The winners of the T20 trophy shall automatically take part in the annual WYACC indoors six-a-side
+                          competition. Should a club not be able to compete in this event it shall advise the Fixture
+                          Secretary no later than fourteen days following the T20 Finals Day.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">T2 DRAWS &amp; TIES</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>Should the number of clubs entering the competition warrant its zoning then the Executive shall
+                          decide each season whether two or four zones shall operate up to the Semi-Final</li>
+                      <li>Ties shall be played on the SD of each round. However, provided that there is no clash with any
+                          scheduled fixture, a club may bring forward a tie to the previous Sunday, should its opponents
+                          agree, ensuring that at least ten days notice is given to the Fixture Secretary.</li>
+                      <li>Ties shall commence in an evening at 6:30pm and for those switched to a Sunday at 1:30pm. Earlier
+                          starts may be made should team captains and the umpires agree.</li>
+                      <li>Should inclement weather, and/or time, not allow the full 20 overs per innings to be played on the
+                          SD then the number may be reduced to a minimum of ten. See Rules T5 (a) &amp; (j) for ties
+                          interrupted on a RD.</li>
+                      <li>In cases of inclement weather should a tie not start or not be completed on a Sunday it shall start
+                          or be continued on the original SD. Should a tie carried over to the SD, or one commencing on the
+                          SD, not be completed it shall commence or continue on the RD. In all cases a tie shall recommence
+                          from the position it was interrupted.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">T3 PLAYER QUALIFICATION</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>To be eligible for the competition players must be registered in compliance with Rule K3.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">T4 PRE-TIE PROCEDURES - GROUND MARKING &amp; EQUIPMENT</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>A line shall be marked on the off side of the pitch some two feet &amp; six inches (79.3cm) from the
+                          centre stump.</li>
+                      <li>A Fielding Restriction Area (FRA)shall be marked on the field of play. It shall consist of two
+                          semi-circles with their centres as the middle stumps at either end of the pitch, the radius of each
+                          of the semi-circles shall be 30 yards(27.43 metres) and linked by two parallel straight lines. No
+                          part of the FRA shall encroach within 10 yards of a boundary and, if space is restricted, it should
+                          be marked at that point irrespective of the radius above.</li>
+                      <li>League balls shall be used but need not necessary be new.</li>
+                      <li>Competing clubs may use coloured clothing in all rounds of the competition including the final.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">T5 TIE PROCEDURES</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>No bowler shall bowl more than four overs. However should the duration of a tie be reduced, see Rule
+                          T2 (d), the bowling restriction shall be re-calculated by dividing the total number of overs to be
+                          played by five, giving the new maximum number of overs per bowler. Any odd number of overs shall be
+                          shared equally amongst the remaining eligible bowlers, but no bowler shall bowl more than one of
+                          these overs.</li>
+                      <li>The maximum length of a bowler’s run up shall be ten yards measured from the centre of the stumps at
+                          the bowler’s end.</li>
+                      <li>At the delivery of a ball not more than five fielders shall be outside the FRA referred to in Rule
+                          T4 (b). For any transgression a no ball shall be called.</li>
+                      <li>Any ball passing down the leg side of the batsman shall be called a wide with one penalty run
+                          awarded in addition to the extra ball.</li>
+                      <li>Should a ball pass either outside of the two feet &amp; six inches line on the off-side, referred to
+                          in Rule T4 (a), or pass above the batsman’s shoulder in their normal standing position, then it
+                          shall be called a wide.</li>
+                      <li>In addition to Rule L8(h) any batsman failing to take his/her guard within two minutes of the fall
+                          of the previous wicket shall be timed out.</li>
+                      <li>A batsman shall immediately retire on reaching, or passing, 100 runs and no return is allowed unless
+                          he/she becomes one of the last pair at the wicket.</li>
+                      <li>In the event of the number of runs being equal at the end of the tie then the winner shall be the
+                          team losing least wickets. If the wickets lost are also equal then a Super Over shall be bowled in
+                          accordance with current ECB T20 Rules.</li>
+                      <li>Runners and substitute fielders are allowed only where an injury is sustained during the course of a
+                          tie.</li>
+                      <li>By the agreement of the two captains the overs may be reduced to a minimum of five per team should
+                          inclement weather delay the start of a tie on the RD.</li>
+                      <li>If play is not possible on either the SD or the RD a Bowl Off as per Rule K7 shall apply.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">T6 TIE RESULTS</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>Within 24 hours of a tie concluding the result with full score sheet, shall be emailed to the
+                          Fixture Secretary. In addition total scores, plus any outstanding performances, shall be placed on
+                          the League website.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">T7 UMPIRES</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>Each team shall provide a competent umpire who has the appropriate credentials {see Rule L11 (c)}.
+                      </li>
+                      <li>Umpires should refer to Rule K8(d) in the event of a Bowl Off being necessary.</li>
+                      <li>For the Semi-Finals and Finals neutral umpires shall be appointed by the League</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">T8 TROPHY</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>The T20 trophy must be returned to Briggs Priestley Ltd [see Rule L15(c)] by the dates shown in the
+                          Trophy Appendix at the end of these Rules.</li>
+                      <li>Failure to comply with this Rule by the offending club shall result in a fine of £5.00 for the first
+                          week and £1.00 per day thereafter.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+      
+          
+      </div>
+          <button class="hclaccordion_section">SECTION 4 - THE RULES OF THE SUNDAY LEAGUE</button>
+      
+      
+          
+      
+      <div class="hclsection_panel" style="display: none;">
+              <button class="hclaccordion">S1 CONSTITUTION</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>That this combination of clubs shall be entitled the Halifax Sunday Cricket League (SL) and is part
+                          of the parent Halifax Cricket League (HCL) and subject to all its applicable Rules, except where
+                          shown below.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">S2 MEETINGS, MEMBERSHIP &amp; SUBSCRIPTIONS</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>At all Council, Annual General Meeting (AGM) or Special General Meeting (SGM) only clubs with a team
+                          entered in the SL shall be entitled to vote on specific SL matters. </li>
+                      <li>Any club wishing to enter a team in the SL shall contact, in writing, the SL Secretary by 31 August
+                          of the year preceding proposed entry. To be eligible for membership a club shall have two senior
+                          sides playing in an ECB recognised weekend league and normally meet the entry standards of the HCL.
+                      </li>
+                      <li>Subscriptions shall be confirmed at the AGM, or an SGM, and shall be paid to the Treasurer before
+                          the February Council Meeting [for full details see HCL Rule L4(b)].</li>
+                      <li>Any club failing to fulfil two or more fixtures (League and/or Cup) will be required to apply for
+                          re-election at the AGM.</li>
+                      <li>The Executive may require any club to apply for re-election. At least two weeks before the
+                          notification for the AGM it shall advise the club concerned together with the reason(s). At the AGM
+                          the name of the club and the reason(s) for it being required to apply for re-election shall be
+                          revealed, together with any statement of response from the club.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">S3 PLAYER REGISTRATION</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>Each club shall field only bona-fide amateur players who shall be registered with the Registrations
+                          Secretary at least 48 hours before they take part in a match.</li>
+                      <li>No player of a club shall be eligible to play for its SL team if he/she played in, or is deemed to
+                          have played in, the club’s previous First XI match.</li>
+                      <li>With the exception of players under 19 years of age on 31 August of the preceding year, no more than
+                          four players who played in, or were deemed to have played in, its club’s previous Second XI match
+                          shall be eligible to play in their club’s following SL match.</li>
+                      <li>No player shall play in the SL if he/she has played, in the current season, First XI League matches
+                          as<br />
+                          <ol type="i">
+                              <li>a senior player in three or more matches or</li>
+                              <li>a junior player in four or more matches.</li>
+                          
+      </ol>
+                          Player’s ages are taken as over or under 17 years of age, on 31 August of the previous year, for
+                          seniors and juniors respectively.
+                      </li>
+                      <li>Any player refused permission by the Executive to play in its club’s Second XI shall not be eligible
+                          to play in its club’s SL team.</li>
+                      <li>A SL club shall be allowed to nominate a non-Sunday playing HCL club as a satellite club provided
+                          the latter club’s name is advised to the Registrations Secretary by no later than 31 March each
+                          season. If the satellite club grants permission for any of its designated registered players to play
+                          for that SL club then he/she may play in a SL fixture, provided he/she has not played in the HCL on
+                          the previous Saturday. There is no limit on the number of players to be used provided that any team,
+                          comprising of players from both clubs, shall fulfil all selection and other qualification criteria
+                          of the SL.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">S4 FIXTURES</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>Teams shall be divided into three Divisions, 1, 2 and 3, with each team in a Division playing an
+                          equal number of matches. </li>
+                      <li>At the close of each season the bottom two teams in Divisions 1 &amp; 2 shall be relegated to
+                          Divisions 2 &amp; 3 respectively. The top two teams in Divisions 2 &amp; 3 shall be promoted to
+                          Divisions 1 &amp; 2 respectively. No team in Division 3 is required to apply for re-election.</li>
+                      <li>The start time of all matches shall be 1:30pm except for i) a nominated morning match or ii) where
+                          the reserve date of the Rod Warhurst Trophy final is utilised, in which cases the start time shall
+                          be 10:00am.</li>
+                      <li>No match shall take place on an artificial pitch.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">S5 MATCH POINTS</button>
+      
+      
+              
+      
+      <div class="hclpanel" style="display: none;">
+                  <ol type="a">
+                      <li>Points shall be determined as follows with references to bonus points detailed below in Rule S5(b).
+                      </li>
+                      <ol type="i">
+                          <li>where the opposition is bowled out and a higher total is achieved, the winning team shall be
+                              awarded 20 points, with the losing team awarded bonus points.</li>
+                          <li>if the team with the lowest total is not all out then the match shall be deemed a draw, with 7
+                              points awarded to the team scoring most runs and 1 point to that scoring least runs. In addition
+                              both teams shall be awarded bonus points.</li>
+                          <li>if the scores are tied each team shall be awarded 4 points and, in addition, both teams shall be
+                              awarded bonus points.</li>
+                          <li>should a match be abandoned due to inclement weather before, or at the completion of the first
+                              innings, each team shall be awarded 8 points plus any bonus points accrued.</li>
+                          <li>in the case of any abandonment during the second innings 4 points shall be awarded to each team,
+                              plus any bonus points accrued.</li>
+                          <li>where a fixture cannot be rearranged due to a club being involved in the Parish Cup (Cup) or
+                              Crossley Shield (Shield) competitions, or hosting a Finals day at its ground, then both teams
+                              shall be awarded 10 points. Such an occurrence shall be recorded in the League table as a nil
+                              points loss but with both teams having 10 points recorded as bonus points. </li>
+      
+                      
+      </ol>
+      
+      <!-- Commented Out 
+       <li>				
+      <p normal"="" align="center" style="text-align: left;"><strong><br / / / / / / />
+      </strong></p></li>
+      -->
+      
+       <li>The bonus points referred to above shall be awarded as per the following tables:
+                        
+      <table class="hclsundaytable">
+                              <tbody>
+                                  <tr>
+                                      <th>SCHEDULED 30 OVERS MATCHES
+                                      </th>
+                                  
+       
+       
+       
+       
+       
+       
+       </tr>
+      
+                                  <tr>
+                                      <th><br />
+                                          Batting</th>
+                                  
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>50-74 runs scored</td>
+                                      <td>1 bonus point</td>
+                                  
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>75-99 runs scored</td>
+                                      <td>2 bonus points</td>
+                                  
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>100-124 runs scored</td>
+                                      <td>3 bonus points</td>
+                                  
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>125-149 runs scored</td>
+                                      <td>4 bonus points</td>
+                                  
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>150 runs or more scored</td>
+                                      <td>5 bonus points</td>
+                                  
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <th><br />
+                                          Bowling</th>
+                                  
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>three wickets taken</td>
+                                      <td>1 bonus point</td>
+                                  
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>four wickets taken</td>
+                                      <td>2 bonus points</td>
+                                 
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>five wickets taken</td>
+                                      <td>3 bonus points</td>
+                                  
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>six wickets taken</td>
+                                      <td>4 bonus points</td>
+                                  
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>seven or more wickets taken</td>
+                                      <td>5 bonus points</td>
+                                  
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <th><br />
+                                          SCHEDULED 40 OVERS MATCHES</th>
+                                 
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <th><br />
+                                          Batting</th>                  
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>100-124 runs scored</td>
+                                      <td>1 bonus point</td>
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>125-149 runs scored</td>
+                                      <td>2 bonus points</td>                           
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>150-174 runs scored</td>
+                                      <td>3 bonus points</td>
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>175-199 runs scored</td>
+                                      <td>4 bonus points</td>
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>200 runs or more scored</td>
+                                      <td>5 bonus points</td>
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <th><br />
+                                          Bowling</th>
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>two or three wickets taken</td>
+                                      <td>1 bonus point</td>
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>four or five wickets taken</td>
+                                      <td>2 bonus points</td>
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>six or seven wickets taken</td>
+                                      <td>3 bonus points</td>
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>eight or nine wickets taken</td>
+                                      <td>4 bonus points</td>
+       
+       
+       
+       
+       
+       
+       </tr>
+                                  <tr>
+                                      <td>All out (including where teams<br />
+                                          do not bat eleven players)</td>
+                                      <td>5 bonus <br />
+      points</td>
+       
+       
+       
+       
+       
+       
+       </tr>
+                              </tbody>                    
+      </table>
+      <p normal"="" align="center" style="text-align: left;"><strong>Note:</strong> 
+      Where a team batting first is not all out and the team batting second scores more runs, the latter, regardless of its actual total, shall be awarded the maximum 5 batting points&nbsp;</p>
+        </li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">S6 PRE-MATCH PROCEDURES</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>Where a member club allows another club to use its ground for a SL fixture, a fee of £25.00 shall be
+                          payable to the host club. The clubs involved shall make arrangements regarding any catering.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">S7 MATCH PROCEDURES</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>All matches shall be of a maximum 40 overs per innings (30 overs for matches commencing at 10:00am).
+                      </li>
+                      <li>In matches affected by inclement weather the minimum number of overs to be played per innings shall
+                          be 25 (20 overs for matches commencing at 10:00am).</li>
+                      <li>Approved League balls shall be used in all matches however they are not required to be new. </li>
+                      <li>Each club shall be responsible for providing a competent scorer for the full duration of a match.
+                      </li>
+                      <li>No player shall bowl more than 9 overs (7 for matches commencing at 10:00am). If a game is
+                          interrupted by inclement weather the above maximums remain in place.</li>
+                      <li>Teams must bowl at least 17 overs per hour and any team failing to meet this requirement shall
+                          forfeit 1 point.</li>
+                      <li>A batsman scoring 100 runs must retire and shall not resume his/her innings.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">S8 MATCH RESULTS</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>Following each match the recording of the result is the responsibility of the home club. Details
+                          shall i) be entered on the League website and ii) be sent by email to the SL Results Secretary by no
+                          later than the days and times shown below:</li>
+                      <ol type="i">
+                          <li>League website: enter by no later than 10.00am Monday the result showing
+                              runs/wickets/overs/points awarded plus the fully completed Match Scoresheet.</li>
+                          <li>SL Results Secretary: email by no later than 10.00am Tuesday the Match Report Form (MRF) duly
+                              signed by the umpire(s) and club representative. </li>
+                      
+      </ol>
+                      <li>All fines shown in Rules L9(b) &amp; (c) shall also apply to this Rule.</li>
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">S9 UMPIRES</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>It shall be the responsibility of each club to provide one competent umpire for the full duration of
+                          a match. If an umpire is not provided one of the players, who shall be a competent umpire, must be
+                          appointed for the whole match. If no such person is available the team unable to provide an umpire
+                          shall be deemed to have failed to fulfil the fixture and be fined accordingly as per HCL Rule L8(m).
+                      </li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+      
+          
+      </div>
+          <button class="hclaccordion_section">SECTION 5 - THE RULES OF THE ROD WARHURST CUP</button>
+      
+      
+          
+      
+      <div class="hclsection_panel">
+              <button class="hclaccordion">W1 TITLE</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>The competition shall be called the Rod Warhurst Cup and comprise ties of 40 overs per team.</li>
+                      <li>When membership of the SL exceeds 24 teams the competition shall only be open to those in Divisions
+                          1 and 2. All remaining teams shall play a full League programme of fixtures in a third division.
+                      </li>
+                      <li>Except where inappropriate HCL &amp; SL Rules shall apply, plus the specific ones provided herein.
+                      </li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">W2 DRAWS &amp; TIES</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>A first round of four Mini-Leagues shall take place with teams playing each other once.</li>
+                      <li>The winning team in each Mini-League match shall receive 2 points and the losers 0 points. In a tied
+                          or abandoned match each team shall receive 1 point.</li>
+                      <li>Where two or more clubs finish level in a Mini-League, qualification shall be determined by the
+                          results of the matches between the teams. Should this fail to establish the qualifier, runs per
+                          wicket for and against shall be the deciding method.</li>
+                      <li>The top team from each of the four Mini-Leagues shall progress to the knockout Semi-Finals with the
+                          two winners contesting the Final.</li>
+                      <li>All results shall stand no matter how many matches are completed.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">W3 TIE PROCEDURES</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>No player shall bowl more than 20% of the overs for his/her team unless an innings is interrupted by
+                          inclement weather after he/she has already completed his/her allocation. </li>
+                      <li>Mini-League matches interrupted by weather or bad light shall be completed on a reduced overs basis
+                          with a minimum of 25 overs each innings.</li>
+                      <li>The semi-finals shall be completed on the scheduled date. Should a start be delayed, or inclement
+                          weather interrupts a tie, then the procedures shown in HCL Rules K6(c), (d) &amp; (e) shall apply.
+                      </li>
+                      <li>Where the scores finish level in a Semi-Final or Final tie the following shall apply in obtaining a
+                          result:<br />
+                          <ol type="a">
+                              <li>the team losing the fewest wickets shall be declared the winner.</li>
+                              <li>should both the runs scored and the wickets lost be the same then a Bowl Off shall take
+                                  place in accordance with Rule K7.</li>
+                          
+      </ol>
+      
+                      </li>
+      
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">W4 UMPIRES</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>Each team competing in the Semi-Finals shall provide an umpire who is an ACO member, for the match
+                          in which it is not competing. Failure to do so will result in the team being </li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+      
+          
+      </div>
+          <button class="hclaccordion_section">SECTION 6 - THE RULES OF THE HALIFAX JUNIOR CRICKET LEAGUE</button>
+      
+      
+          
+      
+      <div class="hclsection_panel" style="display: none;">
+              <button class="hclaccordion">J1 TITLE, OBJECT &amp; CONSTITUTION</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>That this combination of clubs shall be entitled the Halifax Junior Cricket League (JCL) and is part
+                          of the parent Halifax Cricket League (HCL) and subject to all its applicable Rules except where
+                          shown below.</li>
+                      <li>The object of the JCL shall be to promote the best interests of the game of cricket in its junior
+                          format. (c) The constitution of the JCL, from season to season, shall be at the discretion of the
+                          Executive [see Rule J2(c)] dependent upon the number of participating clubs but usually will contain
+                          sections for Under 9 (U9), Under 11 (U11), Under 13 (U13), Under 15 (U15) &amp; Under 17 (U17)
+                          cricketers.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+      
+              <button class="hclaccordion">J2 COUNCIL, OFFICERS &amp; THE EXECUTIVE</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>The President of the HCL shall be the President of the JCL. </li>
+                      <li>Including the President a JCL Council (Council) shall be elected consisting of no more than two
+                          representatives[see Rule J3(d)] from each of the participating clubs, together with a Chairman,
+                          Secretary, Treasurer, Fixture Secretary and Welfare Officer. From time to time any posts listed
+                          above may be combined.</li>
+                      <li>A League Executive (Executive)shall be formed comprising of all the positions listed in J2(b)
+                          elected at the Annual General Meeting (AGM). Any other person may be co-opted by the Executive to
+                          fulfil a designated position or duty. </li>
+                      <li>Managers shall be appointed for the Joe Lumb, U15, U13 &amp; U11 League XI’s who, if required, shall
+                          also act as the JCL representative at any external meeting of a competition. (e) The Executive shall
+                          have the power to deal with any urgent matters including any not covered by specific Rules and
+                          impose any decision or penalty considered necessary which shall be final and binding on all parties.
+                          (f) All references to Officers in these Rules are those of the JCL and not the HCL unless
+                          specifically stated.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">J3 MEETINGS</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>Council Meetings shall be held quarterly, on the third Wednesday of the month of January, and the
+                          first Wednesday of the months of April, July and September. The Annual General Meeting (AGM) shall
+                          be held in November and take place on the Wednesday following the HCL AGM. The Secretary reserves
+                          the right to call other meetings as deemed appropriate.</li>
+                      <li>A Special General Meeting (SGM) shall be scheduled [see J3(c)] at the request of the Executive or by
+                          a written proposal signed by representatives from at least six member clubs, indicating the nature
+                          of the business to be discussed, and sent to the Secretary. </li>
+                      <li>No later than 14 days before all meetings referred to in J3(a) &amp;(b) above a notice, together
+                          with the venue and an agenda, shall be circulated to all clubs and Officers. </li>
+                      <li>At AGM, SGM and Council meetings clubs shall have one representative who shall be entitled to vote
+                          [see Rule J3(f) below] and, if desired, an additional non-voting representative may attend. </li>
+                      <li>At the meetings detailed above all attendees listed shall be entitled to take part in discussions.
+                          All references to ‘Chairman’ shall also apply to any appointed deputy. Voting rights at such
+                          meetings shall be as follows:
+                          <ol type="i">
+                              <li>AGM, SGM and Council meetings: JCL club representatives shall each have one vote with the
+                                  Chairman having a casting vote only. Other than the Chairman’s casting vote, the President
+                                  and Officers shall have no vote.</li>
+                              <li>Executive Meetings: Officers and elected or co-opted members of the Executive shall each
+                                  have one vote, with the Chairman having an additional casting vote if required.</li>
+      
+                          
+      </ol>
+                      </li>
+                      <li>At all meetings votes shall be given personally and not by proxy. The result of the voting shall be
+                          determined by a simple majority of the votes cast except as otherwise provided in these Rules. </li>
+                      <li>Should a club fail to attend any of the meetings referred to in this Rule it shall be fined £25.00.
+                      </li>
+                      <li>Should any fine remain unpaid, for each period of 28 days following notification to the offending
+                          club it shall be doubled.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">J4 MEMBERSHIP, SUBSCRIPTIONS &amp; WELFARE CHECKS</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>Clubs currently playing or wishing to play in the JCL shall provide notification of its team(s) to
+                          the Secretary by no later than 21 February prior to the start of the new season.</li>
+                      <li>A club that plays its cricket in another junior league, at the same or other age groups, is welcome
+                          to apply to join the JCL provided that it applies by the date shown in Rule J4(a).</li>
+                      <li>All new applicants shall be required to meet the ground and administrative entry criteria applied by
+                          the HCL and the conditions of Rule J4(b). A decision on any new membership shall be made by an
+                          electronic majority vote of member clubs, conducted for that purpose.</li>
+                      <li>In the event of any team resigning from the JCL after the start of the season its record of matches
+                          played shall be expunged from the points table. </li>
+                      <li>There shall be no fee charged to League clubs entering teams in the JCL as these are covered by the
+                          levy shown in HCL Rule L4(b). Any JCL club that is not a member of the League shall pay an annual
+                          team entry fee per team, which shall be determined annually by the Executive</li>
+                      <li>Failure to pay any of these fees by 31 May shall result in a fine of £5.00 per fee for each week or
+                          part thereof that they remain unpaid.</li>
+                      <li>Clubs who enter teams and then subsequently withdraw, at any point following the entry deadline,
+                          shall be fined £100 per team that withdraws.</li>
+                      <li>All coaches, team managers, adult scorers and umpires must undergo an enhanced Disclosure and
+                          Barring Service (DBS) check (see UK Government website under ‘DBS’). A qualified coach at either
+                          Level 1 or Level 2 MUST be a member of the ECB Coaches Association by no later than 31 March prior
+                          to the commencement of the season. He/she shall provide their membership number to the CCDG
+                          Secretary.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">J5 PLAYER REGISTRATION &amp; QUALIFICATIONS</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>Any player under 9, 11, 13, 15 and 17 years of age at midnight on 31 August, of the preceding year,
+                          shall be eligible to play at the designated age level in the JCL. </li>
+                      <li>For the levels shown in Rule J5(a) girls playing at under 9 level (junior school level 4) may be one
+                          year older (junior school level 5) than the age limit for this group. Girls at year levels 11, 13,
+                          15 &amp; 17 may be two years older than the age limit for their respective groups.</li>
+                      <li>Unless a completed transfer form has been received a player’s registration with a club at the end of
+                          the previous season shall automatically be carried forward to the following season provided that the
+                          player still meets the requirements of Rule J5(a).</li>
+                      <li>All new player registrations shall be sent to the Registrations Secretary on a JCL registration form
+                          before the opening day of the season. This shall include the player’s full name, date of birth,
+                          address, parental contact telephone number and email address. Players may be registered during the
+                          season and added to CricHQ by club administrators, subject to the above details being provided to
+                          the Registrations Secretary, by no later than 24 hours following the fixture the player has played
+                          in. Any player registered later than this deadline shall be classed as ineligible and the League
+                          points for that fixture forfeited, although no points shall be awarded to the opposition. </li>
+                      <li>A player aged 11 years of age, on 31 August, cannot play senior cricket the following season unless
+                          they have been selected to represent their County at A or B standard. Any such player must have a
+                          permission card from the County attesting to their suitability for senior cricket before playing in
+                          ANY match. A copy of the card must be lodged with both the HCL Registrations Secretary and the JCL
+                          Results Secretary no later than 48 hours before he/she plays in their first senior game and the card
+                          must be maintained to pass to the umpires for each match played thereafter. This Rule applies to all
+                          forms of cricket including friendlies. No player, who is eligible to play U11 cricket, can play any
+                          form of senior cricket, be it competitive or friendly. </li>
+                      <li>A player aged 12 years of age on 31 August and who has not been selected to represent their County
+                          at A or B standard may play senior cricket, in the following season, if they have a clearance form
+                          signed by a parent or guardian plus a Level 2 coach (or equivalent). A copy must be lodged with both
+                          the HCL Registrations Secretary and the JCL Fixtures Secretary 48 hours before he/she plays and
+                          copies must be maintained to pass to umpires for each game played. This rule applies to all forms of
+                          cricket including friendlies. </li>
+                      <li>The selection for a League representative team of any player, registered to play in the JCL, takes
+                          precedence over playing for any club team in another match unless it is a Semi–Final or Cup Final
+                          tie. Players contravening this Rule shall be immediately withdrawn from the selection procedure for
+                          all representative cricket in that season. </li>
+                      <li>Should a club enter two teams at the same age group a separate register of players for each team
+                          shall be submitted to the Fixture Secretary. The registers shall be of players from that age group
+                          and need not include players from lower age groups, e.g. two teams entered at U15 level, then two
+                          separate team registers shall be submitted for players aged 14 and 15 but not aged 13 and under.
+                          Note that different ages may apply to girls - see Rule J5(b). Players must remain in their allocated
+                          teams throughout the season and no exchange of players between registers shall be permitted. (i) No
+                          player shall play for more than one club in the present season without the permission of the
+                          Executive which, before any transfer, shall be satisfied that the player has fulfilled all financial
+                          obligations to the club he/she is leaving. </li>
+                      <li>A player may be loaned to another club when their club does not have a team at the age group in
+                          which they are going to play. The club loaning such a player is responsible for ensuring that it is
+                          recorded on the registration list and this notification indicates both clubs involved. (k) Failure
+                          to comply with any part of this Rule shall result in a fine of £10.00 and, where applicable, the
+                          deduction of League points.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">J6 FIXTURES, MATCH POINTS &amp; AVERAGES</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>The JCL fixture programme shall usually commence on the third Monday of April. The Fixture Secretary
+                          shall be responsible for the allocation of specific dates. </li>
+                      <li>The use of an artificial pitch is permitted but only on the basis that it is used for every match in
+                          the same section throughout the season. Prior to the commencement of the season the Executive shall
+                          be informed of any intended usage and of the section(s) it will be used in.</li>
+                      <li>All clubs shall abide by the following England &amp; Wales Cricket Board (ECB) publications:
+                          <ol>
+                              <li>Guidelines for Junior Players (including helmets (batting &amp; wicketkeeping), fielding and
+                                  fast bowling</li>
+                              <li>the Safe Hands Policy – welfare of young people in cricket.</li>
+      
+                          
+      </ol>
+                      </li>
+                      <li>The awarding of match points shall be as follows:
+                          <ol>
+                              <li>U9 - no League points shall be awarded for this age group. Fixtures shall be honoured but no
+                                  tables produced. Any matches unable to be played due to inclement weather may be rearranged,
+                                  provided both managers agree a date with no restrictions for this age group</li>
+                              <li>U11, U13, U15 and U17: the team scoring the most runs - 4 points. Match tied - 2 points
+                                  each. Losing team taking a minimum of five wickets (excluding retirements) or scoring
+                                  two-thirds of its opponents total score (rounded up to the nearest whole number) in the
+                                  second innings of the match - 1 bonus point. Not started or abandoned due to inclement
+                                  weather -1 point per team.</li>
+                              <li>All matches under Rule J6(d) ii) may be re-arranged within six days of the scheduled fixture
+                                  if the initial match is abandoned due to inclement weather. Any such rearrangement shall
+                                  only take place with the agreement of both team managers and subject to ground availability.
+                                  All such rearrangements shall be advised to the Results Secretary immediately to ensure
+                                  CricHQ completion monitoring is up to date. If no agreement can be reached then the each
+                                  team shall receive 1 point (see above).</li>
+      
+      
+                          
+      </ol>
+                      </li>
+                      <li>At the end of the season should two or more teams finish level on points the winners shall be
+                          determined by a calculation of runs scored divided by wickets lost over the season.</li>
+                      <li>At the end of each season all team managers shall confirm to the Results Secretary, by no later than
+                          seven days after the end of all qualifying fixtures, that they are content with the averages listed
+                          on CricHQ. Any disputes after this deadline shall not be considered. Averages shall be calculated
+                          for all League matches and Cup-ties, including those incomplete, but excluding those for the
+                          Collinson Cup Final and any results expunged due to team withdrawals. The following qualifications
+                          shall be followed in compiling submissions: Batting: Five innings completed with averages for:
+                          <ol>
+                              <li>U13 of 20 runs or over</li>
+                              <li>U15 of 30 runs or over</li>
+                              <li>U17 of 40 runs or over</li>
+      
+                          
+      </ol>
+                          A retired batsman’s innings shall be deemed “complete” but “not out” for these submissions. Should a
+                          batsman have retired or is not dismissed in every match during the season then the total number of
+                          runs scored shall be divided by one. The following apply to all teams of all age groups for all
+                          other disciplines: Bowling: twelve overs completed and six wickets obtained. Wicket-keeping: six or
+                          more victims, separating catches and stumpings. Fielding Marks: highest number of marks per team.
+                          Failure to comply with any part of this Rule shall result in a fine of £10.00.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">J7 MATCH PROCEDURES – UNDER 9</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>Matches played on a Sunday morning shall start no later than 9:30am or, for a Thursday match, no
+                          later than 6:30pm. </li>
+                      <li>Pitches shall measure 16 yards in length with boundaries set at a maximum distance of 25 yards from
+                          the middle stump and a scoreboard shall be used to record match scores.</li>
+                      <li>The ball shall be of junior ‘Incrediball’ specification. </li>
+                      <li>The wearing of helmets is optional. </li>
+                      <li>A match shall be one innings per side and consist of 20 five ball overs where there are 10 players
+                          per side. In the case of an 8-a-side match 16 six-ball overs per side shall be bowled.</li>
+                      <li>Teams shall play 10-a-side pairs cricket, however an 8-a-side match may be played with the agreement
+                          of the two managers. In extreme circumstances fewer players may be used in an attempt to “GET THE
+                          GAME ON”. Batting: Each pair shall bat for four overs with the two batsmen being changed at the
+                          completion of the fourth, eighth, twelfth and sixteenth overs or in the case of an 8-a side match at
+                          the fourth, eighth and twelfth overs. Bowling: May be either underarm or overarm at the discretion
+                          of each player (dependent on capability) and shall be from one end throughout the match. Each player
+                          shall bowl two overs and the bowler shall change at the end of each over. </li>
+                      <li> Each batting side shall start its innings with a score of 100 runs.</li>
+                      <li>Batsmen, in the stance position, shall not be allowed to obscure the view of the off stump in
+                          readiness to receive a delivery. Only a middle &amp; leg guard shall be given by the umpire. (i)
+                          Batsmen shall change ends: i) at the conclusion of each over in order that the batsman facing the
+                          last ball of one over does not face the first ball of the next over, irrespective of the number of
+                          runs, if any, scored off the final ball and ii) at the fall of any wicket. </li>
+                      <li>Batsmen shall have unlimited ‘lives’ but each fall of wicket shall result in five runs being
+                          deducted from the total.</li>
+                      <li>No fielder shall be allowed within ten yards of the striker until the ball is played. Fielders shall
+                          rotate clockwise after each over so that all players are utilised in each fielding position,
+                          including acting as a wicketkeeper as no gloves are required.</li>
+                      <li>Dismissals shall be restricted to only five methods namely: bowled, caught, run out, stumped or hit
+                          wicket - any lbw appeals shall be declined by the umpire. </li>
+                      <li>No-balls:
+                          <ol type="i">
+                              <li>A bowler shall be penalised by a no-ball if a) the delivery bounces three or more times, b)
+                                  rolls along the ground before reaching the striker or c) the ball passes the striker, when
+                                  standing in an upright position, above waist height.</li>
+                              <li>In the case of overstepping, bowlers shall be encouraged to bowl within the crease markings
+                                  and only where this offence is persistent, following at least two warnings and noted by both
+                                  umpires, should a no-ball be called.</li>
+                              <li>Where a no-ball is called it shall count as one ball of the over but with two penalty runs
+                                  awarded, except the final over of an innings [see Rule J7(o)].</li>
+      
+                          
+      </ol>
+                      </li>
+                      <li>Wides: a wide-ball shall only be called when the delivery is clearly out of the batsmen’s reach. In
+                          such a case it shall count as one of the over but with one penalty run awarded plus a free hit [see
+                          Rule J7(p)] where any runs scored shall be additional, except the final over of an innings [see Rule
+                          J7(o)]. </li>
+                      <li>No-balls &amp; Wides Final Over: Where Rules J7(m) and (n) are contravened In the final over of each
+                          innings an extra ball shall be awarded but no penalty runs shall be awarded or free hits allowed.
+                      </li>
+                      <li>A free hit {see Rule J7(n)] is where the ball is placed on a tee in front of the batsman in order
+                          that, from a normal stance position, it can be struck forwards in front of the wicket towards the
+                          area between cover point and square leg in one single continuous movement. The batsman is allowed
+                          one strike at the ball and cannot be out except if he/she or the other batsman is run out from the
+                          free hit. Fielders shall not move from their original fielding positions prior to the free hit being
+                          awarded until the batsman strikes the ball. In the case of a batsman contravening this Rule an
+                          umpire should call dead ball and no additional runs are scored. Should the contravention be by the
+                          fielding side the free hit shall be replayed if the batsman so desires. </li>
+                      <li>The winning team shall be the side scoring the higher number of runs after deductions for the fall
+                          of wickets. All details shall be shown on the scoresheet with the net totals highlighted. </li>
+                      <li>If any match ends with the scores level then the team losing the least wickets shall be declared the
+                          winner. In a case where the wickets lost are also equal then the match shall be declared a tie.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">J8 MATCH PROCEDURES – UNDER 11</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>Fixtures shall be played on a Monday and shall start no later than 6:30pm. </li>
+                      <li>Pitches shall measure 21 yards in length and a scoreboard shall be used to record match scores.</li>
+                      <li>Each club shall purchase a standard JCL supplied ball which shall weigh 4 3⁄4 oz (132.9g). Should
+                          the club also enter an U13 team the six balls may be shared (see Rule J9(c). In all cases new or
+                          used balls may be used for any match.</li>
+                      <li>A match shall be one innings per side and consist of 20 five-ball overs where there are 10 players
+                          per side. In the case of an 8-a-side match 16 six-ball overs per side shall be bowled.</li>
+                      <li>Teams shall play 10-a-side pairs cricket, however an 8-a-side match may be played with the agreement
+                          of the two managers. In extreme circumstances fewer players may be used in an attempt to “GET THE
+                          GAME ON”. Batting: Each pair shall bat for four overs with the two batsmen being changed at the
+                          completion of the fourth, eighth, twelfth and sixteenth overs or in the case of an 8-a-side match at
+                          the fourth, eighth and twelfth overs. Bowling: May be either underarm or overarm at the discretion
+                          of each player (dependant on capability) and shall be from one end throughout the match. Each player
+                          shall bowl two overs and the bowler shall change at the end of each over.</li>
+                      <li>Helmets must be worn by all players when batting and by the wicketkeeper when standing up to the
+                          stumps. This Rule also applies to all practice sessions where a hard ball is used. (g) Where a team
+                          has less than eight players present at a ground the match points shall be awarded to the opposing
+                          team. However if a club is unable to field a competitive team a pairs match, if possible, should
+                          still be played.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">J9 MATCH PROCEDURES – UNDER 13, 15 &amp; 17</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>Fixtures shall be played on a Monday (U17), Wednesday (U15) or Thursday (U13) and shall start no
+                          later than 6:30pm. Any match not started by 7:00pm, due to inclement weather, shall be deemed a draw
+                          with one point awarded to each team. </li>
+                      <li>Pitches shall measure in length i) for U13 - 21 yards and ii) for U15 &amp; U17 – 22 yards. A
+                          scoreboard shall be used to record match scores.</li>
+                      <li>For U13 teams each club shall purchase six 4 3⁄4 oz balls (132.9g). For U15 &amp; U17 matches each
+                          team shall use an official HCL ball weighing 5 ½ oz (155.9g). In all cases new or used balls may be
+                          used for any match.</li>
+                      <li>The maximum number of overs to be bowled shall be 20 per team. Managers may agree to play reduced
+                          overs where light and or inclement weather are likely to or do intervene. Such matches shall be a
+                          minimum of 12 overs per team and each shall have the opportunity to bowl an equal number of overs.
+                      </li>
+                      <li>In the event of inclement weather a reduced number of overs shall be played and agreed by the team
+                          managers. The overs shall be reduced at a rate of one per side for every 6 minutes of time lost, to
+                          a maximum of 8 overs per side, in total, for the match.</li>
+                      <li>No match shall be scheduled for less than twelve overs per side and any such match shall be declared
+                          null and void, except in the case where a side batting second is all out with points awarded as per
+                          Rule J6(c). </li>
+                      <li>Except when the last pair are batting a batsman shall retire ‘not out’ after he/she has scored the
+                          following number of runs in a match, U13 - 25 runs, U15 - 30 runs &amp; U17 - 50 runs. In all cases
+                          no batsman shall resume their innings. </li>
+                      <li>The maximum number of overs a player shall be allowed to bowl in a match are: i) U13 &amp; U15 -
+                          three and ii) U17 - four. In U13 &amp; U15 matches at least seven players shall bowl. A player who
+                          acts as wicketkeeper in a match shall not be able to bowl. (i) No player shall bowl if he/she is not
+                          wearing a predominantly white shirt and it is desirable that all players should wear predominantly
+                          white clothing. </li>
+                      <li>Helmets must be worn by all players when batting and by the wicketkeeper when standing up to the
+                          stumps. This Rule also applies to all practice sessions where a hard ball is used.</li>
+                      <li>Where a team has less than seven players present at a ground the match points shall be awarded to
+                          the opposing team and it shall be fined £10.00. The £10.00 shall be divided equally between the JCL
+                          and the opposing team.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">J10 MATCH RESULTS</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>The home team shall be responsible for ensuring that the result and full scorecard are input onto
+                          CricHQ no later than 48 hours after the relevant fixture has been completed. Failure to comply with
+                          this rule shall result in a fine of £5 per day for every 24 hours, or part thereof, that the full
+                          result and scorecard is not input. The decision of the Results Secretary is final and binding and no
+                          appeal shall be considered.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">J11 UMPIRES, SCORERS &amp; ADULT REPRESENTATIVES</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>In all sections each club shall provide a competent umpire, scorer and team manager to supervise the
+                          players. </li>
+                      <li>Failure to adhere to this Rule shall result in the forfeiture of any points gained in the match,
+                          which shall be awarded to their opponents. (c) Any club not complying with this Rule shall also be
+                          requested to meet the Executive with an explanation for any shortage of the persons described above.
+                      </li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">J12 REPRESENTATIVE MATCHES</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>Any person under 11, 13, 15 or 17 years of age at midnight on 31 August of the preceding year shall
+                          be eligible to play for a JCL representative team provided that person is registered with a member
+                          club. </li>
+                      <li>Any player selected for a League XI in any inter-league competition (i.e Joe Lumb or Festival
+                          cricket) and not taking up the invitation cannot play for their club on the day of the match without
+                          the consent of the Executive, except for a semi-final or final of the Parish Cup or Crossley Shield
+                          competitions. </li>
+                      <li>Any player in breach of this Rule will automatically be suspended from all junior and senior cricket
+                          for 14 days and his/her club shall be fined £50.00.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">J13 RULE ADDITIONS &amp; AMENDMENTS</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>No alteration to these Rules shall be made except at the AGM or at a SGM called for this specific
+                          purpose. </li>
+                      <li>The following timetable shall apply for all proposals to be determined at an AGM:
+                          <ol type="i">
+                              <li>A club wishing to submit (a) proposal(s) shall send it (them) to reach the Secretary by no
+                                  later than 1 October. </li>
+                              <li>The Secretary shall collate all club proposals and, together with any from the Executive,
+                                  email to all Club Secretaries and Junior Managers by no later than 10 October. </li>
+                              <li>Voting shall be undertaken electronically and completed voting forms shall be emailed to the
+                                  Secretary by no later than 9 November. </li>
+                              <li>Failure to make a return by the deadline shall be deemed an abstention and no further
+                                  communication shall be entered into. </li>
+                              <li>Should there be a tie on any vote the Chairman’s casting vote shall apply. vi) The results
+                                  of all voting shall be announced at the AGM</li>
+      
+                          
+      </ol>
+                      </li>
+      
+                  
+      </ol>
+                  <button class="hclaccordion">J14 ANNUAL AWARDS &amp; TROPHIES</button>
+      
+      
+                  
+      
+      <div class="hclpanel">
+                      <ol type="a">
+                          <li>Team awards for the U17, U15, U13, U11 &amp; U9 Championship Trophies, Collinson Cups, Festival
+                              trophies and the Clarence Smith Player of the Season Trophy shall be the responsibility of the
+                              winning club. </li>
+                          <li>Individual trophies for performances during the season shall be awarded for the U17, U15 and U13
+                              sections for batting, bowling, wicketkeeping and fielding categories and presented at the JCL
+                              Prize Presentation Evening. In the event of a tie for a wicketkeeping or fielding award no more
+                              than two trophies shall be awarded, with stumpings taking precedence over catches to determine
+                              the winner(s) of the wicketkeeping award.</li>
+                          <li>All trophies shall be returned in an undamaged condition no later than 30 June to Briggs
+                              Priestley Ltd for engraving (info@briggspriestley.co.uk). Failure to do so shall result in a
+                              fine for an offending club charged at £1.00 per day. There shall be no extension to this
+                              deadline under any circumstances. Clubs are reminded that any repairs or engraving that need to
+                              be made MUST be conducted by Briggs Priestley Ltd and any such work not conducted by it shall
+                              result in fiscal penalty to be decided by the JCL Executive.</li>
+      
+                      
+      </ol>
+      
+                  
+      </div>
+      
+              
+      </div>
+      
+          
+      </div>
+          <button class="hclaccordion_section">SECTION 7 - THE RULES OF THE COLLINSON CUP</button>
+      
+      
+          
+      
+      <div class="hclsection_panel">
+              <button class="hclaccordion">C1 TITLE &amp; CONSTITUTION</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>The competition shall be called the Collinson Cup (Cup) and consist of U11, U13, U15 &amp; U17 age
+                          groups. </li>
+                      <li>The Executive shall oversee the management of the competitions and be responsible for setting the
+                          schedules, including making the draw for all rounds.</li>
+                      <li> Except where inappropriate JCL Rules shall apply plus the specific ones provided herein. (d) All
+                          age group competitions shall be arranged and designed by the Fixture Secretary, dependent on the
+                          number of teams that are entered for each age group.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">C2 DRAWS, TIES &amp; GENERAL PROCEDURES</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>The draws for each of the First Rounds shall be made by the Fixture Secretary within seven days
+                          following the publication of the fixtures for the external White Rose and Joe Lumb competitions.
+                      </li>
+                      <li>All ties up to and including the Semi-Final Round shall be played on the ground of the team drawn
+                          first. </li>
+                      <li>Two Finals Day venues, played on different days, shall be organised by the Executive with the U11’s
+                          &amp; U13’s Finals allocated to one club and the U15’s &amp; U17’sto a second club.</li>
+                      <li>Where a cup-tie results in the scores being equal then the team losing the least number of wickets
+                          shall be the winner. Should the number of wickets lost also be equal the team with the faster
+                          scoring rate for its first ten overs shall be the winner. </li>
+                      <li>Should a Semi-Final be postponed due to inclement weather or is prevented from being completed on
+                          the scheduled date it shall be played/replayed on the Semi-Final reserve date. Should inclement
+                          weather prevent the completion of this tie then the result shall be decided by a bowl off, as per
+                          HCL Rule K7. </li>
+                      <li>Where a club postpones a JCL cup-tie, due to participation in another junior league competition, and
+                          subsequently the rearrangement of that JCL cup-tie again clashes with another league’s fixtures in
+                          which it competes, it will be required to play in the JCL tie. Failure to do so will result in a
+                          fine of £100.00 plus the forfeiture of the tie.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">C3 PLAYER ELIGIBILITY</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>During the same season no player shall play for more than one club in the competition unless he or
+                          she is playing for different clubs in different age groups. </li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">C4 SPECIAL MATCH PROCEDURES – UNDER 11</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>U11’s shall play standard 11-a-side cricket with the restrictions shown in the following Rules.
+                      </li>
+                      <li>Pitches shall measure 21 yards in length and a scoreboard shall be used to record match scores.
+                      </li>
+                      <li>Each club must provide its own ball which shall weigh4 3⁄4 oz (132.9g).</li>
+                      <li>Except when the last pair is batting a batsman shall retire ‘not out’ after he/she has scored 25
+                          runs. No batsman shall resume their innings. </li>
+                      <li>At least seven players shall bowl, with no bowler allowed to bowl more than three overs, or 20% of
+                          the overs agreed to be bowled, rounded down to the nearest whole number.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">C5 UMPIRES</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>The Halifax Cricket League Association of Cricket Officials shall provide umpires for the Semi-Final
+                          and Final ties.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+              <button class="hclaccordion">C6 PROVISION OF CUP FINAL TIE BALLS</button>
+      
+      
+              
+      
+      <div class="hclpanel">
+                  <ol type="a">
+                      <li>The JCL will provide free of charge a new ball, at the relevant weight for each side, for all
+                          Collinson Cup Final Ties.</li>
+      
+                  
+      </ol>
+      
+              
+      </div>
+      
+          
+      </div>
+      
+      
+          <script>
+              var acc = document.getElementsByClassName("hclaccordion");
+              var acc_s = document.getElementsByClassName("hclaccordion_section");
+              // var l;
+              var i;
+      
+              for (i = 0; i < acc.length; i++) {
+                  acc[i].addEventListener("click", function () {
+                      this.classList.toggle("active");
+                      var hclpanel = this.nextElementSibling;
+                      if (hclpanel.style.display === "block") {
+                          hclpanel.style.display = "none";
+                      } else {
+                          hclpanel.style.display = "block";
+                      }
+                  });
+              }
+      
+              for (i = 0; i < acc_s.length; i++) {
+                  acc_s[i].addEventListener("click", function () {
+                      this.classList.toggle("active");
+                      var hclsection_panel = this.nextElementSibling;
+                      if (hclsection_panel.style.display === "block") {
+                          hclsection_panel.style.display = "none";
+                      } else {
+                          hclsection_panel.style.display = "block";
+                      }
+                  });
+              }
+          </script>
+      </div>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
